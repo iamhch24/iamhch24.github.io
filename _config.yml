@@ -20,7 +20,7 @@ title                    : "Edward's Dev Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Edward Hyun(현충호)"
-description              : "데이터사이언스(머신러닝,딥러닝)와 백엔드에 대한 개인적인 정리 자료."
+description              : "데이터사이언스(머신러닝,딥러닝)와 백엔드에 대한 개인적인 정리 자료.<br>Phython, Java, Node.js, React.js, ES6, PHP, Oracle, MariaDB"
 url                      : "https://iamhch24.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
