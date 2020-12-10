@@ -19,7 +19,7 @@ locale                   : "Daejeon-South Korea"
 title                    : "Edward's Dev Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "현충호"
+name                     : "Edward Hyun(현충호)"
 description              : "데이터사이언스(머신러닝,딥러닝)과 백엔드에 대한 개인적인 정리 자료."
 url                      : "https://iamhch24.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Edward Hyun(현충호)"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "데이터사이언스(머신러닝,딥러닝)과 백엔드에 대한 개인적인 정리 자료."
   location         : "Daejeon-South Korea"
   email            : "iamhch24@gmail.com"
   links:
