@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Edward Hyun<br>(현충호)"
   avatar           : "/assets/images/iamhch.jpg"
-  bio              : "데이터사이언스(머신러닝,딥러닝)와 백엔드에 대한 개인적인 정리 자료.<hr>Phython, Java, Node.js, React.js, ES6, PHP, Oracle, MariaDB"
+  bio              : "데이터사이언스(머신러닝,딥러닝)와 백엔드에 대한 개인적인 정리 자료.<hr>Python, R, Java, Node.js, React.js, ES6, PHP, Oracle, MariaDB"
   location         : "Daejeon-South Korea"
   email            : "iamhch24@gmail.com"
   links:
