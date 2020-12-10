@@ -2,10 +2,10 @@
 main:
   #- title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "Data Science"
-     url: /Posts_DS/
-  - title: "Programming"
-     url: /Posts_PR/
+  #- title: "Data Science"
+  #   url: /Posts_DS/
+  #- title: "Programming"
+  #   url: /Posts_PR/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
