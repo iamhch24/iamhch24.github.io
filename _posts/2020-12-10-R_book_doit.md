@@ -1,3 +1,13 @@
+---
+title: "Do it 쉽게 배우는 <font color='orange'> R</font> 데이터 분석"
+categories:
+    - data-science
+tags:
+    - data-science
+    - R
+toc: true
+---
+
 # "Do it 쉽게 배우는 <font color='orange'> R</font> 데이터 분석"
 
 
