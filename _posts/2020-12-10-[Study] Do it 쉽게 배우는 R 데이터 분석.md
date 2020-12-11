@@ -8,7 +8,7 @@ tags:
 toc: true
 ---
 
-# "[Study] Do it 쉽게 배우는 <font color='orange'> R</font> 데이터 분석Do it 쉽게 배우는 <font color='orange'> R</font> 데이터 분석"
+# "[Study] Do it 쉽게 배우는 <font color='orange'> R</font> 데이터 분석"
 
 
 ## 1. R 환경설정 (1~2장)
