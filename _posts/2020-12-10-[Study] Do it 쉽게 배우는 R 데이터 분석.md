@@ -1,9 +1,9 @@
 ---
 title: "[Study] Do it 쉽게 배우는 R 데이터 분석"
 categories:
-    - Data-science
+    - data-science
 tags:
-    - Data-science
+    - data-science
     - R
 toc: true
 ---
