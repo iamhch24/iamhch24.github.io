@@ -288,7 +288,7 @@ https://wikidocs.net/33957 :: 논문 작성에 필요한 R ggplot2 시각화
 ## 9. 프로젝트 내용 (어린이 사고 vs 스쿨존)
 
 >kids_accident.R
-'''R
+
     library(ggplot2)
     library(dplyr)
     library(corrplot)
@@ -313,10 +313,12 @@ https://wikidocs.net/33957 :: 논문 작성에 필요한 R ggplot2 시각화
     #히트맵 그래프
     col <- colorRampPalette(c("#BB4444","#EE9988","#FFFFFF","#77AADD","#4477AA"))
     corrplot(df_cor, method="color",col=col(200), type="lower",order="hclust",addCoef.col="black",diag=T)
-'''
+
+
 
 >cj_zone_data.R
-'''R
+
+
     library(ggplot2)
     library(dplyr)
     library(corrplot)
@@ -414,10 +416,10 @@ https://wikidocs.net/33957 :: 논문 작성에 필요한 R ggplot2 시각화
     # 4. 데이터 전처리가 끝난 스쿨존 정보를 CSV 파일로 저장한다.
     #################################
     write.csv(zone_info2, file="cj_schoolzone_Data2.csv")
-'''
+
 
 >cj_zone_visual.R
-'''R
+
     library(ggplot2)
     library(dplyr)
     library(corrplot)
@@ -479,7 +481,7 @@ https://wikidocs.net/33957 :: 논문 작성에 필요한 R ggplot2 시각화
     #히트맵 그래프
     col <- colorRampPalette(c("#BB4444","#EE9988","#FFFFFF","#77AADD","#4477AA"))
     corrplot(df_cor, method="color",col=col(200), type="lower",order="hclust",addCoef.col="black",diag=T)
-'''   
+
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbODQyNjg2MDU0LC0yMDI5NzE4NzUsNzY3NT
