@@ -18,8 +18,8 @@ JVM코틀린 -> 자바 애플리케이션 + 안드로이드 애플리케이션 �
 JS 코틀린 -> DB부터, 서버, 클라이언트 까지 풀스택 웹 개발 가능
 Native코틀린 -> LLVM 컴파일러를 통해 기계 코드 가능 (임베디드, IoT)
 
-* 설치 : Zulu JDK SE 8, IntelliJ ID
-*
+* 설치 : Zulu JDK SE 8, IntelliJ IDEA Community 에디션
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3Mjc2Mzc4LDExNDA4OTg5MDddfQ==
+eyJoaXN0b3J5IjpbNTY4ODk0MzM3LDExNDA4OTg5MDddfQ==
 -->
