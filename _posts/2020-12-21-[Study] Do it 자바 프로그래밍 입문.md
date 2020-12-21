@@ -22,11 +22,15 @@ System.out.println();
 () : 연산자 = 계산식에서는 우선순위 부여
 문자열 " " 사용
 ctrl+/ :: 주석처리
+/*  */ 주석처리
+/** 해서 엔터를 치면 javadoc이 실행됨 : 설명문 달기
+src 폴더에서 .java 실행을 하면 bin 폴더에 .class 바이트 코드가 생성됨
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0OTE2MTg5NSwtMTQzMTY3OTcyM119
+eyJoaXN0b3J5IjpbMTY3NDYzNzg1OSwxMDQ5MTYxODk1LC0xND
+MxNjc5NzIzXX0=
 -->
