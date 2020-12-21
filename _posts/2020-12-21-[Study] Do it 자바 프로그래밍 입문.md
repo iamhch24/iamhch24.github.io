@@ -22,6 +22,7 @@ System.out.println();
 () : 연산자 = 계산식에서는 우선순위 부여
 문자열 " " 사용
 ctrl+/ :: 주석처리
+코드창의 글자 크기 설정 :: window>preference>General>Appearance>Colors and Fonts>Basic>Text Font> 
 
 	/*  */ 주석처리
 	/** 해서 엔터를 치면 javadoc이 실행됨 : 설명문 달기
@@ -49,6 +50,6 @@ main()이 없으면 :: 순수클래스, 실행이 안됨
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjg0ODM4ODUsMTY3NDYzNzg1OSwxMD
-Q5MTYxODk1LC0xNDMxNjc5NzIzXX0=
+eyJoaXN0b3J5IjpbLTEzNDUxOTAxNDksLTEyNjg0ODM4ODUsMT
+Y3NDYzNzg1OSwxMDQ5MTYxODk1LC0xNDMxNjc5NzIzXX0=
 -->
