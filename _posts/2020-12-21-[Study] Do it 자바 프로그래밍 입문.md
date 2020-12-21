@@ -51,12 +51,14 @@ toc: true
 
 덧셈을 할 경우 초기화 값은 0
 곱셈을 할 경우 초기화 값은 1
+문자열 초기화 ""
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3OTYwMjUzLDU2ODIyMjI3NiwtODc1ND
-kwOTM3LDI3NjI1MzYxLC0xMjY4NDgzODg1LDE2NzQ2Mzc4NTks
-MTA0OTE2MTg5NSwtMTQzMTY3OTcyM119
+eyJoaXN0b3J5IjpbMTczNzk2ODc4OSwxNDc5NjAyNTMsNTY4Mj
+IyMjc2LC04NzU0OTA5MzcsMjc2MjUzNjEsLTEyNjg0ODM4ODUs
+MTY3NDYzNzg1OSwxMDQ5MTYxODk1LC0xNDMxNjc5NzIzXX0=
 -->
