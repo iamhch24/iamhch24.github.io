@@ -36,12 +36,15 @@ src 폴더에서 .java 실행을 하면 bin 폴더에 .class 바이트 코드가
 > public :: 공개, 오픈되어 있음 
 static :: 정적
 void :: 리턴값이 없음
+자바는 무조건 클래스가 있어야 함. 모든게 클래스 안에 있어야함. 또 클래스 안에 메서드가 있어야 함.
+first class : 클래스가 가장 높음 
+클래스 밖에 코드를 쓰면 안됨
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk4MDEzOSwxNjc0NjM3ODU5LDEwNDkxNj
-E4OTUsLTE0MzE2Nzk3MjNdfQ==
+eyJoaXN0b3J5IjpbMTI5OTk4NzIyNCwxNjc0NjM3ODU5LDEwND
+kxNjE4OTUsLTE0MzE2Nzk3MjNdfQ==
 -->
