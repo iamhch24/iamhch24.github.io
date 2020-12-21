@@ -14,7 +14,7 @@ toc: true
 * 이클립스 설치
 
 > 패키지 : 폴더 개념
-> Entry Point : 시작점
+> Entry Point : 시작점 :: static void main()
 > print 함수
 > System.out.println();
 > () : 연산자 = 함수호출할 때 그곳으로 가라는 뜻, () 앞은 주소
@@ -56,7 +56,7 @@ toc: true
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjE2MjIyMyw1NjgyMjIyNzYsLTg3NT
-Q5MDkzNywyNzYyNTM2MSwtMTI2ODQ4Mzg4NSwxNjc0NjM3ODU5
-LDEwNDkxNjE4OTUsLTE0MzE2Nzk3MjNdfQ==
+eyJoaXN0b3J5IjpbMTQ3OTYwMjUzLDU2ODIyMjI3NiwtODc1ND
+kwOTM3LDI3NjI1MzYxLC0xMjY4NDgzODg1LDE2NzQ2Mzc4NTks
+MTA0OTE2MTg5NSwtMTQzMTY3OTcyM119
 -->
