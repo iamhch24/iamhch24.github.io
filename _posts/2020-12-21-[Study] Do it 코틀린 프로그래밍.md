@@ -14,7 +14,11 @@ Kotlin/JVM :: 자바 가상 머신에서 동작하는 애플리케이션을 만�
 Kotlin/JS :: 자바스크립트로 웹 브라우저에서 동작하는 애플리케이션을 만들 수 있다.
 Kotlin.Native : LLVM 컴파일러를 이용하여 여러 플랫폼을 타깃으로 하는 애플리케이션을 만들 수 있다.
 코틀린은 JVM, JS, Native 상에서 실행될 수 있음
-JVM코틀린 -> 자바 애플리케이션 + 안드로읻
+JVM코틀린 -> 자바 애플리케이션 + 안드로이드 애플리케이션 만들수 있음
+JS 코틀린 -> DB부터, 서버, 클라이언트 까지 풀스택 웹 개발 가능
+Native코틀린 -> LLVM 컴파일러를 통해 기계 코드 가능 (임베디드, IoT)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDkwMDQ4NDVdfQ==
+eyJoaXN0b3J5IjpbMTE0MDg5ODkwN119
 -->
