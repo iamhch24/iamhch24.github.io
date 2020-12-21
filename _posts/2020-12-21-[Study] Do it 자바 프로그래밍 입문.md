@@ -39,12 +39,14 @@ void :: 리턴값이 없음
 자바는 무조건 클래스가 있어야 함. 모든게 클래스 안에 있어야함. 또 클래스 안에 메서드가 있어야 함.
 first class : 클래스가 가장 높음 
 클래스 밖에 코드를 쓰면 안됨
+main()은 하나 이상 있어야 실행이 됨. :: runable class
+main()이 없으면 :: 순수클래스, 실행이 안됨
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5OTk4NzIyNCwxNjc0NjM3ODU5LDEwND
-kxNjE4OTUsLTE0MzE2Nzk3MjNdfQ==
+eyJoaXN0b3J5IjpbLTIwMDc3Mzc5MDYsMTY3NDYzNzg1OSwxMD
+Q5MTYxODk1LC0xNDMxNjc5NzIzXX0=
 -->
