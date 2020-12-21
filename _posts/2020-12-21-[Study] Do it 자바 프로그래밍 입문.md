@@ -46,11 +46,12 @@ toc: true
 
 # 2장 변수와 자료형
 
-
+변수의 선언과 함께 초기화를 해 준다.
+선언 후 곧바로 호출 시 에러가 뜨도록 되어 있으
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY4MjIyMjc2LC04NzU0OTA5MzcsMjc2Mj
-UzNjEsLTEyNjg0ODM4ODUsMTY3NDYzNzg1OSwxMDQ5MTYxODk1
-LC0xNDMxNjc5NzIzXX0=
+eyJoaXN0b3J5IjpbLTYzMTg5OTg2Niw1NjgyMjIyNzYsLTg3NT
+Q5MDkzNywyNzYyNTM2MSwtMTI2ODQ4Mzg4NSwxNjc0NjM3ODU5
+LDEwNDkxNjE4OTUsLTE0MzE2Nzk3MjNdfQ==
 -->
