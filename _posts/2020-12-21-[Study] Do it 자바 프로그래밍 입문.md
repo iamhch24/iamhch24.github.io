@@ -44,12 +44,13 @@ toc: true
 > main()은 하나 이상 있어야 실행이 됨. :: runable class
 > main()이 없으면 :: 순수클래스, 실행이 안됨
 
+# 2장 변수와 자료형
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NTQ5MDkzNywyNzYyNTM2MSwtMTI2OD
-Q4Mzg4NSwxNjc0NjM3ODU5LDEwNDkxNjE4OTUsLTE0MzE2Nzk3
-MjNdfQ==
+eyJoaXN0b3J5IjpbNTY4MjIyMjc2LC04NzU0OTA5MzcsMjc2Mj
+UzNjEsLTEyNjg0ODM4ODUsMTY3NDYzNzg1OSwxMDQ5MTYxODk1
+LC0xNDMxNjc5NzIzXX0=
 -->
