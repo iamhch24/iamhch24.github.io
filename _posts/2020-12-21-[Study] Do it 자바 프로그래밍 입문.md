@@ -26,11 +26,21 @@ ctrl+/ :: 주석처리
 /** 해서 엔터를 치면 javadoc이 실행됨 : 설명문 달기
 src 폴더에서 .java 실행을 하면 bin 폴더에 .class 바이트 코드가 생성됨
 
+```java
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("안녕 자바 \n");
+	}
+```
+public :: 공개
+static :: 정적
+void :: 리턴값이 없음
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NDYzNzg1OSwxMDQ5MTYxODk1LC0xND
-MxNjc5NzIzXX0=
+eyJoaXN0b3J5IjpbMzA3NTk5NzYxLDE2NzQ2Mzc4NTksMTA0OT
+E2MTg5NSwtMTQzMTY3OTcyM119
 -->
