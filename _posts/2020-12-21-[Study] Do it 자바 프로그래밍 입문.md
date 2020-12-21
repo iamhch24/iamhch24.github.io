@@ -7,7 +7,7 @@ tags:
     - java
 toc: true
 ---
-## "[Study] Do it 자바프로그래밍 입문"
+# "[Study] Do it 자바프로그래밍 입문"
 
 ## 1장 자바 프로그래밍 시작하기
 
@@ -47,6 +47,6 @@ main()이 없으면 :: 순수클래스, 실행이 안됨
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDc3Mzc5MDYsMTY3NDYzNzg1OSwxMD
-Q5MTYxODk1LC0xNDMxNjc5NzIzXX0=
+eyJoaXN0b3J5IjpbODgzMjc5ODk5LDE2NzQ2Mzc4NTksMTA0OT
+E2MTg5NSwtMTQzMTY3OTcyM119
 -->
