@@ -9,7 +9,8 @@ toc: true
 ---
 ## "[Study] Do it 자바프로그래밍 입문"
 
-1장 자바 프로그래밍 시작하기
+## 1장 자바 프로그래밍 시작하기
+
 Java SE 1.8 설치
 이클립스 설치
 
@@ -17,6 +18,11 @@ Java SE 1.8 설치
 Entry Point : 시작점
 print 함수
 System.out.println();
+() : 연산자 = 함수호출할 때 그곳으로 가라는 뜻, () 앞은 주소
+() : 연산자 = 우선순위 부여
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MDg1MzIxNF19
+eyJoaXN0b3J5IjpbLTE0MzE2Nzk3MjNdfQ==
 -->
