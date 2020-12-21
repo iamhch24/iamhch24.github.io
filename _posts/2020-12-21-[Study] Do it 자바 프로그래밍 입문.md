@@ -21,11 +21,12 @@ System.out.println();
 () : 연산자 = 함수호출할 때 그곳으로 가라는 뜻, () 앞은 주소
 () : 연산자 = 계산식에서는 우선순위 부여
 문자열 " " 사용
+ctrl+/ :: 주석처리
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDY5Nzc5NjksLTE0MzE2Nzk3MjNdfQ
-==
+eyJoaXN0b3J5IjpbMTA0OTE2MTg5NSwtMTQzMTY3OTcyM119
 -->
