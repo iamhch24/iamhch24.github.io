@@ -14,13 +14,21 @@ toc: true
 * 이클립스 설치
 
 > 패키지 : 폴더 개념
+
 > Entry Point : 시작점 :: static void main()
+
 > print 함수
+
 > System.out.println();
+
 > () : 연산자 = 함수호출할 때 그곳으로 가라는 뜻, () 앞은 주소
+
 > () : 연산자 = 계산식에서는 우선순위 부여
+
 > 문자열 " " 사용
+
 > ctrl+/ :: 주석처리
+
 > 코드창의 글자 크기 설정 :: window>preference>General>Appearance>Colors and Fonts>Basic>Text Font>Edit 
 
 	/*  */ 주석처리
@@ -68,7 +76,7 @@ toc: true
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMTc5NjQwOSwxMTgxODQwMzMxLDk1MD
+eyJoaXN0b3J5IjpbMTM0MzQ4MjE5NywxMTgxODQwMzMxLDk1MD
 QxMTM1NywxNzM3OTY4Nzg5LDE0Nzk2MDI1Myw1NjgyMjIyNzYs
 LTg3NTQ5MDkzNywyNzYyNTM2MSwtMTI2ODQ4Mzg4NSwxNjc0Nj
 M3ODU5LDEwNDkxNjE4OTUsLTE0MzE2Nzk3MjNdfQ==
