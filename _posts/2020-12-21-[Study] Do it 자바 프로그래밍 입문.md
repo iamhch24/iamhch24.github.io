@@ -54,11 +54,18 @@ toc: true
 문자열 초기화 ""
 
 
+컴파일 타임 상수
+	final int MAX_NUM = 100;
+	
+런타임 상수
+	final int ADD_NUM = add();
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNzk2ODc4OSwxNDc5NjAyNTMsNTY4Mj
-IyMjc2LC04NzU0OTA5MzcsMjc2MjUzNjEsLTEyNjg0ODM4ODUs
-MTY3NDYzNzg1OSwxMDQ5MTYxODk1LC0xNDMxNjc5NzIzXX0=
+eyJoaXN0b3J5IjpbOTUwNDExMzU3LDE3Mzc5Njg3ODksMTQ3OT
+YwMjUzLDU2ODIyMjI3NiwtODc1NDkwOTM3LDI3NjI1MzYxLC0x
+MjY4NDgzODg1LDE2NzQ2Mzc4NTksMTA0OTE2MTg5NSwtMTQzMT
+Y3OTcyM119
 -->
