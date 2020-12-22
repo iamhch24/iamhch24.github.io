@@ -58,6 +58,7 @@ toc: true
 ```Java
 	final int MAX_NUM = 100;
 ```
+
 > 런타임 상수
 ```Java
 	final int ADD_NUM = add();
@@ -67,8 +68,8 @@ toc: true
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MTg0MDMzMSw5NTA0MTEzNTcsMTczNz
-k2ODc4OSwxNDc5NjAyNTMsNTY4MjIyMjc2LC04NzU0OTA5Mzcs
-Mjc2MjUzNjEsLTEyNjg0ODM4ODUsMTY3NDYzNzg1OSwxMDQ5MT
-YxODk1LC0xNDMxNjc5NzIzXX0=
+eyJoaXN0b3J5IjpbMTczMTc5NjQwOSwxMTgxODQwMzMxLDk1MD
+QxMTM1NywxNzM3OTY4Nzg5LDE0Nzk2MDI1Myw1NjgyMjIyNzYs
+LTg3NTQ5MDkzNywyNzYyNTM2MSwtMTI2ODQ4Mzg4NSwxNjc0Nj
+M3ODU5LDEwNDkxNjE4OTUsLTE0MzE2Nzk3MjNdfQ==
 -->
