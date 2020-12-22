@@ -54,18 +54,21 @@ toc: true
 문자열 초기화 ""
 
 
-컴파일 타임 상수
+> 컴파일 타임 상수
+```Java
 	final int MAX_NUM = 100;
-	
-런타임 상수
+```
+> 런타임 상수
+```Java
 	final int ADD_NUM = add();
+```
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUwNDExMzU3LDE3Mzc5Njg3ODksMTQ3OT
-YwMjUzLDU2ODIyMjI3NiwtODc1NDkwOTM3LDI3NjI1MzYxLC0x
-MjY4NDgzODg1LDE2NzQ2Mzc4NTksMTA0OTE2MTg5NSwtMTQzMT
-Y3OTcyM119
+eyJoaXN0b3J5IjpbMTE4MTg0MDMzMSw5NTA0MTEzNTcsMTczNz
+k2ODc4OSwxNDc5NjAyNTMsNTY4MjIyMjc2LC04NzU0OTA5Mzcs
+Mjc2MjUzNjEsLTEyNjg0ODM4ODUsMTY3NDYzNzg1OSwxMDQ5MT
+YxODk1LC0xNDMxNjc5NzIzXX0=
 -->
