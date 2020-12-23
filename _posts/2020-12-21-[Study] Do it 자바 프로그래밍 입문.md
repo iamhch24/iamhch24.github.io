@@ -71,13 +71,19 @@ toc: true
 ```Java
 	final int ADD_NUM = add();
 ```
+정수 타입 int (4바이트) 기본형
+실수 타입 double (8바이트) 기본형
+
+long을 넘어가면 숫자는 
+문자열로 받아서 처리한다.
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MzQ4MjE5NywxMTgxODQwMzMxLDk1MD
-QxMTM1NywxNzM3OTY4Nzg5LDE0Nzk2MDI1Myw1NjgyMjIyNzYs
-LTg3NTQ5MDkzNywyNzYyNTM2MSwtMTI2ODQ4Mzg4NSwxNjc0Nj
-M3ODU5LDEwNDkxNjE4OTUsLTE0MzE2Nzk3MjNdfQ==
+eyJoaXN0b3J5IjpbMTQ0NzE5ODgyLDEzNDM0ODIxOTcsMTE4MT
+g0MDMzMSw5NTA0MTEzNTcsMTczNzk2ODc4OSwxNDc5NjAyNTMs
+NTY4MjIyMjc2LC04NzU0OTA5MzcsMjc2MjUzNjEsLTEyNjg0OD
+M4ODUsMTY3NDYzNzg1OSwxMDQ5MTYxODk1LC0xNDMxNjc5NzIz
+XX0=
 -->
