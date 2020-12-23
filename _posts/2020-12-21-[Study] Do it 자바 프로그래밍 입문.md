@@ -65,15 +65,16 @@ toc: true
 	final int ADD_NUM = add();
 ```
 
+* 문자 타입 char (2바이트) 
 * 정수 타입 int (4바이트) 기본형
 * 실수 타입 double (8바이트) 기본형
 * long을 넘어가면 숫자는 문자열로 받아서 처리한다.
-
+* 런타임 환경에서 에러 나는 것보다 컴파일 에러가 훨씬 나음.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MDYwNTQxOCwxMzQzNDgyMTk3LDExOD
+eyJoaXN0b3J5IjpbLTM4ODA1MTQwMCwxMzQzNDgyMTk3LDExOD
 E4NDAzMzEsOTUwNDExMzU3LDE3Mzc5Njg3ODksMTQ3OTYwMjUz
 LDU2ODIyMjI3NiwtODc1NDkwOTM3LDI3NjI1MzYxLC0xMjY4ND
 gzODg1LDE2NzQ2Mzc4NTksMTA0OTE2MTg5NSwtMTQzMTY3OTcy
