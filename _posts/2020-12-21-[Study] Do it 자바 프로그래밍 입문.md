@@ -70,15 +70,16 @@ toc: true
 * 실수 타입 double (8바이트) 기본형
 * long을 넘어가면 숫자는 문자열로 받아서 처리한다.
 * 런타임 환경에서 에러 나는 것보다 컴파일 에러가 훨씬 나음.
-
-연산자(리턴값 있음, 순위중요) -> 표현식 vs 선언식
-
+* 연산자(리턴값 있음, 순위중요) -> 표현식 vs 선언식
+* 과거 값을 사용하고 싶을 때
+num = num +1 :: 자기 자신이 들어가야 함
+* shift 연산자 :: 비트수를 움직임
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzgwNDgwMzIsLTM4ODA1MTQwMCwxMz
-QzNDgyMTk3LDExODE4NDAzMzEsOTUwNDExMzU3LDE3Mzc5Njg3
-ODksMTQ3OTYwMjUzLDU2ODIyMjI3NiwtODc1NDkwOTM3LDI3Nj
-I1MzYxLC0xMjY4NDgzODg1LDE2NzQ2Mzc4NTksMTA0OTE2MTg5
-NSwtMTQzMTY3OTcyM119
+eyJoaXN0b3J5IjpbMjA5NDM5NDM3NSwtMTEzODA0ODAzMiwtMz
+g4MDUxNDAwLDEzNDM0ODIxOTcsMTE4MTg0MDMzMSw5NTA0MTEz
+NTcsMTczNzk2ODc4OSwxNDc5NjAyNTMsNTY4MjIyMjc2LC04Nz
+U0OTA5MzcsMjc2MjUzNjEsLTEyNjg0ODM4ODUsMTY3NDYzNzg1
+OSwxMDQ5MTYxODk1LC0xNDMxNjc5NzIzXX0=
 -->
