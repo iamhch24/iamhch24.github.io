@@ -14,14 +14,13 @@ toc: true
 * 이클립스 설치
 
 * 패키지 : 폴더 개념
-> Entry Point : 시작점 :: static void main()
-> print 함수
-> System.out.println();
-> () : 연산자 = 함수호출할 때 그곳으로 가라는 뜻, () 앞은 주소
-> () : 연산자 = 계산식에서는 우선순위 부여
-> 문자열 " " 사용
-> ctrl+/ :: 주석처리
-> 코드창의 글자 크기 설정 :: window>preference>General>Appearance>Colors and Fonts>Basic>Text Font>Edit 
+* Entry Point : 시작점 :: static void main()
+* print 함수 ::  System.out.println();
+* () : 연산자 = 함수호출할 때 그곳으로 가라는 뜻, () 앞은 주소
+  () : 연산자 = 계산식에서는 우선순위 부여
+* 문자열 " " 사용
+* ctrl+/ :: 주석처리
+* 코드창의 글자 크기 설정 :: window>preference>General>Appearance>Colors and Fonts>Basic>Text Font>Edit 
 
 	/*  */ 주석처리
 	/** 해서 엔터를 치면 javadoc이 실행됨 : 설명문 달기
@@ -65,19 +64,18 @@ toc: true
 ```Java
 	final int ADD_NUM = add();
 ```
-정수 타입 int (4바이트) 기본형
-실수 타입 double (8바이트) 기본형
 
-long을 넘어가면 숫자는 
-문자열로 받아서 처리한다.
+* 정수 타입 int (4바이트) 기본형
+* 실수 타입 double (8바이트) 기본형
+* long을 넘어가면 숫자는 문자열로 받아서 처리한다.
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ3MDczNjMwLDEzNDM0ODIxOTcsMTE4MT
-g0MDMzMSw5NTA0MTEzNTcsMTczNzk2ODc4OSwxNDc5NjAyNTMs
-NTY4MjIyMjc2LC04NzU0OTA5MzcsMjc2MjUzNjEsLTEyNjg0OD
-M4ODUsMTY3NDYzNzg1OSwxMDQ5MTYxODk1LC0xNDMxNjc5NzIz
-XX0=
+eyJoaXN0b3J5IjpbLTQ2MDYwNTQxOCwxMzQzNDgyMTk3LDExOD
+E4NDAzMzEsOTUwNDExMzU3LDE3Mzc5Njg3ODksMTQ3OTYwMjUz
+LDU2ODIyMjI3NiwtODc1NDkwOTM3LDI3NjI1MzYxLC0xMjY4ND
+gzODg1LDE2NzQ2Mzc4NTksMTA0OTE2MTg5NSwtMTQzMTY3OTcy
+M119
 -->
