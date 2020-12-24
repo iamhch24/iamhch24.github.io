@@ -109,14 +109,24 @@ public class ChristmasTree {
 		}	
 	}
 }
+
+--- 실행 결과 ---
+          *          
+        * * *        
+      * * * * *      
+    * * * * * * *    
+  * * * * * * * * *  
+         | |
+         | |
+         | |
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ2OTgwNTgsLTExMTQwMDk1NTksMTQ5Mj
-IyNjk3NiwyMDk0Mzk0Mzc1LC0xMTM4MDQ4MDMyLC0zODgwNTE0
-MDAsMTM0MzQ4MjE5NywxMTgxODQwMzMxLDk1MDQxMTM1NywxNz
-M3OTY4Nzg5LDE0Nzk2MDI1Myw1NjgyMjIyNzYsLTg3NTQ5MDkz
-NywyNzYyNTM2MSwtMTI2ODQ4Mzg4NSwxNjc0NjM3ODU5LDEwND
-kxNjE4OTUsLTE0MzE2Nzk3MjNdfQ==
+eyJoaXN0b3J5IjpbMTE4MzAzMzgzNSwtMTExNDAwOTU1OSwxND
+kyMjI2OTc2LDIwOTQzOTQzNzUsLTExMzgwNDgwMzIsLTM4ODA1
+MTQwMCwxMzQzNDgyMTk3LDExODE4NDAzMzEsOTUwNDExMzU3LD
+E3Mzc5Njg3ODksMTQ3OTYwMjUzLDU2ODIyMjI3NiwtODc1NDkw
+OTM3LDI3NjI1MzYxLC0xMjY4NDgzODg1LDE2NzQ2Mzc4NTksMT
+A0OTE2MTg5NSwtMTQzMTY3OTcyM119
 -->
