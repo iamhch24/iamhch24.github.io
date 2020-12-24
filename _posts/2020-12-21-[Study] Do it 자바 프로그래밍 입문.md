@@ -85,12 +85,38 @@ public static void main(String[] args) throws Exception {
 	System.out.println(str);
 }
 ```
+>크리스마스 트리
+```Java
+package loopeaxample;
+
+public class ChristmasTree {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		String star ="*";
+		String line ="";
+		for(int i= 1;i<=5;i++) {
+			line ="";
+			for(int j=0;j<=5-i;j++) {
+				line += "  ";
+			}
+			System.out.println(line+star+line);
+			star += " * *";
+			
+		}
+		for(int z= 1;z<=3;z++) {
+			System.out.println("         | |");
+		}	
+	}
+}
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTQwMDk1NTksMTQ5MjIyNjk3NiwyMD
-k0Mzk0Mzc1LC0xMTM4MDQ4MDMyLC0zODgwNTE0MDAsMTM0MzQ4
-MjE5NywxMTgxODQwMzMxLDk1MDQxMTM1NywxNzM3OTY4Nzg5LD
-E0Nzk2MDI1Myw1NjgyMjIyNzYsLTg3NTQ5MDkzNywyNzYyNTM2
-MSwtMTI2ODQ4Mzg4NSwxNjc0NjM3ODU5LDEwNDkxNjE4OTUsLT
-E0MzE2Nzk3MjNdfQ==
+eyJoaXN0b3J5IjpbNzQ2OTgwNTgsLTExMTQwMDk1NTksMTQ5Mj
+IyNjk3NiwyMDk0Mzk0Mzc1LC0xMTM4MDQ4MDMyLC0zODgwNTE0
+MDAsMTM0MzQ4MjE5NywxMTgxODQwMzMxLDk1MDQxMTM1NywxNz
+M3OTY4Nzg5LDE0Nzk2MDI1Myw1NjgyMjIyNzYsLTg3NTQ5MDkz
+NywyNzYyNTM2MSwtMTI2ODQ4Mzg4NSwxNjc0NjM3ODU5LDEwND
+kxNjE4OTUsLTE0MzE2Nzk3MjNdfQ==
 -->
