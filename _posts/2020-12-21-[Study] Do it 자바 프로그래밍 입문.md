@@ -75,19 +75,22 @@ toc: true
 num = num +1 :: 자기 자신이 들어가야 함
 * shift 연산자 :: 비트수를 움직임
 
-한글입력
+> 한글입력
+
 ```Java
+public static void main(String[] args) throws Exception {
 	byte[] str_buffer = new byte[1024];
 	int value2 = System.in.read(str_buffer);
 	String str = new String(str_buffer);
 	System.out.println(str);
+}
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MjIyNjk3NiwyMDk0Mzk0Mzc1LC0xMT
-M4MDQ4MDMyLC0zODgwNTE0MDAsMTM0MzQ4MjE5NywxMTgxODQw
-MzMxLDk1MDQxMTM1NywxNzM3OTY4Nzg5LDE0Nzk2MDI1Myw1Nj
-gyMjIyNzYsLTg3NTQ5MDkzNywyNzYyNTM2MSwtMTI2ODQ4Mzg4
-NSwxNjc0NjM3ODU5LDEwNDkxNjE4OTUsLTE0MzE2Nzk3MjNdfQ
-==
+eyJoaXN0b3J5IjpbLTExMTQwMDk1NTksMTQ5MjIyNjk3NiwyMD
+k0Mzk0Mzc1LC0xMTM4MDQ4MDMyLC0zODgwNTE0MDAsMTM0MzQ4
+MjE5NywxMTgxODQwMzMxLDk1MDQxMTM1NywxNzM3OTY4Nzg5LD
+E0Nzk2MDI1Myw1NjgyMjIyNzYsLTg3NTQ5MDkzNywyNzYyNTM2
+MSwtMTI2ODQ4Mzg4NSwxNjc0NjM3ODU5LDEwNDkxNjE4OTUsLT
+E0MzE2Nzk3MjNdfQ==
 -->
