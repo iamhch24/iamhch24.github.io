@@ -75,11 +75,19 @@ toc: true
 num = num +1 :: 자기 자신이 들어가야 함
 * shift 연산자 :: 비트수를 움직임
 
+한글입력
+```Java
+	byte[] str_buffer = new byte[1024];
+	int value2 = System.in.read(str_buffer);
+	String str = new String(str_buffer);
+	System.out.println(str);
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NDM5NDM3NSwtMTEzODA0ODAzMiwtMz
-g4MDUxNDAwLDEzNDM0ODIxOTcsMTE4MTg0MDMzMSw5NTA0MTEz
-NTcsMTczNzk2ODc4OSwxNDc5NjAyNTMsNTY4MjIyMjc2LC04Nz
-U0OTA5MzcsMjc2MjUzNjEsLTEyNjg0ODM4ODUsMTY3NDYzNzg1
-OSwxMDQ5MTYxODk1LC0xNDMxNjc5NzIzXX0=
+eyJoaXN0b3J5IjpbMTQ5MjIyNjk3NiwyMDk0Mzk0Mzc1LC0xMT
+M4MDQ4MDMyLC0zODgwNTE0MDAsMTM0MzQ4MjE5NywxMTgxODQw
+MzMxLDk1MDQxMTM1NywxNzM3OTY4Nzg5LDE0Nzk2MDI1Myw1Nj
+gyMjIyNzYsLTg3NTQ5MDkzNywyNzYyNTM2MSwtMTI2ODQ4Mzg4
+NSwxNjc0NjM3ODU5LDEwNDkxNjE4OTUsLTE0MzE2Nzk3MjNdfQ
+==
 -->
