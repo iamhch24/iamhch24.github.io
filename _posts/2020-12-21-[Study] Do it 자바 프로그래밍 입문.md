@@ -131,10 +131,15 @@ this : 자신의 메모리를 가리키는 this
 
 >static 변수 : 클래스에서 공통으로 사용하는 변수를 'static'변수로 선언함. static 변수는 프로그램이 실행되어 메모리에 올라갔을 때 딱 한번 메모리 공간이 할당되고 그 값은 모든 인스턴스가 공유함. 클래스에 기반한 변수라고 해서 클래스 변수라고도 함.
 
+클래스 메서드 : static 변수를 위한 메서드
+
+싱글톤 패턴
+1단계 : 생성자를 private으로 만들기
+2단계 : 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE2MDcyMzY5LDEyMDA5MTYyNzksLTUxNz
+eyJoaXN0b3J5IjpbMTU2NDc5NTc4LDEyMDA5MTYyNzksLTUxNz
 c5ODgxMiwxMTgzMDMzODM1LC0xMTE0MDA5NTU5LDE0OTIyMjY5
 NzYsMjA5NDM5NDM3NSwtMTEzODA0ODAzMiwtMzg4MDUxNDAwLD
 EzNDM0ODIxOTcsMTE4MTg0MDMzMSw5NTA0MTEzNTcsMTczNzk2
