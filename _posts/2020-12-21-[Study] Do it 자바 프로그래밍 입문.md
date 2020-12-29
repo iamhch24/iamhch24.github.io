@@ -110,15 +110,6 @@ public class ChristmasTree {
 	}
 }
 
---- 실행 결과 ---
-          *          
-        * * *        
-      * * * * *      
-    * * * * * * *    
-  * * * * * * * * *  
-         | |
-         | |
-         | |
 ```
 
 # 5장 클래스와 객체
@@ -127,13 +118,14 @@ new 연사자는 heap에 메모리 할당해 줌
 지역 변수는 stack에 메모리 생김
 전역 변수, static 변수는 data 영역에 메모리 생김
 
-
+public get/set 함수를 사용하여 캡슈ㅜㄹ
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNzc5ODgxMiwxMTgzMDMzODM1LC0xMT
-E0MDA5NTU5LDE0OTIyMjY5NzYsMjA5NDM5NDM3NSwtMTEzODA0
-ODAzMiwtMzg4MDUxNDAwLDEzNDM0ODIxOTcsMTE4MTg0MDMzMS
-w5NTA0MTEzNTcsMTczNzk2ODc4OSwxNDc5NjAyNTMsNTY4MjIy
-Mjc2LC04NzU0OTA5MzcsMjc2MjUzNjEsLTEyNjg0ODM4ODUsMT
-Y3NDYzNzg1OSwxMDQ5MTYxODk1LC0xNDMxNjc5NzIzXX0=
+eyJoaXN0b3J5IjpbNTY4NjQ1NTM4LC01MTc3OTg4MTIsMTE4Mz
+AzMzgzNSwtMTExNDAwOTU1OSwxNDkyMjI2OTc2LDIwOTQzOTQz
+NzUsLTExMzgwNDgwMzIsLTM4ODA1MTQwMCwxMzQzNDgyMTk3LD
+ExODE4NDAzMzEsOTUwNDExMzU3LDE3Mzc5Njg3ODksMTQ3OTYw
+MjUzLDU2ODIyMjI3NiwtODc1NDkwOTM3LDI3NjI1MzYxLC0xMj
+Y4NDgzODg1LDE2NzQ2Mzc4NTksMTA0OTE2MTg5NSwtMTQzMTY3
+OTcyM119
 -->
