@@ -129,15 +129,16 @@ private : 같은 클래스 내부에서만 접근 가능
 # 6장 클래스와 객체 2
 this : 자신의 메모리를 가리키는 this 
 
+>static 변수 : 클래스에서 공통으로 사용하는 변수를 'static'변수로 선언함. static 변수는 프로그램이 실행되어 메모리에 올라갔을 때 딱 한번 메모리 공간이 할당되고 그 값은 모든 인스턴스가 공유함. 클래스에 기반한 변수라고 해서 클래스 변수라고도 함.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMDkxNjI3OSwtNTE3Nzk4ODEyLDExOD
-MwMzM4MzUsLTExMTQwMDk1NTksMTQ5MjIyNjk3NiwyMDk0Mzk0
-Mzc1LC0xMTM4MDQ4MDMyLC0zODgwNTE0MDAsMTM0MzQ4MjE5Ny
-wxMTgxODQwMzMxLDk1MDQxMTM1NywxNzM3OTY4Nzg5LDE0Nzk2
-MDI1Myw1NjgyMjIyNzYsLTg3NTQ5MDkzNywyNzYyNTM2MSwtMT
-I2ODQ4Mzg4NSwxNjc0NjM3ODU5LDEwNDkxNjE4OTUsLTE0MzE2
-Nzk3MjNdfQ==
+eyJoaXN0b3J5IjpbODE2MDcyMzY5LDEyMDA5MTYyNzksLTUxNz
+c5ODgxMiwxMTgzMDMzODM1LC0xMTE0MDA5NTU5LDE0OTIyMjY5
+NzYsMjA5NDM5NDM3NSwtMTEzODA0ODAzMiwtMzg4MDUxNDAwLD
+EzNDM0ODIxOTcsMTE4MTg0MDMzMSw5NTA0MTEzNTcsMTczNzk2
+ODc4OSwxNDc5NjAyNTMsNTY4MjIyMjc2LC04NzU0OTA5MzcsMj
+c2MjUzNjEsLTEyNjg0ODM4ODUsMTY3NDYzNzg1OSwxMDQ5MTYx
+ODk1XX0=
 -->
