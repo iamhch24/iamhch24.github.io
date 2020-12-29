@@ -118,7 +118,9 @@ new 연사자는 heap에 메모리 할당해 줌
 지역 변수는 stack에 메모리 생김
 전역 변수, static 변수는 data 영역에 메모리 생김
 
-public get/set 메서드를 사용하여 캡슐화 함.
+* main() 함수를 포함한 실행 클래스를 따로 만든다
+
+* public get/set 메서드를 사용하여 캡슐화 함.
 
 >접근제어자
 public : 외부 클래스 어디에서나 접근 가능
@@ -142,11 +144,11 @@ private : 같은 클래스 내부에서만 접근 가능
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTYxNTc5OTMsMTIwMDkxNjI3OSwtNT
-E3Nzk4ODEyLDExODMwMzM4MzUsLTExMTQwMDk1NTksMTQ5MjIy
-Njk3NiwyMDk0Mzk0Mzc1LC0xMTM4MDQ4MDMyLC0zODgwNTE0MD
-AsMTM0MzQ4MjE5NywxMTgxODQwMzMxLDk1MDQxMTM1NywxNzM3
-OTY4Nzg5LDE0Nzk2MDI1Myw1NjgyMjIyNzYsLTg3NTQ5MDkzNy
-wyNzYyNTM2MSwtMTI2ODQ4Mzg4NSwxNjc0NjM3ODU5LDEwNDkx
-NjE4OTVdfQ==
+eyJoaXN0b3J5IjpbLTQ4Njk1OTkyMCwxMjAwOTE2Mjc5LC01MT
+c3OTg4MTIsMTE4MzAzMzgzNSwtMTExNDAwOTU1OSwxNDkyMjI2
+OTc2LDIwOTQzOTQzNzUsLTExMzgwNDgwMzIsLTM4ODA1MTQwMC
+wxMzQzNDgyMTk3LDExODE4NDAzMzEsOTUwNDExMzU3LDE3Mzc5
+Njg3ODksMTQ3OTYwMjUzLDU2ODIyMjI3NiwtODc1NDkwOTM3LD
+I3NjI1MzYxLC0xMjY4NDgzODg1LDE2NzQ2Mzc4NTksMTA0OTE2
+MTg5NV19
 -->
