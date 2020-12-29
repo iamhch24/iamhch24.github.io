@@ -151,9 +151,13 @@ Person returnItSelf(){
 ```Java
 5_000 // 5000의 숫자를 천단위자릿수 표시할 수 잇다.
 ```
+클래스 안에서 
+클래스 타입의 변수를 갖고 있으면 결합도가 높음 
+그러나 매개변수 형태로 인젝션 타입이 효율성이 더 높음.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4OTgzNDE0OSwtMTQ3NDMxNzc0MywtND
+eyJoaXN0b3J5IjpbMTA2MjAzNzM1NSwtMTQ3NDMxNzc0MywtND
 g2OTU5OTIwLDEyMDA5MTYyNzksLTUxNzc5ODgxMiwxMTgzMDMz
 ODM1LC0xMTE0MDA5NTU5LDE0OTIyMjY5NzYsMjA5NDM5NDM3NS
 wtMTEzODA0ODAzMiwtMzg4MDUxNDAwLDEzNDM0ODIxOTcsMTE4
