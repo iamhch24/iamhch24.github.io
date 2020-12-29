@@ -123,14 +123,17 @@ public get/set 메서드를 사용하여 캡슐화 함.
 >접근제어자
 public : 외부 클래스 어디에서나 접근 가능
 protected : 상속한 경우, 같은 패키지 내부에서만 접근 가능
-private : 같은 클래스 내부에서만 접근 가능
 없는 경우 : default, 같은 패키지 내부에서만 접근 가능
+private : 같은 클래스 내부에서만 접근 가능
+
+# 6장 클래스와 객체 2
+this : 자신의 메모리를 가리키는 this 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MjMzOTE4NCwtNTE3Nzk4ODEyLDExOD
+eyJoaXN0b3J5IjpbMTIwMDkxNjI3OSwtNTE3Nzk4ODEyLDExOD
 MwMzM4MzUsLTExMTQwMDk1NTksMTQ5MjIyNjk3NiwyMDk0Mzk0
 Mzc1LC0xMTM4MDQ4MDMyLC0zODgwNTE0MDAsMTM0MzQ4MjE5Ny
 wxMTgxODQwMzMxLDk1MDQxMTM1NywxNzM3OTY4Nzg5LDE0Nzk2
