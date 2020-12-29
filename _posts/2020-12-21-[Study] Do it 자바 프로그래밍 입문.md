@@ -155,14 +155,16 @@ Person returnItSelf(){
 클래스 타입의 변수를 갖고 있으면 결합도가 높음 
 그러나 매개변수(파라미터) 형태로 받아서 사용하는 인젝션 타입이 결합도를 낮추고 효율성이 더 높음.
 
+결합도가 높으면 하나를 수정할 때 영향이 많이 해당 부분을 전부 수정해줘야 해서 유지보수가 어려움.
 
+--> 의존성 주입이라는 개념 정리 필요
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0MTk3MTAyMSwxMDYyMDM3MzU1LC0xND
-c0MzE3NzQzLC00ODY5NTk5MjAsMTIwMDkxNjI3OSwtNTE3Nzk4
-ODEyLDExODMwMzM4MzUsLTExMTQwMDk1NTksMTQ5MjIyNjk3Ni
-wyMDk0Mzk0Mzc1LC0xMTM4MDQ4MDMyLC0zODgwNTE0MDAsMTM0
-MzQ4MjE5NywxMTgxODQwMzMxLDk1MDQxMTM1NywxNzM3OTY4Nz
-g5LDE0Nzk2MDI1Myw1NjgyMjIyNzYsLTg3NTQ5MDkzNywyNzYy
-NTM2MV19
+eyJoaXN0b3J5IjpbMTM5NDUyNjg1OCwtMjQxOTcxMDIxLDEwNj
+IwMzczNTUsLTE0NzQzMTc3NDMsLTQ4Njk1OTkyMCwxMjAwOTE2
+Mjc5LC01MTc3OTg4MTIsMTE4MzAzMzgzNSwtMTExNDAwOTU1OS
+wxNDkyMjI2OTc2LDIwOTQzOTQzNzUsLTExMzgwNDgwMzIsLTM4
+ODA1MTQwMCwxMzQzNDgyMTk3LDExODE4NDAzMzEsOTUwNDExMz
+U3LDE3Mzc5Njg3ODksMTQ3OTYwMjUzLDU2ODIyMjI3NiwtODc1
+NDkwOTM3XX0=
 -->
