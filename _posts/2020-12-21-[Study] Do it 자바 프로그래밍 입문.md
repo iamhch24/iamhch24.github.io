@@ -127,23 +127,26 @@ protected : 상속한 경우, 같은 패키지 내부에서만 접근 가능
 private : 같은 클래스 내부에서만 접근 가능
 
 # 6장 클래스와 객체 2
-this : 자신의 메모리를 가리키는 this 
+* this : 자신의 메모리를 가리키는 this 
 
->static 변수 : 클래스에서 공통으로 사용하는 변수를 'static'변수로 선언함. static 변수는 프로그램이 실행되어 메모리에 올라갔을 때 딱 한번 메모리 공간이 할당되고 그 값은 모든 인스턴스가 공유함. 클래스에 기반한 변수라고 해서 클래스 변수라고도 함.
+* static 변수 : 클래스에서 공통으로 사용하는 변수를 'static'변수로 선언함. static 변수는 프로그램이 실행되어 메모리에 올라갔을 때 딱 한번 메모리 공간이 할당되고 그 값은 모든 인스턴스가 공유함. 클래스에 기반한 변수라고 해서 클래스 변수라고도 함.
 
-클래스 메서드 : static 변수를 위한 메서드
+* 클래스 메서드 : static 변수를 위한 메서드
 
-싱글톤 패턴
+>싱글톤 패턴 디자인
 1단계 : 생성자를 private으로 만들기
-2단계 : 
+2단계 : 클래스 내부에 static으로 유일한 인스턴스 생성하기
+3단계 : 외부에서 참조할 수 있는 public 메서드 만들기
+4단계 : 실제로 사용하는 코드 만들기
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NDc5NTc4LDEyMDA5MTYyNzksLTUxNz
-c5ODgxMiwxMTgzMDMzODM1LC0xMTE0MDA5NTU5LDE0OTIyMjY5
-NzYsMjA5NDM5NDM3NSwtMTEzODA0ODAzMiwtMzg4MDUxNDAwLD
-EzNDM0ODIxOTcsMTE4MTg0MDMzMSw5NTA0MTEzNTcsMTczNzk2
-ODc4OSwxNDc5NjAyNTMsNTY4MjIyMjc2LC04NzU0OTA5MzcsMj
-c2MjUzNjEsLTEyNjg0ODM4ODUsMTY3NDYzNzg1OSwxMDQ5MTYx
-ODk1XX0=
+eyJoaXN0b3J5IjpbLTIwNTYxNTc5OTMsMTIwMDkxNjI3OSwtNT
+E3Nzk4ODEyLDExODMwMzM4MzUsLTExMTQwMDk1NTksMTQ5MjIy
+Njk3NiwyMDk0Mzk0Mzc1LC0xMTM4MDQ4MDMyLC0zODgwNTE0MD
+AsMTM0MzQ4MjE5NywxMTgxODQwMzMxLDk1MDQxMTM1NywxNzM3
+OTY4Nzg5LDE0Nzk2MDI1Myw1NjgyMjIyNzYsLTg3NTQ5MDkzNy
+wyNzYyNTM2MSwtMTI2ODQ4Mzg4NSwxNjc0NjM3ODU5LDEwNDkx
+NjE4OTVdfQ==
 -->
