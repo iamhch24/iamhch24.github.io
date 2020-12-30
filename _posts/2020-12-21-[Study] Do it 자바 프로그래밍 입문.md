@@ -177,13 +177,27 @@ for (int i=0; i<arr.length; i++ ) {
 }
 ```
 
+>ArrayList 사용
+
+```Java
+ArrayList<Book> library = new ArrayList<Book>();
+library.add(new Book("태백산맥","조정래"));
+library.add(new Book("데미안","헤르만 헤세"));
+library.add(new Book("어떻게 살 것인가","유시민"));
+library.add(new Book("토지","박경리"));
+library.add(new Book("어린왕자","생택쥐페리"));
+for(Book book : library) {
+	book.showBookInfo();
+}
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzODQ2OTE0NCw4MTAwNjkyMDUsMTM5ND
-UyNjg1OCwtMjQxOTcxMDIxLDEwNjIwMzczNTUsLTE0NzQzMTc3
-NDMsLTQ4Njk1OTkyMCwxMjAwOTE2Mjc5LC01MTc3OTg4MTIsMT
-E4MzAzMzgzNSwtMTExNDAwOTU1OSwxNDkyMjI2OTc2LDIwOTQz
-OTQzNzUsLTExMzgwNDgwMzIsLTM4ODA1MTQwMCwxMzQzNDgyMT
-k3LDExODE4NDAzMzEsOTUwNDExMzU3LDE3Mzc5Njg3ODksMTQ3
-OTYwMjUzXX0=
+eyJoaXN0b3J5IjpbNTI1ODE1NTQwLDEzMzg0NjkxNDQsODEwMD
+Y5MjA1LDEzOTQ1MjY4NTgsLTI0MTk3MTAyMSwxMDYyMDM3MzU1
+LC0xNDc0MzE3NzQzLC00ODY5NTk5MjAsMTIwMDkxNjI3OSwtNT
+E3Nzk4ODEyLDExODMwMzM4MzUsLTExMTQwMDk1NTksMTQ5MjIy
+Njk3NiwyMDk0Mzk0Mzc1LC0xMTM4MDQ4MDMyLC0zODgwNTE0MD
+AsMTM0MzQ4MjE5NywxMTgxODQwMzMxLDk1MDQxMTM1NywxNzM3
+OTY4Nzg5XX0=
 -->
