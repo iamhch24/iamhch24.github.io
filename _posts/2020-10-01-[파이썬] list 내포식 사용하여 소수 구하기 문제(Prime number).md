@@ -16,7 +16,17 @@ prime_nums = list(filter(lambda x: x if list(map( lambda m, n : m%n,[x]*(x-2), r
 print(prime_nums)
 ```
 
-## list 내포식을 이용하여 
+## list 내포식을 이용하여 소수 구하기
+```Python
+n = 100
+prime_nums = [
+    i for i in range(2,n+1) 
+    if [ i%j for j in range(2,i)].count(0)==0
+]
+print(prime_nums)
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MTQ0ODk0NSwtMTQ2Nzg4OTE0MV19
+eyJoaXN0b3J5IjpbLTEwNDI1Njk3NzgsLTE0Njc4ODkxNDFdfQ
+==
 -->
