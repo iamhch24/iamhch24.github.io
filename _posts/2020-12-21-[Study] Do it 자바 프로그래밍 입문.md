@@ -169,15 +169,19 @@ int[] studentIDs = new int[INDEX];
 
 ```Java
 int[][] arr = {{1,2,3},{4,5,6}};
-for (int i=0; i<arr.length; 
-
+for (int i=0; i<arr.length; i++ ) {
+	for (int j=0;j<arr[i].length;j++){
+		System.out.println(arr[i][j]);
+	}
+	System.out.println( );
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAxNzU0MjE4LDgxMDA2OTIwNSwxMzk0NT
-I2ODU4LC0yNDE5NzEwMjEsMTA2MjAzNzM1NSwtMTQ3NDMxNzc0
-MywtNDg2OTU5OTIwLDEyMDA5MTYyNzksLTUxNzc5ODgxMiwxMT
-gzMDMzODM1LC0xMTE0MDA5NTU5LDE0OTIyMjY5NzYsMjA5NDM5
-NDM3NSwtMTEzODA0ODAzMiwtMzg4MDUxNDAwLDEzNDM0ODIxOT
-csMTE4MTg0MDMzMSw5NTA0MTEzNTcsMTczNzk2ODc4OSwxNDc5
-NjAyNTNdfQ==
+eyJoaXN0b3J5IjpbLTE4MDA4ODgyNjAsODEwMDY5MjA1LDEzOT
+Q1MjY4NTgsLTI0MTk3MTAyMSwxMDYyMDM3MzU1LC0xNDc0MzE3
+NzQzLC00ODY5NTk5MjAsMTIwMDkxNjI3OSwtNTE3Nzk4ODEyLD
+ExODMwMzM4MzUsLTExMTQwMDk1NTksMTQ5MjIyNjk3NiwyMDk0
+Mzk0Mzc1LC0xMTM4MDQ4MDMyLC0zODgwNTE0MDAsMTM0MzQ4Mj
+E5NywxMTgxODQwMzMxLDk1MDQxMTM1NywxNzM3OTY4Nzg5LDE0
+Nzk2MDI1M119
 -->
