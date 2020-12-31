@@ -200,13 +200,15 @@ for(String lang : strArrary){
 }
 ```
 
-* \<E\>와 같은 형태를 "제네릭 자료형"이라고 함. 어떤 값이 하나의 참조 자료형이 아닌 여러 참조 자료형을 사용할 수 있도록 프로그래밍
+* \<E\>와 같은 형태를 "제네릭 자료형"이라고 함. 어떤 값이 하나의 참조 자료형이 아닌 여러 참조 자료형을 사용할 수 있도록 프로그래밍하는 것을 "제네릭 프로그래밍"이라고 함.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjExNTI3MDgsNTI1ODE1NTQwLDEzMz
-g0NjkxNDQsODEwMDY5MjA1LDEzOTQ1MjY4NTgsLTI0MTk3MTAy
-MSwxMDYyMDM3MzU1LC0xNDc0MzE3NzQzLC00ODY5NTk5MjAsMT
-IwMDkxNjI3OSwtNTE3Nzk4ODEyLDExODMwMzM4MzUsLTExMTQw
-MDk1NTksMTQ5MjIyNjk3NiwyMDk0Mzk0Mzc1LC0xMTM4MDQ4MD
-MyLC0zODgwNTE0MDAsMTM0MzQ4MjE5NywxMTgxODQwMzMxLDk1
-MDQxMTM1N119
+eyJoaXN0b3J5IjpbMTE2OTg1MjIzLDUyNTgxNTU0MCwxMzM4ND
+Y5MTQ0LDgxMDA2OTIwNSwxMzk0NTI2ODU4LC0yNDE5NzEwMjEs
+MTA2MjAzNzM1NSwtMTQ3NDMxNzc0MywtNDg2OTU5OTIwLDEyMD
+A5MTYyNzksLTUxNzc5ODgxMiwxMTgzMDMzODM1LC0xMTE0MDA5
+NTU5LDE0OTIyMjY5NzYsMjA5NDM5NDM3NSwtMTEzODA0ODAzMi
+wtMzg4MDUxNDAwLDEzNDM0ODIxOTcsMTE4MTg0MDMzMSw5NTA0
+MTEzNTddfQ==
 -->
