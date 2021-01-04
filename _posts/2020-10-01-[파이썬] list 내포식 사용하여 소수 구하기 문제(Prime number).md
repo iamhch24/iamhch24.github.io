@@ -6,6 +6,7 @@ tags:
     - dev
     - python 
 toc: true
+
 ---
 ## lambda 함수를 이용하여 소수 구하기
 
@@ -27,6 +28,6 @@ print(prime_nums)
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDI1Njk3NzgsLTE0Njc4ODkxNDFdfQ
-==
+eyJoaXN0b3J5IjpbLTEwNzgwODc3MiwtMTA0MjU2OTc3OCwtMT
+Q2Nzg4OTE0MV19
 -->
