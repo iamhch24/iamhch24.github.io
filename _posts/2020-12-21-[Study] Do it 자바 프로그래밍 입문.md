@@ -168,7 +168,7 @@ int[] studentIDs = new int[INDEX];
 >다차원 배열
 
 ```Java
-int[][] arr = {{1,2,3},{4,5,6}};
+int[][] arr = new int[5][5];
 for (int i=0; i<arr.length; i++ ) {
 	for (int j=0;j<arr[i].length;j++){
 		System.out.println(arr[i][j]);
@@ -204,11 +204,11 @@ for(String lang : strArrary){
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MTQ0ODQ3MCwxMTY5ODUyMjMsNTI1OD
-E1NTQwLDEzMzg0NjkxNDQsODEwMDY5MjA1LDEzOTQ1MjY4NTgs
-LTI0MTk3MTAyMSwxMDYyMDM3MzU1LC0xNDc0MzE3NzQzLC00OD
-Y5NTk5MjAsMTIwMDkxNjI3OSwtNTE3Nzk4ODEyLDExODMwMzM4
-MzUsLTExMTQwMDk1NTksMTQ5MjIyNjk3NiwyMDk0Mzk0Mzc1LC
-0xMTM4MDQ4MDMyLC0zODgwNTE0MDAsMTM0MzQ4MjE5NywxMTgx
-ODQwMzMxXX0=
+eyJoaXN0b3J5IjpbMjAzMDQ3ODUyLDE2NTE0NDg0NzAsMTE2OT
+g1MjIzLDUyNTgxNTU0MCwxMzM4NDY5MTQ0LDgxMDA2OTIwNSwx
+Mzk0NTI2ODU4LC0yNDE5NzEwMjEsMTA2MjAzNzM1NSwtMTQ3ND
+MxNzc0MywtNDg2OTU5OTIwLDEyMDA5MTYyNzksLTUxNzc5ODgx
+MiwxMTgzMDMzODM1LC0xMTE0MDA5NTU5LDE0OTIyMjY5NzYsMj
+A5NDM5NDM3NSwtMTEzODA0ODAzMiwtMzg4MDUxNDAwLDEzNDM0
+ODIxOTddfQ==
 -->
