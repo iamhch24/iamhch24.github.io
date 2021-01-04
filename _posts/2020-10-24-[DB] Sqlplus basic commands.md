@@ -7,6 +7,7 @@ tags:
     - db
     - oracle
 toc: true
+
 ---
 
 cmd 창 여는 방법
@@ -89,5 +90,5 @@ ALTER SESSION SET NLS_LANGUAGE=Korean;
 COL EMPNO1 FOR A20;
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjE4NTU5MjJdfQ==
+eyJoaXN0b3J5IjpbMTQ4Nzk3MjA2NF19
 -->
