@@ -6,6 +6,7 @@ tags:
     - dev
     - kotlin
 toc: true
+
 ---
 #01 코틀린 시작하기
 코틀린 :: 젯브레인즈에서 개발, 안드로이드 스튜디오도 공식적으로 지원
@@ -23,5 +24,6 @@ Native코틀린 -> LLVM 컴파일러를 통해 기계 코드 가능 (임베디�
 *  IntelliJ IDEA Community 에디션
 * 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTQ0ODExMjgsMTE0MDg5ODkwN119
+eyJoaXN0b3J5IjpbLTE5NTU5ODUzNjYsLTE1MTQ0ODExMjgsMT
+E0MDg5ODkwN119
 -->
