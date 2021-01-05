@@ -205,7 +205,7 @@ for(String lang : strArrary){
 
 # 9장 추상클래스
 생성자를 만드는 것이 가능하지만 객체 인스턴스 생성은 불가능
-상속을 받은 하위 객체에서 body를 구현함.
+추상 메서드는 바디가 없음. 상속을 받은 하위 객체에서 메서드 body를 구현함.
 사용하는 이유 : 공통의 프로젝트를 시행시 먼저 디자인하는 부분으로 추상클래스를 선언하고 구현하는 것은 상속 받아 구체적인 body를 구현함
 추상클래스에서 자식의 오버라이딩 개념을 implement라고 표현함
 추상 메서드 선언시 파라미터 이름까지 써 줘야 함.
@@ -231,11 +231,11 @@ abstract 예약어를 추가해야 함.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2OTQ5OTExOSwtMTI1MTE0OTQxLC05Nz
-MzNzcwMDAsMjAzMDQ3ODUyLDE2NTE0NDg0NzAsMTE2OTg1MjIz
-LDUyNTgxNTU0MCwxMzM4NDY5MTQ0LDgxMDA2OTIwNSwxMzk0NT
-I2ODU4LC0yNDE5NzEwMjEsMTA2MjAzNzM1NSwtMTQ3NDMxNzc0
-MywtNDg2OTU5OTIwLDEyMDA5MTYyNzksLTUxNzc5ODgxMiwxMT
-gzMDMzODM1LC0xMTE0MDA5NTU5LDE0OTIyMjY5NzYsMjA5NDM5
-NDM3NV19
+eyJoaXN0b3J5IjpbLTE3MzA0NDQyNjYsLTEyNTExNDk0MSwtOT
+czMzc3MDAwLDIwMzA0Nzg1MiwxNjUxNDQ4NDcwLDExNjk4NTIy
+Myw1MjU4MTU1NDAsMTMzODQ2OTE0NCw4MTAwNjkyMDUsMTM5ND
+UyNjg1OCwtMjQxOTcxMDIxLDEwNjIwMzczNTUsLTE0NzQzMTc3
+NDMsLTQ4Njk1OTkyMCwxMjAwOTE2Mjc5LC01MTc3OTg4MTIsMT
+E4MzAzMzgzNSwtMTExNDAwOTU1OSwxNDkyMjI2OTc2LDIwOTQz
+OTQzNzVdfQ==
 -->
