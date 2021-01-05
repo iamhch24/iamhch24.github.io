@@ -227,9 +227,7 @@ abstract 예약어를 추가해야 함.
 클래스 다이어그램에서 클래스는 실선, 인터페이스는 점선으로 그림
 인터페이스는 생성자 자체를 못 만듦.
 
-
-
-이름 명명 규칙
+> 이름 명명 규칙
 인터페이스도 클래스 처럼 대문자로 시작하기에 구별을 위해
 끝에 -able, -ible 을 붙여서 인터페이스임을 암묵적으로 명시함
 
@@ -243,11 +241,11 @@ System.exit(1); // 비정상 종료
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3Mjg0OTQ3MCwtMTEwNDA2MDY2NywtMT
-czMDQ0NDI2NiwtMTI1MTE0OTQxLC05NzMzNzcwMDAsMjAzMDQ3
-ODUyLDE2NTE0NDg0NzAsMTE2OTg1MjIzLDUyNTgxNTU0MCwxMz
-M4NDY5MTQ0LDgxMDA2OTIwNSwxMzk0NTI2ODU4LC0yNDE5NzEw
-MjEsMTA2MjAzNzM1NSwtMTQ3NDMxNzc0MywtNDg2OTU5OTIwLD
-EyMDA5MTYyNzksLTUxNzc5ODgxMiwxMTgzMDMzODM1LC0xMTE0
-MDA5NTU5XX0=
+eyJoaXN0b3J5IjpbLTEyOTU4NjAyOTIsLTExMDQwNjA2NjcsLT
+E3MzA0NDQyNjYsLTEyNTExNDk0MSwtOTczMzc3MDAwLDIwMzA0
+Nzg1MiwxNjUxNDQ4NDcwLDExNjk4NTIyMyw1MjU4MTU1NDAsMT
+MzODQ2OTE0NCw4MTAwNjkyMDUsMTM5NDUyNjg1OCwtMjQxOTcx
+MDIxLDEwNjIwMzczNTUsLTE0NzQzMTc3NDMsLTQ4Njk1OTkyMC
+wxMjAwOTE2Mjc5LC01MTc3OTg4MTIsMTE4MzAzMzgzNSwtMTEx
+NDAwOTU1OV19
 -->
