@@ -214,11 +214,13 @@ abstract 예약어를 추가해야 함.
 
 
 > 추상클래스를 현업에서 사용하는 방법
+
 ```Java
 (왼쪽) 추상클래스 = new 추상클래스의 자식 ();
 ```
 
 > 추상클래스 vs 인터페이스
+
 추상클래스도 클래스이기에 상속이 1개만 가능
 인터페이스는 다중 상속이 가능함 (연결도 느슨함)
 이와 같은 이유로 현업에서는 인터페이스를 더 많이 사용함.
@@ -228,11 +230,11 @@ abstract 예약어를 추가해야 함.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTExNDk0MSwtOTczMzc3MDAwLDIwMz
-A0Nzg1MiwxNjUxNDQ4NDcwLDExNjk4NTIyMyw1MjU4MTU1NDAs
-MTMzODQ2OTE0NCw4MTAwNjkyMDUsMTM5NDUyNjg1OCwtMjQxOT
-cxMDIxLDEwNjIwMzczNTUsLTE0NzQzMTc3NDMsLTQ4Njk1OTky
-MCwxMjAwOTE2Mjc5LC01MTc3OTg4MTIsMTE4MzAzMzgzNSwtMT
-ExNDAwOTU1OSwxNDkyMjI2OTc2LDIwOTQzOTQzNzUsLTExMzgw
-NDgwMzJdfQ==
+eyJoaXN0b3J5IjpbLTk5NTI4Mjg5LC0xMjUxMTQ5NDEsLTk3Mz
+M3NzAwMCwyMDMwNDc4NTIsMTY1MTQ0ODQ3MCwxMTY5ODUyMjMs
+NTI1ODE1NTQwLDEzMzg0NjkxNDQsODEwMDY5MjA1LDEzOTQ1Mj
+Y4NTgsLTI0MTk3MTAyMSwxMDYyMDM3MzU1LC0xNDc0MzE3NzQz
+LC00ODY5NTk5MjAsMTIwMDkxNjI3OSwtNTE3Nzk4ODEyLDExOD
+MwMzM4MzUsLTExMTQwMDk1NTksMTQ5MjIyNjk3NiwyMDk0Mzk0
+Mzc1XX0=
 -->
