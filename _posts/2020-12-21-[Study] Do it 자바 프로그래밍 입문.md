@@ -205,13 +205,15 @@ for(String lang : strArrary){
 
 # 9장 추상클래스
 생성자 호출은 가능하지만 body가 없어 객체 인스턴스 생성은 불가능
-상속을 받은 하위 객체에서 body
+상속을 받은 하위 객체에서 body를 구현함.
+사용하는 이유 : 공통의 프로젝트를 시행시 먼저 디자인하는 부분으로 추상클래스를 선언하고 구현하는 것은 상속 받아 구체적인 body를 구현함
+추상클래스에서 자식의 오버라이딩 개념을 implement라고 표현함
 추상 메서드 선언시 파라미터 이름까지 써 줘야 함.
 private이 되면 안됨. public 으로 정의
 abstract 예약어를 추가해야 함.
-추상클래스에서 자식의 오버라이딩 개념을 implement라고 표현함
 
-> 사용법
+
+> 추상클래스를 현업에서 사용하는 방법
 ```Java
 (왼쪽) 추상클래스 = new 추상클래스의 자식 ();
 ```
@@ -224,7 +226,7 @@ abstract 예약어를 추가해야 함.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNDg5MDI5NiwyMDMwNDc4NTIsMTY1MT
+eyJoaXN0b3J5IjpbLTk3MzM3NzAwMCwyMDMwNDc4NTIsMTY1MT
 Q0ODQ3MCwxMTY5ODUyMjMsNTI1ODE1NTQwLDEzMzg0NjkxNDQs
 ODEwMDY5MjA1LDEzOTQ1MjY4NTgsLTI0MTk3MTAyMSwxMDYyMD
 M3MzU1LC0xNDc0MzE3NzQzLC00ODY5NTk5MjAsMTIwMDkxNjI3
