@@ -203,9 +203,16 @@ for(String lang : strArrary){
 
 * "제네릭 자료형"이라고 함. 어떤 값이 하나의 참조 자료형이 아닌 여러 참조 자료형을 사용할 수 있도록 프로그래밍하는 것을 "제네릭 프로그래밍"이라고 함.
 
+# 9장 추상클래스
+생성자 호출은 가능하지만 body가 없어 객체 인스턴스 생성은 불가능
+추상 메서드 선언시 파라미터 이름까지 써 줘야 함.
+
+
+(왼쪽) 추상클래스 = new 추상클래스의 자식 ();
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMzk0NTU2MiwyMDMwNDc4NTIsMTY1MT
+eyJoaXN0b3J5IjpbMTg0NzkxMTA1MiwyMDMwNDc4NTIsMTY1MT
 Q0ODQ3MCwxMTY5ODUyMjMsNTI1ODE1NTQwLDEzMzg0NjkxNDQs
 ODEwMDY5MjA1LDEzOTQ1MjY4NTgsLTI0MTk3MTAyMSwxMDYyMD
 M3MzU1LC0xNDc0MzE3NzQzLC00ODY5NTk5MjAsMTIwMDkxNjI3
