@@ -206,14 +206,22 @@ for(String lang : strArrary){
 # 9장 추상클래스
 생성자 호출은 가능하지만 body가 없어 객체 인스턴스 생성은 불가능
 추상 메서드 선언시 파라미터 이름까지 써 줘야 함.
+private이 되면 안됨. public 으로 정의
 
+> 사용법
+```Java
 (왼쪽) 추상클래스 = new 추상클래스의 자식 ();
+```
 
 > 추상클래스 vs 인터페이스
-추상클래스도 클래스이기에 상속이 1개만 가
+추상클래스도 클래스이기에 상속이 1개만 가능
+인터페이스는 다중 상속이 가능함 (연결도 느슨함)
+클래스 다이어그램에서 클래스는 실선, 인터페이스는 점선으로 그림
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA4NjE3NzAyLDIwMzA0Nzg1MiwxNjUxND
+eyJoaXN0b3J5IjpbLTczODAzMDIzLDIwMzA0Nzg1MiwxNjUxND
 Q4NDcwLDExNjk4NTIyMyw1MjU4MTU1NDAsMTMzODQ2OTE0NCw4
 MTAwNjkyMDUsMTM5NDUyNjg1OCwtMjQxOTcxMDIxLDEwNjIwMz
 czNTUsLTE0NzQzMTc3NDMsLTQ4Njk1OTkyMCwxMjAwOTE2Mjc5
