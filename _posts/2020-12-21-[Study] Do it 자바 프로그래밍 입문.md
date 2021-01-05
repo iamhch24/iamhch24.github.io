@@ -205,8 +205,11 @@ for(String lang : strArrary){
 
 # 9장 추상클래스
 생성자 호출은 가능하지만 body가 없어 객체 인스턴스 생성은 불가능
+상속을 받은 하위 객체에서 body
 추상 메서드 선언시 파라미터 이름까지 써 줘야 함.
 private이 되면 안됨. public 으로 정의
+abstract 예약어를 추가해야 함.
+추상클래스에서 자식의 오버라이딩 개념을 implement라고 표현함
 
 > 사용법
 ```Java
@@ -221,11 +224,11 @@ private이 되면 안됨. public 으로 정의
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczODAzMDIzLDIwMzA0Nzg1MiwxNjUxND
-Q4NDcwLDExNjk4NTIyMyw1MjU4MTU1NDAsMTMzODQ2OTE0NCw4
-MTAwNjkyMDUsMTM5NDUyNjg1OCwtMjQxOTcxMDIxLDEwNjIwMz
-czNTUsLTE0NzQzMTc3NDMsLTQ4Njk1OTkyMCwxMjAwOTE2Mjc5
-LC01MTc3OTg4MTIsMTE4MzAzMzgzNSwtMTExNDAwOTU1OSwxND
-kyMjI2OTc2LDIwOTQzOTQzNzUsLTExMzgwNDgwMzIsLTM4ODA1
-MTQwMF19
+eyJoaXN0b3J5IjpbMTYzNDg5MDI5NiwyMDMwNDc4NTIsMTY1MT
+Q0ODQ3MCwxMTY5ODUyMjMsNTI1ODE1NTQwLDEzMzg0NjkxNDQs
+ODEwMDY5MjA1LDEzOTQ1MjY4NTgsLTI0MTk3MTAyMSwxMDYyMD
+M3MzU1LC0xNDc0MzE3NzQzLC00ODY5NTk5MjAsMTIwMDkxNjI3
+OSwtNTE3Nzk4ODEyLDExODMwMzM4MzUsLTExMTQwMDk1NTksMT
+Q5MjIyNjk3NiwyMDk0Mzk0Mzc1LC0xMTM4MDQ4MDMyLC0zODgw
+NTE0MDBdfQ==
 -->
