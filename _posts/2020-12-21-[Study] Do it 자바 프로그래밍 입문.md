@@ -204,7 +204,7 @@ for(String lang : strArrary){
 * "제네릭 자료형"이라고 함. 어떤 값이 하나의 참조 자료형이 아닌 여러 참조 자료형을 사용할 수 있도록 프로그래밍하는 것을 "제네릭 프로그래밍"이라고 함.
 
 # 9장 추상클래스
-생성자 호출은 가능하지만 body가 없어 객체 인스턴스 생성은 불가능
+생성자를 만드는 것이 가능하지만 객체 인스턴스 생성은 불가능
 상속을 받은 하위 객체에서 body를 구현함.
 사용하는 이유 : 공통의 프로젝트를 시행시 먼저 디자인하는 부분으로 추상클래스를 선언하고 구현하는 것은 상속 받아 구체적인 body를 구현함
 추상클래스에서 자식의 오버라이딩 개념을 implement라고 표현함
@@ -225,16 +225,17 @@ abstract 예약어를 추가해야 함.
 인터페이스는 다중 상속이 가능함 (연결도 느슨함)
 이와 같은 이유로 현업에서는 인터페이스를 더 많이 사용함.
 클래스 다이어그램에서 클래스는 실선, 인터페이스는 점선으로 그림
+인터페이스는 생성자 자체를 못 만듦.
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NTI4Mjg5LC0xMjUxMTQ5NDEsLTk3Mz
-M3NzAwMCwyMDMwNDc4NTIsMTY1MTQ0ODQ3MCwxMTY5ODUyMjMs
-NTI1ODE1NTQwLDEzMzg0NjkxNDQsODEwMDY5MjA1LDEzOTQ1Mj
-Y4NTgsLTI0MTk3MTAyMSwxMDYyMDM3MzU1LC0xNDc0MzE3NzQz
-LC00ODY5NTk5MjAsMTIwMDkxNjI3OSwtNTE3Nzk4ODEyLDExOD
-MwMzM4MzUsLTExMTQwMDk1NTksMTQ5MjIyNjk3NiwyMDk0Mzk0
-Mzc1XX0=
+eyJoaXN0b3J5IjpbMTA2OTQ5OTExOSwtMTI1MTE0OTQxLC05Nz
+MzNzcwMDAsMjAzMDQ3ODUyLDE2NTE0NDg0NzAsMTE2OTg1MjIz
+LDUyNTgxNTU0MCwxMzM4NDY5MTQ0LDgxMDA2OTIwNSwxMzk0NT
+I2ODU4LC0yNDE5NzEwMjEsMTA2MjAzNzM1NSwtMTQ3NDMxNzc0
+MywtNDg2OTU5OTIwLDEyMDA5MTYyNzksLTUxNzc5ODgxMiwxMT
+gzMDMzODM1LC0xMTE0MDA5NTU5LDE0OTIyMjY5NzYsMjA5NDM5
+NDM3NV19
 -->
