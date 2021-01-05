@@ -221,16 +221,18 @@ abstract 예약어를 추가해야 함.
 > 추상클래스 vs 인터페이스
 추상클래스도 클래스이기에 상속이 1개만 가능
 인터페이스는 다중 상속이 가능함 (연결도 느슨함)
+이와 같은 이유로 현업에서는 인터페이스를 더 많이 사용함.
 클래스 다이어그램에서 클래스는 실선, 인터페이스는 점선으로 그림
 
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MzM3NzAwMCwyMDMwNDc4NTIsMTY1MT
-Q0ODQ3MCwxMTY5ODUyMjMsNTI1ODE1NTQwLDEzMzg0NjkxNDQs
-ODEwMDY5MjA1LDEzOTQ1MjY4NTgsLTI0MTk3MTAyMSwxMDYyMD
-M3MzU1LC0xNDc0MzE3NzQzLC00ODY5NTk5MjAsMTIwMDkxNjI3
-OSwtNTE3Nzk4ODEyLDExODMwMzM4MzUsLTExMTQwMDk1NTksMT
-Q5MjIyNjk3NiwyMDk0Mzk0Mzc1LC0xMTM4MDQ4MDMyLC0zODgw
-NTE0MDBdfQ==
+eyJoaXN0b3J5IjpbLTEyNTExNDk0MSwtOTczMzc3MDAwLDIwMz
+A0Nzg1MiwxNjUxNDQ4NDcwLDExNjk4NTIyMyw1MjU4MTU1NDAs
+MTMzODQ2OTE0NCw4MTAwNjkyMDUsMTM5NDUyNjg1OCwtMjQxOT
+cxMDIxLDEwNjIwMzczNTUsLTE0NzQzMTc3NDMsLTQ4Njk1OTky
+MCwxMjAwOTE2Mjc5LC01MTc3OTg4MTIsMTE4MzAzMzgzNSwtMT
+ExNDAwOTU1OSwxNDkyMjI2OTc2LDIwOTQzOTQzNzUsLTExMzgw
+NDgwMzJdfQ==
 -->
