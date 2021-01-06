@@ -58,7 +58,7 @@ public class BubbleSort implements Sortable {
 				}
 			}
 		}
-		// ascending 결과 출력
+		// descending 결과 출력
 		for (int i=0; i < 30; i++) { 
 			System.out.printf("%3d ",arr[i]);
 		}
@@ -78,5 +78,5 @@ public class BubbleSort implements Sortable {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTk2MTUwMTddfQ==
+eyJoaXN0b3J5IjpbMTMxMzAxNjg0MywtMjA1OTYxNTAxN119
 -->
