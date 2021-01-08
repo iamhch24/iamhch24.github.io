@@ -22,8 +22,11 @@ toc: true
 * 싱글 스레드 :: 여러 스레드가 순차적으로 실행되는 것
 * 스레드의 장점 :: 코드의 재사용성과 데이터 공유가 가능하다
 * 스레드의 단점 :: 여러 스레드가 동시 실행 시 공유 자원에 대해 동기화를 해주어야 한다.
+* CPU 스케줄링 :: 운영체제가 작업을 처리하기 위해 각 프로세스에 CPU를 적절히 할당하는 정책
+* CPU 스케줄링 종류 : 선점 (우선순위) vs 비선점 (끝까지 기다림)
 * 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NzI3ODc3OSwtMTI2NDQ0NDc3M119
+eyJoaXN0b3J5IjpbNTA0NzE0NDQsMTk2NzI3ODc3OSwtMTI2ND
+Q0NDc3M119
 -->
