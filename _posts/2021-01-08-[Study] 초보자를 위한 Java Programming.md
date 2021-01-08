@@ -53,7 +53,15 @@ public class 클래스명 implements Runnable{
 * Running 상태 :: 스레드 스케줄러에 의해 선택된 스레드를 실행하는 상태
 * Blocked 상태 :: 스레드가 작업을 완수하지 못하고 잠시 작업을 멈추는 상태
 
+>스레드 실행 과정
+1. start() 호출
+2. 스레드가 실행을 준비한다
+3. 
+slee() ::
+yield() ::
+join() ::
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NDU2NTI1NCwxNjM0MDgxMTI3LDUwND
+eyJoaXN0b3J5IjpbMTMyNDgxOTIxNSwxNjM0MDgxMTI3LDUwND
 cxNDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3NzNdfQ==
 -->
