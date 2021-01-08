@@ -62,8 +62,13 @@ public class 클래스명 implements Runnable{
 6. 대기 상태에서 다시 준비 상태로 전환
 
 > sleep() 메서드
-* sleep(long millis) :: 현재 실행중인 스레드의 실행을 지정 시간만큼 중지시킨다.
+* sleep(long millis) :: 현재 실행중인 스레드의 실행을 지정 시간만큼 중지시킨다. 이는 우선순위가 낮은 스레드가 기아 상태에 빠지는 것을 방지할 수 있음.
+* 호출방법 :: Thread.sleep(1/000초); //주어진 시간 동안 대기 상태에서 머문다.
+
+>yield() 메서드
+* 현재 실행하는 스레드가 다른 스레드를 실행하도록 실행을 중지한다.
+* 호출방법 :: Thre
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NjQ4NTkwOCwxNjM0MDgxMTI3LDUwND
+eyJoaXN0b3J5IjpbLTk2MzExNzY4MCwxNjM0MDgxMTI3LDUwND
 cxNDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3NzNdfQ==
 -->
