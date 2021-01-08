@@ -26,9 +26,21 @@ toc: true
 * CPU 스케줄링 종류 : 선점 (우선순위) vs 비선점 (끝까지 기다림)
 * 스레드 스케줄링 :: 멀티 스레드가 동작할 때 어떤 스레드를 먼저 수행할 것인지를 결정하는 작업 / 자바는 우선순위가 높은 스레드가 먼저 실행되는 선점형 스케줄링 방식을 사용함.
 * 자바 스레드 특징 :: 우선권 스케줄링 , 스레드는 각 상태를 거치면서 실행한다. 멀티 스레드로 동작한다.
-* 자바에서 스레드 생성 방법 :: 1) Thread 클래스 이용 2) Runnable 인터페이스 이용 (Runnable 이 Thread르
+* 자바에서 스레드 생성 방법 :: 1) Thread 클래스 이용 2) Runnable 인터페이스 이용 (Runnable 이 Thread를 상속함)
+ 
+>사용자가 정의 스레드를 만드는 방법
+
+```Java
+class 클래스명 extends Thread{
+	public void run(){
+	//스레드 실행시 실행 명령문
+	...
+	}
+}
+```
+ 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNzg1MDU0Niw1MDQ3MTQ0NCwxOTY3Mj
+eyJoaXN0b3J5IjpbMTE2NTY1NzE2NCw1MDQ3MTQ0NCwxOTY3Mj
 c4Nzc5LC0xMjY0NDQ0NzczXX0=
 -->
