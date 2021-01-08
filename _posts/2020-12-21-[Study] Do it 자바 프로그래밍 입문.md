@@ -278,9 +278,33 @@ public class StringClassTest {
 
 > <T extends 클래스제한 >
 * 제네릭 타입에서 오는 타입을 제한하기 위해 T 뒤에 extends를 설정해 준다.
-* 책에서는 
+* 책에서는 추상 클래스를 부모로 하는 클래스들로 제한하기 위해 extends 다음에 추상클래스로 제한해주는 것을 추천하는데
+* 인터페이스 가능여부 설명이 없어서 직접 사용을 해 보니 인터페이스도 사용하는데 문제가 없었다.
+
+```Java
+package generics;
+
+public class GenericPrinter<T extends Materialible> {
+	private T material;
+
+	public T getMaterial() {
+		return material;
+	}
+
+	public void setMaterial(T material) {
+		this.material = material;
+	}
+	
+	public String toString() {
+		return material.toString();
+	}
+}
+
+
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQzODE2MDQ3LC0xODAzMzc3MTYyLC0xMT
+eyJoaXN0b3J5IjpbNTY2NDQ2ODAwLC0xODAzMzc3MTYyLC0xMT
 A0MDYwNjY3LC0xNzMwNDQ0MjY2LC0xMjUxMTQ5NDEsLTk3MzM3
 NzAwMCwyMDMwNDc4NTIsMTY1MTQ0ODQ3MCwxMTY5ODUyMjMsNT
 I1ODE1NTQwLDEzMzg0NjkxNDQsODEwMDY5MjA1LDEzOTQ1MjY4
