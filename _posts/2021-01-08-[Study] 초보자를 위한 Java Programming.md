@@ -56,12 +56,14 @@ public class 클래스명 implements Runnable{
 >스레드 실행 과정
 1. start() 호출
 2. 스레드가 실행을 준비한다
-3. 
-slee() ::
-yield() ::
-join() ::
+3. 스케줄러에 의해 스레드 호출(run() 호출)
+4. 스레드 실행
+5. 스레드가 완료하지 못하고 대기 상태로 전환( sleep(), yield(), join() 호출)
+6. 대기 상태에서 다시 준비 상태로 전환
 
+> sleep() 메서드
+* sleep(long millis) :: 현재 실행중인 스레드의 실행을 지정 시간만큼 중지시킨다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNDgxOTIxNSwxNjM0MDgxMTI3LDUwND
+eyJoaXN0b3J5IjpbLTY1NjQ4NTkwOCwxNjM0MDgxMTI3LDUwND
 cxNDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3NzNdfQ==
 -->
