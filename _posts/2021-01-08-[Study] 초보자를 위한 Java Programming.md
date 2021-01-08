@@ -20,8 +20,10 @@ toc: true
 * 스레드 :: 프로세스 내에서 실행되는 세부 실행 단위
 * 멀티 스레드 :: 하나의 프로세스에 내에서 여러 개의 스레드가 병행 처리되는 것
 * 싱글 스레드 :: 여러 스레드가 순차적으로 실행되는 것
-* 스레드의 장점 :: 코드
+* 스레드의 장점 :: 코드의 재사용성과 데이터 공유가 가능하다
+* 스레드의 단점 :: 여러 스레드가 동시 실행 시 공유 자원에 대해 동기화를 해주어야 한다.
+* 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0ODAzNTk3NSwtMTI2NDQ0NDc3M119
+eyJoaXN0b3J5IjpbMTk2NzI3ODc3OSwtMTI2NDQ0NDc3M119
 -->
