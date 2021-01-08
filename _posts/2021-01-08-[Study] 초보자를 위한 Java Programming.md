@@ -24,9 +24,10 @@ toc: true
 * 스레드의 단점 :: 여러 스레드가 동시 실행 시 공유 자원에 대해 동기화를 해주어야 한다.
 * CPU 스케줄링 :: 운영체제가 작업을 처리하기 위해 각 프로세스에 CPU를 적절히 할당하는 정책
 * CPU 스케줄링 종류 : 선점 (우선순위) vs 비선점 (끝까지 기다림)
-* 
+* 스레드 스케줄링 :: 멀티 스레드가 동작할 때 어떤 스레드를 먼저 수행할 것인지를 결정하는 작업 / 자바는 우선순위가 높은 스레드가 먼저 실행되는 선점형 스케줄링 방식을 사용함.
+* 자바 스레드 특징 :: 우선권 스
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA0NzE0NDQsMTk2NzI3ODc3OSwtMTI2ND
-Q0NDc3M119
+eyJoaXN0b3J5IjpbOTQ5MDQ2NjgxLDUwNDcxNDQ0LDE5NjcyNz
+g3NzksLTEyNjQ0NDQ3NzNdfQ==
 -->
