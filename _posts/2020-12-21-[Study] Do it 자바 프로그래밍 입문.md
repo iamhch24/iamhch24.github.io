@@ -300,11 +300,50 @@ public class GenericPrinter<T extends Materialible> {
 	}
 }
 
+package generics;
 
+public interface Materialible {
+	public void doPrinting();
+	public String toString();
+}
+
+package generics;
+
+public class GenericPrinterTest {
+
+	public static void main(String[] args) {
+		GenericPrinter<Powder> generic1 = new GenericPrinter<>();
+		generic1.setMaterial(new Powder());
+		System.out.println(generic1.getMaterial());
+		GenericPrinter<Plastic> generic2 = new GenericPrinter<>();
+		generic2.setMaterial(new Plastic());
+		System.out.println(generic2.getMaterial());	
+	}
+}
+
+package generics;
+public class Powder implements Materialible{
+	public void doPrinting() {
+		System.out.println("Powder 재료로 출력합니다.");	
+	}
+	public String toString() {
+		return "재료는 Powder 입니다.";
+	}	
+}
+
+package generics;
+public class Plastic implements Materialible{
+	public void doPrinting() {
+		System.out.println("Plastic 재료로 출력합니다.");
+	}
+	public String toString() {
+		return "재료는 Plastic 입니다.";	
+	}	
+}
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY2NDQ2ODAwLC0xODAzMzc3MTYyLC0xMT
+eyJoaXN0b3J5IjpbODY2Mjk5NzY1LC0xODAzMzc3MTYyLC0xMT
 A0MDYwNjY3LC0xNzMwNDQ0MjY2LC0xMjUxMTQ5NDEsLTk3MzM3
 NzAwMCwyMDMwNDc4NTIsMTY1MTQ0ODQ3MCwxMTY5ODUyMjMsNT
 I1ODE1NTQwLDEzMzg0NjkxNDQsODEwMDY5MjA1LDEzOTQ1MjY4
