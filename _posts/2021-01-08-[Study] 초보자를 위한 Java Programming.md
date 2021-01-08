@@ -38,9 +38,16 @@ class 클래스명 extends Thread{
 	}
 }
 ```
- 
+ ⇒ 보통 Runnable 인터페이스를 이요하는 이유는 자바는 단일 상속만 허용하므로 클래스가 다른 클래스를 상속받는 경우에는 Thread 클래스를 상속받지 못함.
+
+```Java
+public class 클래스명 implements Runnable{
+	public void run(){
+	
+	}
+}
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NTY1NzE2NCw1MDQ3MTQ0NCwxOTY3Mj
-c4Nzc5LC0xMjY0NDQ0NzczXX0=
+eyJoaXN0b3J5IjpbLTEwMjU0NjQyMjUsNTA0NzE0NDQsMTk2Nz
+I3ODc3OSwtMTI2NDQ0NDc3M119
 -->
