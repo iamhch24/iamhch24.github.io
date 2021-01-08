@@ -43,11 +43,14 @@ class 클래스명 extends Thread{
 ```Java
 public class 클래스명 implements Runnable{
 	public void run(){
-	
+		...
 	}
 }
+```
+
  
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjU0NjQyMjUsNTA0NzE0NDQsMTk2Nz
-I3ODc3OSwtMTI2NDQ0NDc3M119
+eyJoaXN0b3J5IjpbMTYzNDA4MTEyNyw1MDQ3MTQ0NCwxOTY3Mj
+c4Nzc5LC0xMjY0NDQ0NzczXX0=
 -->
