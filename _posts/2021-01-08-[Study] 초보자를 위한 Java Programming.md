@@ -1,5 +1,5 @@
 ---
-title: "[자바스크립트] 팝업창-세션쿠키설정"
+title: "[Study] 초보자를 위한 Java Programming"
 categories:
     - dev
 tags:
@@ -9,6 +9,10 @@ toc: true
 
 ---
 
+# [Study] 초보자를 위한 Java Programming
+
+# 11장 쓰레드
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NTAxNzg1MF19
+eyJoaXN0b3J5IjpbLTEyNjQ0NDQ3NzNdfQ==
 -->
