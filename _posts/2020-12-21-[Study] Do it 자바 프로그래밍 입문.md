@@ -283,34 +283,27 @@ public class StringClassTest {
 
 ```Java
 package generics;
-
 public class GenericPrinter<T extends Materialible> {
 	private T material;
-
 	public T getMaterial() {
 		return material;
 	}
-
 	public void setMaterial(T material) {
 		this.material = material;
 	}
-	
 	public String toString() {
 		return material.toString();
 	}
 }
 
 package generics;
-
 public interface Materialible {
 	public void doPrinting();
 	public String toString();
 }
 
 package generics;
-
 public class GenericPrinterTest {
-
 	public static void main(String[] args) {
 		GenericPrinter<Powder> generic1 = new GenericPrinter<>();
 		generic1.setMaterial(new Powder());
@@ -342,12 +335,13 @@ public class Plastic implements Materialible{
 }
 ```
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY2Mjk5NzY1LC0xODAzMzc3MTYyLC0xMT
-A0MDYwNjY3LC0xNzMwNDQ0MjY2LC0xMjUxMTQ5NDEsLTk3MzM3
-NzAwMCwyMDMwNDc4NTIsMTY1MTQ0ODQ3MCwxMTY5ODUyMjMsNT
-I1ODE1NTQwLDEzMzg0NjkxNDQsODEwMDY5MjA1LDEzOTQ1MjY4
-NTgsLTI0MTk3MTAyMSwxMDYyMDM3MzU1LC0xNDc0MzE3NzQzLC
-00ODY5NTk5MjAsMTIwMDkxNjI3OSwtNTE3Nzk4ODEyLDExODMw
-MzM4MzVdfQ==
+eyJoaXN0b3J5IjpbMTQ5NjExOTk4NSwtMTgwMzM3NzE2MiwtMT
+EwNDA2MDY2NywtMTczMDQ0NDI2NiwtMTI1MTE0OTQxLC05NzMz
+NzcwMDAsMjAzMDQ3ODUyLDE2NTE0NDg0NzAsMTE2OTg1MjIzLD
+UyNTgxNTU0MCwxMzM4NDY5MTQ0LDgxMDA2OTIwNSwxMzk0NTI2
+ODU4LC0yNDE5NzEwMjEsMTA2MjAzNzM1NSwtMTQ3NDMxNzc0My
+wtNDg2OTU5OTIwLDEyMDA5MTYyNzksLTUxNzc5ODgxMiwxMTgz
+MDMzODM1XX0=
 -->
