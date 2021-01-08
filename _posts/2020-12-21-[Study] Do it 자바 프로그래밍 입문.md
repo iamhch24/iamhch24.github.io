@@ -277,6 +277,7 @@ public class StringClassTest {
 ### 제네릭 <T>
 
 > <T extends 클래스제한 >
+
 * 제네릭 타입에서 오는 타입을 제한하기 위해 T 뒤에 extends를 설정해 준다.
 * 책에서는 추상 클래스를 부모로 하는 클래스들로 제한하기 위해 extends 다음에 추상클래스로 제한해주는 것을 추천하는데
 * 인터페이스 가능여부 설명이 없어서 직접 사용을 해 보니 인터페이스도 사용하는데 문제가 없었다.
@@ -337,11 +338,11 @@ public class Plastic implements Materialible{
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NjExOTk4NSwtMTgwMzM3NzE2MiwtMT
-EwNDA2MDY2NywtMTczMDQ0NDI2NiwtMTI1MTE0OTQxLC05NzMz
-NzcwMDAsMjAzMDQ3ODUyLDE2NTE0NDg0NzAsMTE2OTg1MjIzLD
-UyNTgxNTU0MCwxMzM4NDY5MTQ0LDgxMDA2OTIwNSwxMzk0NTI2
-ODU4LC0yNDE5NzEwMjEsMTA2MjAzNzM1NSwtMTQ3NDMxNzc0My
-wtNDg2OTU5OTIwLDEyMDA5MTYyNzksLTUxNzc5ODgxMiwxMTgz
-MDMzODM1XX0=
+eyJoaXN0b3J5IjpbLTEwNzQ2MTUwMDksLTE4MDMzNzcxNjIsLT
+ExMDQwNjA2NjcsLTE3MzA0NDQyNjYsLTEyNTExNDk0MSwtOTcz
+Mzc3MDAwLDIwMzA0Nzg1MiwxNjUxNDQ4NDcwLDExNjk4NTIyMy
+w1MjU4MTU1NDAsMTMzODQ2OTE0NCw4MTAwNjkyMDUsMTM5NDUy
+Njg1OCwtMjQxOTcxMDIxLDEwNjIwMzczNTUsLTE0NzQzMTc3ND
+MsLTQ4Njk1OTkyMCwxMjAwOTE2Mjc5LC01MTc3OTg4MTIsMTE4
+MzAzMzgzNV19
 -->
