@@ -67,8 +67,19 @@ public class 클래스명 implements Runnable{
 
 >yield() 메서드
 * 현재 실행하는 스레드가 다른 스레드를 실행하도록 실행을 중지한다.
-* 호출방법 :: Thre
+* 호출방법 :: Thread.yield(); // 실행 중인 스레드가 호출한다.
+
+>join() 메서드
+* 대기 중인 스레드가 join 메서드를 호출한다. 호출 시 실행 중인 스레드는 대기 상태로 가고, 호출한 메서드가 실행된다. 호출한 메서도가 종료되면 대기 중인 스레드가 다시 실해
+
+
+
+
+
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MzExNzY4MCwxNjM0MDgxMTI3LDUwND
+eyJoaXN0b3J5IjpbMTA5Nzc3MjE5OCwxNjM0MDgxMTI3LDUwND
 cxNDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3NzNdfQ==
 -->
