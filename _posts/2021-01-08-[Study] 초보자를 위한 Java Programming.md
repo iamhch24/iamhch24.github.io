@@ -70,7 +70,8 @@ public class 클래스명 implements Runnable{
 * 호출방법 :: Thread.yield(); // 실행 중인 스레드가 호출한다.
 
 >join() 메서드
-* 대기 중인 스레드가 join 메서드를 호출한다. 호출 시 실행 중인 스레드는 대기 상태로 가고, 호출한 메서드가 실행된다. 호출한 메서도가 종료되면 대기 중인 스레드가 다시 실해
+* 대기 중인 스레드가 join 메서드를 호출한다. 호출 시 실행 중인 스레드는 대기 상태로 가고, 호출한 메서드가 실행된다. 호출한 메서도가 종료되면 대기 중인 스레드가 다시 실행된다.
+* 호출방법 :: Thread.join();  // 대기 중인 스레드가 호출하여 실행 중인 스레드를 대기 상태로 만든다.
 
 
 
@@ -80,6 +81,6 @@ public class 클래스명 implements Runnable{
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5Nzc3MjE5OCwxNjM0MDgxMTI3LDUwND
-cxNDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3NzNdfQ==
+eyJoaXN0b3J5IjpbLTExNzgyNzU3MjUsMTYzNDA4MTEyNyw1MD
+Q3MTQ0NCwxOTY3Mjc4Nzc5LC0xMjY0NDQ0NzczXX0=
 -->
