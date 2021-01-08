@@ -74,15 +74,18 @@ public class 클래스명 implements Runnable{
 * 호출방법 :: Thread.join();  // 대기 중인 스레드가 호출하여 실행 중인 스레드를 대기 상태로 만든다.
 
 
->자바 동기화 방식
+>자바 동기화 방식 :: lock을 이용하여 동기화 수행함
 
 ```Java
-public synchrnozied void m(){
+public synchronized void m(){
+	...
 } // 메서드 전체가 동기화됨
 
 public void m(){
-	synchron
-}
+	synchronized (공유 객체){
+	...
+	}
+} // 일부만 동기화
 ```
 
 * Busy/Wait 방식 
@@ -92,7 +95,7 @@ public void m(){
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMTc1NDAwNiwtMTE3ODI3NTcyNSwxNj
-M0MDgxMTI3LDUwNDcxNDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3
-NzNdfQ==
+eyJoaXN0b3J5IjpbODMyMjkwNjIyLC0xMTc4Mjc1NzI1LDE2Mz
+QwODExMjcsNTA0NzE0NDQsMTk2NzI3ODc3OSwtMTI2NDQ0NDc3
+M119
 -->
