@@ -48,9 +48,12 @@ public class 클래스명 implements Runnable{
 }
 ```
 
- 
+> 쓰레드가 가지는 여러가지 상태 
+* Runnable 상태 :: 스레드가 실행하기 위한 준비상태
+* Running 상태 :: 스레드 스케줄러에 의해 선택된 스레드를 실행하는 상태
+* Blocked 상태 :: 스레드가 작업을 완수하지 못하고 잠시 작업을 멈추는 상태
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNDA4MTEyNyw1MDQ3MTQ0NCwxOTY3Mj
-c4Nzc5LC0xMjY0NDQ0NzczXX0=
+eyJoaXN0b3J5IjpbLTc5NDU2NTI1NCwxNjM0MDgxMTI3LDUwND
+cxNDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3NzNdfQ==
 -->
