@@ -115,14 +115,16 @@ public void m(){
 > 데이터 종류에 따른 스트림 클래스 분류
 
 * byte 데이터 :: (입력) InputStream  + (출력) OutputStream
-* char 데이터 :: (
+* char 데이터 :: (입력) Reader + (출력) Writer
+
+> 데이터 처리 순서에 따른 분류 2가지 :: Node 스트림 
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMTYzMzYyNCwtMTE3ODI3NTcyNSwxNj
+eyJoaXN0b3J5IjpbMTQ1NDcwMzE5OCwtMTE3ODI3NTcyNSwxNj
 M0MDgxMTI3LDUwNDcxNDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3
 NzNdfQ==
 -->
