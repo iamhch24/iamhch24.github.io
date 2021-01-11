@@ -357,6 +357,7 @@ public class Plastic implements Materialible{
 * Iterator는 thread 환경에서 강함, 
 * Iterator는 내부적으로 index가 있기 때문에 한번 수행이 다 되면 마지막을 가리키고 있어서 다시 쓰려면 다시 초기화 해줘야 한다.
 
+### 객체 정렬하기
 
 * Comparable 인터페이스 구현시 
 compareTe() 오버라이딩
@@ -373,12 +374,18 @@ public int compareTo(object o){
 ```
 *`Comparable` 인터페이스의 `compareTo()` 메서드를 통해 인자로 넘어온 같은 타입의 다른 객체와 대소 비교가 가능합니다. 메서드를 호출하는 객체가 인자로 넘어온 객체보다 작을 경우에는 음수를 리턴하고, 크기가 동일하다면 0, 클 경우에는 양수를 리턴해야합니다.
 
+⇒ Sort() 가능해짐
+참고 :: https://www.daleseo.com/java-comparable-comparator/
+
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MTQ0ODQsMTQ4NTgzODA5LDIxMzgyMz
-EzODQsMjA2NzM3NTk3NCwxNzE1MjUxNTc1LDI0Mjg1NzE1Mywt
-MTA3NDYxNTAwOSwtMTgwMzM3NzE2MiwtMTEwNDA2MDY2NywtMT
-czMDQ0NDI2NiwtMTI1MTE0OTQxLC05NzMzNzcwMDAsMjAzMDQ3
-ODUyLDE2NTE0NDg0NzAsMTE2OTg1MjIzLDUyNTgxNTU0MCwxMz
-M4NDY5MTQ0LDgxMDA2OTIwNSwxMzk0NTI2ODU4LC0yNDE5NzEw
-MjFdfQ==
+eyJoaXN0b3J5IjpbLTE3OTc3Mjc0OTMsMTQ4NTgzODA5LDIxMz
+gyMzEzODQsMjA2NzM3NTk3NCwxNzE1MjUxNTc1LDI0Mjg1NzE1
+MywtMTA3NDYxNTAwOSwtMTgwMzM3NzE2MiwtMTEwNDA2MDY2Ny
+wtMTczMDQ0NDI2NiwtMTI1MTE0OTQxLC05NzMzNzcwMDAsMjAz
+MDQ3ODUyLDE2NTE0NDg0NzAsMTE2OTg1MjIzLDUyNTgxNTU0MC
+wxMzM4NDY5MTQ0LDgxMDA2OTIwNSwxMzk0NTI2ODU4LC0yNDE5
+NzEwMjFdfQ==
 -->
