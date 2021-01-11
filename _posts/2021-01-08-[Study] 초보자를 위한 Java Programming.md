@@ -101,14 +101,20 @@ public void m(){
 * 입출력 기능뿐만 아니라 뒤에 배우는 대부분의 기능을 이러한 방식으로 세부적인 기능을 샙슐화시키면서 개발자에게는 해당 기능을 수행하는 클래스(API)를 제공하여 작업을 쉽게 할 수 있게 한다. 
 * 즉, 자바에서는 각 장치마다 데이터 입출력을 담당하는 스트림 클래스를 제공한다.
 
-> 스티
+> 스트림 클래스 특징
+
+* 단방향이다. (InputStream, OutputStream)
+* FIFO (First In First Out) 이다. 
+* 같은 용도의 스트림끼리는 연결이 가능하다
+
+> 처리하는 데잍
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NTUwMTk3MCwtMTE3ODI3NTcyNSwxNj
-M0MDgxMTI3LDUwNDcxNDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3
-NzNdfQ==
+eyJoaXN0b3J5IjpbNzM1NTE3ODM4LC0xMTc4Mjc1NzI1LDE2Mz
+QwODExMjcsNTA0NzE0NDQsMTk2NzI3ODc3OSwtMTI2NDQ0NDc3
+M119
 -->
