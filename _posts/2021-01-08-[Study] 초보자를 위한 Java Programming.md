@@ -142,14 +142,18 @@ public void m(){
 * java.io.BufferedOutputStream :: 출력 데이터를 일단 buffer에 저장한 후 가공한다. flussh 기능을 이용하여 버퍼에 채워지지 않더라도 출력할 수 있다.
 * java.io.PrintStream :: 모든 데이터를 화면에 출력해주는 print(), println()을 정의한다.
 
-> Reader ::
+> Reader :: java.io.Reader :: 문자(char) 입력을 받는데 사용되는 스트림 클래스의 최상위 추상 클래스. Char(2byte)단위로 입력받는다
+
+* java.io.FileReader :: 파일에서 데이터를 읽을 수 있는 기능을 제공한다. char 단위로 읽는다. 파일이 존재하지 않으면 FileNotFoundException
+
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjEyNTAwODMsLTEzNTcyNDk3NDMsMT
-gxMDU2ODk5MiwtMTc4MzQ2NzA0NywtMTE0Nzc4NDIzNiwtMTE3
-ODI3NTcyNSwxNjM0MDgxMTI3LDUwNDcxNDQ0LDE5NjcyNzg3Nz
-ksLTEyNjQ0NDQ3NzNdfQ==
+eyJoaXN0b3J5IjpbMjA0OTYzNDQyMCwtMTM1NzI0OTc0MywxOD
+EwNTY4OTkyLC0xNzgzNDY3MDQ3LC0xMTQ3Nzg0MjM2LC0xMTc4
+Mjc1NzI1LDE2MzQwODExMjcsNTA0NzE0NDQsMTk2NzI3ODc3OS
+wtMTI2NDQ0NDc3M119
 -->
