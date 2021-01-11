@@ -162,12 +162,17 @@ public void m(){
 
 * 객체 직렬화 정의 :: 프로그램 실행시 생성되는 인스턴스의 상태를 장치에 저장하거나 네트워크로 전송하는 기능
 * 등장 배경 :: 인스턴스의 상태를 다른 프로그램이나 네크워크로 전송해야 할 경우가 발생.
-* 자바 객체 직렬화 특징 :: 객체의 상태를 지속시키는 방법을 제공한다. 
+* 자바 객체 직렬화 특징 :: 객체의 상태를 지속시키는 방법을 제공한다. 스트림을 통해 다른 장치나 네트워크에서 사용 가능하게 한다. 객체는 바이트 데이터로 저장되거나 전송된다.
+
+> 자바 객체 직렬화 과정
+
+* java.io.Serializable 인터페이스를 구현한다. 인터페이스를 구현한 클래스의 속성은 모두 직렬화의 대상이 된다. 직렬화 대상에서 제외키시고 싶은 경우에는 transient를 이용한다.
+* 스트림 클래스르
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNTAzNjY0MSwtNDQxODc4OTQ1LC0xMz
+eyJoaXN0b3J5IjpbMTY1MzAzNzk0OCwtNDQxODc4OTQ1LC0xMz
 U3MjQ5NzQzLDE4MTA1Njg5OTIsLTE3ODM0NjcwNDcsLTExNDc3
 ODQyMzYsLTExNzgyNzU3MjUsMTYzNDA4MTEyNyw1MDQ3MTQ0NC
 wxOTY3Mjc4Nzc5LC0xMjY0NDQ0NzczXX0=
