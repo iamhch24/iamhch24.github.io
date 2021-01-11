@@ -130,14 +130,18 @@ public void m(){
 * 표준 출력 :: 모니터 System.out
 * 표준 오류 출력 :: System.err
 
+>InputStream 클래스 :: java.io.InputSteam :: byte 데이터를 입력받는데 필요한 스트림 클래스들의 최상위
 
+* java.io.FileInputStream :: 파일에서 byte 데이터를 읽을 수 잇는 기능을 제공한다. 파일이 존재하지 않으면 FileNotFoundException을 발생시킨다.
+* java.io.BufferedInput
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMDU2ODk5MiwtMTc4MzQ2NzA0NywtMT
-E0Nzc4NDIzNiwtMTE3ODI3NTcyNSwxNjM0MDgxMTI3LDUwNDcx
-NDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3NzNdfQ==
+eyJoaXN0b3J5IjpbMzcyNjY0ODk2LDE4MTA1Njg5OTIsLTE3OD
+M0NjcwNDcsLTExNDc3ODQyMzYsLTExNzgyNzU3MjUsMTYzNDA4
+MTEyNyw1MDQ3MTQ0NCwxOTY3Mjc4Nzc5LC0xMjY0NDQ0NzczXX
+0=
 -->
