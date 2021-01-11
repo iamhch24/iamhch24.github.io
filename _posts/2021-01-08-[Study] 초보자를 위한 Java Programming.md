@@ -155,14 +155,16 @@ public void m(){
 
 >InputStreamReader, OutputSreamWriter의 특징
 
-* 사용자가 키보드로 한글을 입력하면 실제 컴퓨터는 먼저 바이트 데이터로 입력받는다. 바이트 데이터를 InputStream
+* 사용자가 키보드로 한글을 입력하면 실제 컴퓨터는 먼저 바이트 데이터로 입력받는다. 바이트 데이터를 InputStreamReader 클래스로 전달하여 한글로 조합한 후 프로그램에 전달하는 것이다. 이와 반대로 OutputStreamWriter는 바이트 데이터를 문자로 변경한 후 출력하는 역할을 한다. 
+
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjIwNjU1OTMsLTEzNTcyNDk3NDMsMT
-gxMDU2ODk5MiwtMTc4MzQ2NzA0NywtMTE0Nzc4NDIzNiwtMTE3
-ODI3NTcyNSwxNjM0MDgxMTI3LDUwNDcxNDQ0LDE5NjcyNzg3Nz
-ksLTEyNjQ0NDQ3NzNdfQ==
+eyJoaXN0b3J5IjpbLTQ0MTg3ODk0NSwtMTM1NzI0OTc0MywxOD
+EwNTY4OTkyLC0xNzgzNDY3MDQ3LC0xMTQ3Nzg0MjM2LC0xMTc4
+Mjc1NzI1LDE2MzQwODExMjcsNTA0NzE0NDQsMTk2NzI3ODc3OS
+wtMTI2NDQ0NDc3M119
 -->
