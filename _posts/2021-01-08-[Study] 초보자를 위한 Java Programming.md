@@ -124,7 +124,7 @@ public void m(){
 ⇒ Node 계열 스트림은 장치로부터 데이터를 입력받기에 바빠서 다른 작업을 할 수 없다. 그래서 Node 스트림으로 받은 데이터를 다른 Filter 계열 스트림으로 전달하여 입력 데이터를 가공한다.
 
 
-> 자바 표준 입출력 스트림 :: java.lan
+> 자바 표준 입출력 스트림 :: java.lang.System 클래스
 
 * 표준 입력 :: 키보드 System.in
 * 표준 출력 :: 모니터 System.out
@@ -135,7 +135,7 @@ public void m(){
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMzY3OTY4MywtMTE0Nzc4NDIzNiwtMT
-E3ODI3NTcyNSwxNjM0MDgxMTI3LDUwNDcxNDQ0LDE5NjcyNzg3
-NzksLTEyNjQ0NDQ3NzNdfQ==
+eyJoaXN0b3J5IjpbLTE3ODM0NjcwNDcsLTExNDc3ODQyMzYsLT
+ExNzgyNzU3MjUsMTYzNDA4MTEyNyw1MDQ3MTQ0NCwxOTY3Mjc4
+Nzc5LC0xMjY0NDQ0NzczXX0=
 -->
