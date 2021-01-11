@@ -343,13 +343,25 @@ public class Plastic implements Materialible{
 
 ### 컬렉션 프레임 워크 = 자료구조(java.util.*)
 
+컬렉션 프레임 워크에서는 Iterator 형태로 반환하여 처리할 수도 있다.
+
+```Java
+	ArrayList<Member> member = new ArrayList<>();
+	member.add(new Member(1,"Karl"));
+	member.add(new Member(2,"Brian"));
+	Iterator<Member> iterator = member.iterator();
+	while(iterator.hasNext()) {
+		System.out.println(iterator.next().getMemberName());
+	}
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNTI1MTU3NSwyNDI4NTcxNTMsLTEwNz
-Q2MTUwMDksLTE4MDMzNzcxNjIsLTExMDQwNjA2NjcsLTE3MzA0
-NDQyNjYsLTEyNTExNDk0MSwtOTczMzc3MDAwLDIwMzA0Nzg1Mi
-wxNjUxNDQ4NDcwLDExNjk4NTIyMyw1MjU4MTU1NDAsMTMzODQ2
-OTE0NCw4MTAwNjkyMDUsMTM5NDUyNjg1OCwtMjQxOTcxMDIxLD
-EwNjIwMzczNTUsLTE0NzQzMTc3NDMsLTQ4Njk1OTkyMCwxMjAw
-OTE2Mjc5XX0=
+eyJoaXN0b3J5IjpbMjA2NzM3NTk3NCwxNzE1MjUxNTc1LDI0Mj
+g1NzE1MywtMTA3NDYxNTAwOSwtMTgwMzM3NzE2MiwtMTEwNDA2
+MDY2NywtMTczMDQ0NDI2NiwtMTI1MTE0OTQxLC05NzMzNzcwMD
+AsMjAzMDQ3ODUyLDE2NTE0NDg0NzAsMTE2OTg1MjIzLDUyNTgx
+NTU0MCwxMzM4NDY5MTQ0LDgxMDA2OTIwNSwxMzk0NTI2ODU4LC
+0yNDE5NzEwMjEsMTA2MjAzNzM1NSwtMTQ3NDMxNzc0MywtNDg2
+OTU5OTIwXX0=
 -->
