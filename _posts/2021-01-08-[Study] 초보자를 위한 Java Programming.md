@@ -150,14 +150,15 @@ public void m(){
 > Writer :: java.io.Writer :: char 단위로 출력하는데 사용되는 스트림클래스의 최상위 추상 클래스
 
 * java.io.FileWrite :: 파일에 데이터를 출력하는 기능을 제공하는 스트림 클래스, char 단위로 출력. 출력 대상 파일이 존재하지 않으면 새로 생성함. 생성자 호출 시 인자로 덮어 쓰기 또는 내용 추가를 선택할 수 있다.
-* java.io.BufferedWriter :: 버퍼링을 통한 char 단위 쓰기를 할 수 있는 필터 스트림 클래스
+* java.io.BufferedWriter :: 버퍼링을 통한 char 단위 쓰기를 할 수 있는 필터 스트림 클래스 한 줄 단위로 출력할 수 있는 newLine()이 제공된다.
+* java.io.PrintWriter :: 특정 형식으로 문자를 출력하는 스트림이다. 바이트 출력 스트림과 문자 출력 스트림에 모두 사용 가능하다. 자동 flush 기능을 제공한다.
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYyMzQ4NjY3LC0xMzU3MjQ5NzQzLDE4MT
+eyJoaXN0b3J5IjpbNzM2NjkxMzMyLC0xMzU3MjQ5NzQzLDE4MT
 A1Njg5OTIsLTE3ODM0NjcwNDcsLTExNDc3ODQyMzYsLTExNzgy
 NzU3MjUsMTYzNDA4MTEyNyw1MDQ3MTQ0NCwxOTY3Mjc4Nzc5LC
 0xMjY0NDQ0NzczXX0=
