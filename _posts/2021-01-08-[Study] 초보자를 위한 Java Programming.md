@@ -153,13 +153,16 @@ public void m(){
 * java.io.BufferedWriter :: 버퍼링을 통한 char 단위 쓰기를 할 수 있는 필터 스트림 클래스 한 줄 단위로 출력할 수 있는 newLine()이 제공된다.
 * java.io.PrintWriter :: 특정 형식으로 문자를 출력하는 스트림이다. 바이트 출력 스트림과 문자 출력 스트림에 모두 사용 가능하다. 자동 flush 기능을 제공한다.
 
+>InputStreamReader, OutputSreamWriter의 특징
+
+* 사용자가 키보드로 한글을 입력하면 실제 컴퓨터는 먼저 바이트 데이터로 입력받는다. 바이트 데이터를 InputStream
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM2NjkxMzMyLC0xMzU3MjQ5NzQzLDE4MT
-A1Njg5OTIsLTE3ODM0NjcwNDcsLTExNDc3ODQyMzYsLTExNzgy
-NzU3MjUsMTYzNDA4MTEyNyw1MDQ3MTQ0NCwxOTY3Mjc4Nzc5LC
-0xMjY0NDQ0NzczXX0=
+eyJoaXN0b3J5IjpbLTE2MjIwNjU1OTMsLTEzNTcyNDk3NDMsMT
+gxMDU2ODk5MiwtMTc4MzQ2NzA0NywtMTE0Nzc4NDIzNiwtMTE3
+ODI3NTcyNSwxNjM0MDgxMTI3LDUwNDcxNDQ0LDE5NjcyNzg3Nz
+ksLTEyNjQ0NDQ3NzNdfQ==
 -->
