@@ -88,14 +88,18 @@ public void m(){
 } // 일부만 동기화
 ```
 
-* Busy/Wait 방식 
+* Busy/Wait 방법 :: 성능을 떨어뜨림
+* Lock/Sleep 방법 :: Object 클래스의 wait()와 notify()을 이용하여 동기화 성능을 향상시킴
+
+
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMyMjkwNjIyLC0xMTc4Mjc1NzI1LDE2Mz
-QwODExMjcsNTA0NzE0NDQsMTk2NzI3ODc3OSwtMTI2NDQ0NDc3
-M119
+eyJoaXN0b3J5IjpbLTExMDM4MzI5OTgsLTExNzgyNzU3MjUsMT
+YzNDA4MTEyNyw1MDQ3MTQ0NCwxOTY3Mjc4Nzc5LC0xMjY0NDQ0
+NzczXX0=
 -->
