@@ -167,13 +167,15 @@ public void m(){
 > 자바 객체 직렬화 과정
 
 * java.io.Serializable 인터페이스를 구현한다. 인터페이스를 구현한 클래스의 속성은 모두 직렬화의 대상이 된다. 직렬화 대상에서 제외키시고 싶은 경우에는 transient를 이용한다.
-* 스트림 클래스르
+* 스트림 클래스를 이용하여 직렬화 또는 역직렬화한다. ObjectOuputStream의 writeObejct()메서드, ObjectInputStream의 readObject()메서드 이용
+
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MzAzNzk0OCwtNDQxODc4OTQ1LC0xMz
-U3MjQ5NzQzLDE4MTA1Njg5OTIsLTE3ODM0NjcwNDcsLTExNDc3
-ODQyMzYsLTExNzgyNzU3MjUsMTYzNDA4MTEyNyw1MDQ3MTQ0NC
-wxOTY3Mjc4Nzc5LC0xMjY0NDQ0NzczXX0=
+eyJoaXN0b3J5IjpbLTExMjM2MjQzMzMsLTQ0MTg3ODk0NSwtMT
+M1NzI0OTc0MywxODEwNTY4OTkyLC0xNzgzNDY3MDQ3LC0xMTQ3
+Nzg0MjM2LC0xMTc4Mjc1NzI1LDE2MzQwODExMjcsNTA0NzE0ND
+QsMTk2NzI3ODc3OSwtMTI2NDQ0NDc3M119
 -->
