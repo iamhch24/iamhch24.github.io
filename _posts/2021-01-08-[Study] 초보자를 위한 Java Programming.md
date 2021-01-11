@@ -109,14 +109,20 @@ public void m(){
 
 > 처리하는 데이터 타입 2가지 :: byte 타입 + char 타입
 
-* byte 데이터 :: 동
+* byte 데이터 :: 동영상, 이미지, 사운 등 멀티미디어 데이터 / 8bit 단위 입출력
+* char 데이터 :: 일반적인 문자 데이터, 2byte 단위 입출력
+
+> 데이터 종류에 따른 스트림 클래스 분류
+
+* byte 데이터 :: (입력) InputStream  + (출력) OutputStream
+* char 데이터 :: (
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzgzNDcxNTYsLTExNzgyNzU3MjUsMT
-YzNDA4MTEyNyw1MDQ3MTQ0NCwxOTY3Mjc4Nzc5LC0xMjY0NDQ0
-NzczXX0=
+eyJoaXN0b3J5IjpbLTkyMTYzMzYyNCwtMTE3ODI3NTcyNSwxNj
+M0MDgxMTI3LDUwNDcxNDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3
+NzNdfQ==
 -->
