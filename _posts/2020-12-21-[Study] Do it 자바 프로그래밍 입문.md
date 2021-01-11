@@ -364,20 +364,21 @@ compareTe() 오버라이딩
 public int compareTo(object o){
 	if( o instanceof Member ){
 		Memeber member = (Member) o;
-		if(this.memberID <
-
+		if(this.memberID > member.memberID) return 1;
+		else if(this.memberID == member.memberID) return 0;
+		else return -1;
+	}
+	return -1;
 }
 ```
-
-
-`Comparable` 인터페이스의 `compareTo()` 메서드를 통해 인자로 넘어온 같은 타입의 다른 객체와 대소 비교가 가능합니다. 메서드를 호출하는 객체가 인자로 넘어온 객체보다 작을 경우에는 음수를 리턴하고, 크기가 동일하다면 0, 클 경우에는 양수를 리턴해야합니다.
+*`Comparable` 인터페이스의 `compareTo()` 메서드를 통해 인자로 넘어온 같은 타입의 다른 객체와 대소 비교가 가능합니다. 메서드를 호출하는 객체가 인자로 넘어온 객체보다 작을 경우에는 음수를 리턴하고, 크기가 동일하다면 0, 클 경우에는 양수를 리턴해야합니다.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE4OTkzNjA0LDE0ODU4MzgwOSwyMTM4Mj
-MxMzg0LDIwNjczNzU5NzQsMTcxNTI1MTU3NSwyNDI4NTcxNTMs
-LTEwNzQ2MTUwMDksLTE4MDMzNzcxNjIsLTExMDQwNjA2NjcsLT
-E3MzA0NDQyNjYsLTEyNTExNDk0MSwtOTczMzc3MDAwLDIwMzA0
-Nzg1MiwxNjUxNDQ4NDcwLDExNjk4NTIyMyw1MjU4MTU1NDAsMT
-MzODQ2OTE0NCw4MTAwNjkyMDUsMTM5NDUyNjg1OCwtMjQxOTcx
-MDIxXX0=
+eyJoaXN0b3J5IjpbMTY1MTQ0ODQsMTQ4NTgzODA5LDIxMzgyMz
+EzODQsMjA2NzM3NTk3NCwxNzE1MjUxNTc1LDI0Mjg1NzE1Mywt
+MTA3NDYxNTAwOSwtMTgwMzM3NzE2MiwtMTEwNDA2MDY2NywtMT
+czMDQ0NDI2NiwtMTI1MTE0OTQxLC05NzMzNzcwMDAsMjAzMDQ3
+ODUyLDE2NTE0NDg0NzAsMTE2OTg1MjIzLDUyNTgxNTU0MCwxMz
+M4NDY5MTQ0LDgxMDA2OTIwNSwxMzk0NTI2ODU4LC0yNDE5NzEw
+MjFdfQ==
 -->
