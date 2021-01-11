@@ -158,13 +158,17 @@ public void m(){
 * 사용자가 키보드로 한글을 입력하면 실제 컴퓨터는 먼저 바이트 데이터로 입력받는다. 바이트 데이터를 InputStreamReader 클래스로 전달하여 한글로 조합한 후 프로그램에 전달하는 것이다. 이와 반대로 OutputStreamWriter는 바이트 데이터를 문자로 변경한 후 출력하는 역할을 한다. 
 
 
+### 객체 직렬화 (Serialization)
 
+* 객체 직렬화 정의 :: 프로그램 실행시 생성되는 인스턴스의 상태를 장치에 저장하거나 네트워크로 전송하는 기능
+* 등장 배경 :: 인스턴스의 상태를 다른 프로그램이나 네크워크로 전송해야 할 경우가 발생.
+* 자바 객체 직렬화 특징 :: 객체의 상태를 지속시키는 방법을 제공한다. 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MTg3ODk0NSwtMTM1NzI0OTc0MywxOD
-EwNTY4OTkyLC0xNzgzNDY3MDQ3LC0xMTQ3Nzg0MjM2LC0xMTc4
-Mjc1NzI1LDE2MzQwODExMjcsNTA0NzE0NDQsMTk2NzI3ODc3OS
-wtMTI2NDQ0NDc3M119
+eyJoaXN0b3J5IjpbLTYxNTAzNjY0MSwtNDQxODc4OTQ1LC0xMz
+U3MjQ5NzQzLDE4MTA1Njg5OTIsLTE3ODM0NjcwNDcsLTExNDc3
+ODQyMzYsLTExNzgyNzU3MjUsMTYzNDA4MTEyNyw1MDQ3MTQ0NC
+wxOTY3Mjc4Nzc5LC0xMjY0NDQ0NzczXX0=
 -->
