@@ -107,14 +107,16 @@ public void m(){
 * FIFO (First In First Out) 이다. 
 * 같은 용도의 스트림끼리는 연결이 가능하다
 
-> 처리하는 데잍
+> 처리하는 데이터 타입 2가지 :: byte 타입 + char 타입
+
+* byte 데이터 :: 동
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM1NTE3ODM4LC0xMTc4Mjc1NzI1LDE2Mz
-QwODExMjcsNTA0NzE0NDQsMTk2NzI3ODc3OSwtMTI2NDQ0NDc3
-M119
+eyJoaXN0b3J5IjpbLTE4NzgzNDcxNTYsLTExNzgyNzU3MjUsMT
+YzNDA4MTEyNyw1MDQ3MTQ0NCwxOTY3Mjc4Nzc5LC0xMjY0NDQ0
+NzczXX0=
 -->
