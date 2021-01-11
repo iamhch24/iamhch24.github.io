@@ -354,15 +354,18 @@ public class Plastic implements Materialible{
 		System.out.println(iterator.next().getMemberName());
 	}
 ```
-* Iterator는 thread 환경에서 강함
+* Iterator는 thread 환경에서 강함, 
+* Iterator는 내부적으로 index가 있기 때문에 한번 수행이 다 되면 마지막을 가리키고 있어서 다시 쓰려면 다시 초기화 해줘야 한다.
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzODIzMTM4NCwyMDY3Mzc1OTc0LDE3MT
-UyNTE1NzUsMjQyODU3MTUzLC0xMDc0NjE1MDA5LC0xODAzMzc3
-MTYyLC0xMTA0MDYwNjY3LC0xNzMwNDQ0MjY2LC0xMjUxMTQ5ND
-EsLTk3MzM3NzAwMCwyMDMwNDc4NTIsMTY1MTQ0ODQ3MCwxMTY5
-ODUyMjMsNTI1ODE1NTQwLDEzMzg0NjkxNDQsODEwMDY5MjA1LD
-EzOTQ1MjY4NTgsLTI0MTk3MTAyMSwxMDYyMDM3MzU1LC0xNDc0
-MzE3NzQzXX0=
+eyJoaXN0b3J5IjpbLTYyMDY1MTc4MSwyMTM4MjMxMzg0LDIwNj
+czNzU5NzQsMTcxNTI1MTU3NSwyNDI4NTcxNTMsLTEwNzQ2MTUw
+MDksLTE4MDMzNzcxNjIsLTExMDQwNjA2NjcsLTE3MzA0NDQyNj
+YsLTEyNTExNDk0MSwtOTczMzc3MDAwLDIwMzA0Nzg1MiwxNjUx
+NDQ4NDcwLDExNjk4NTIyMyw1MjU4MTU1NDAsMTMzODQ2OTE0NC
+w4MTAwNjkyMDUsMTM5NDUyNjg1OCwtMjQxOTcxMDIxLDEwNjIw
+MzczNTVdfQ==
 -->
