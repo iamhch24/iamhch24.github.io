@@ -121,6 +121,8 @@ public void m(){
 
 * Node 스트림 계열 :: 단순한 입출력 작업, 장치에 직접적으로 연결 -- InputStream, FileReader, ...
 * Filter 스트림 계열 :: 입력 데이터, 출력 데이터를 가공함. 효율적 입출력 가능 -- ex) InputSteamReader, BufferedReader, ObjectInputStream, ...
+⇒ Node 계열 스트림은 장치로부터 데이터를 입력받기에 바빠서 다른 작업을 할 수 없다. 그래서 Node 스트림으로 받은 데이터를 다른 Filter 계열 스트림으로 전달하여 입력 데이터를 가공한다.
+
 
 
 
@@ -128,7 +130,7 @@ public void m(){
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MTI4MjI4MCwtMTE3ODI3NTcyNSwxNj
-M0MDgxMTI3LDUwNDcxNDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3
-NzNdfQ==
+eyJoaXN0b3J5IjpbLTExNDc3ODQyMzYsLTExNzgyNzU3MjUsMT
+YzNDA4MTEyNyw1MDQ3MTQ0NCwxOTY3Mjc4Nzc5LC0xMjY0NDQ0
+NzczXX0=
 -->
