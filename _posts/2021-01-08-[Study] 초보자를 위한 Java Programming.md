@@ -147,7 +147,9 @@ public void m(){
 * java.io.FileReader :: 파일에서 데이터를 읽을 수 있는 기능을 제공한다. char 단위로 읽는다. 파일이 존재하지 않으면 FileNotFoundException예외가 발생한다. 글자 깨짐이 없다.
 * java.io.BufferedReader :: 데이터를 버퍼로 읽어 들여 여러 가지 처리를 할 수 있다. readLine() 메서드를 이용하여 데이터의 개행문자 (/r/n)을 인식을 인식할 수 있다. 행 단위로 처리 시 많이 사용한다.
 
-> Writer :: ㅓㅁㅍ
+> Writer :: java.io.Writer :: char 단위로 출력하는데 사용되는 스트림클래스의 최상위 추상 클래스
+
+* java.io.FileWrite :: 파일에 데이터를 출력하는 기능을 제공하는 스트림 클래스, char 단위로 출력. 출력 대상 파일이 존재하지 않으면 새로 생성함. 생성자 호출 시 인자로 덮어 쓰기 또는 내용 추가를 선택할 수 있다.
 
 
 
@@ -155,8 +157,8 @@ public void m(){
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjQxNjA4ODAsLTEzNTcyNDk3NDMsMT
-gxMDU2ODk5MiwtMTc4MzQ2NzA0NywtMTE0Nzc4NDIzNiwtMTE3
-ODI3NTcyNSwxNjM0MDgxMTI3LDUwNDcxNDQ0LDE5NjcyNzg3Nz
-ksLTEyNjQ0NDQ3NzNdfQ==
+eyJoaXN0b3J5IjpbLTE2Mjk2MDMyNSwtMTM1NzI0OTc0MywxOD
+EwNTY4OTkyLC0xNzgzNDY3MDQ3LC0xMTQ3Nzg0MjM2LC0xMTc4
+Mjc1NzI1LDE2MzQwODExMjcsNTA0NzE0NDQsMTk2NzI3ODc3OS
+wtMTI2NDQ0NDc3M119
 -->
