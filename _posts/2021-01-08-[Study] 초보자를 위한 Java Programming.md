@@ -128,6 +128,8 @@ public void m(){
 
 * 표준 입력 :: 키보드 System.in
 * 표준 출력 :: 모니터 System.out
+* 표준 오류 출력 :: System.err
+
 
 
 
@@ -135,7 +137,7 @@ public void m(){
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODM0NjcwNDcsLTExNDc3ODQyMzYsLT
-ExNzgyNzU3MjUsMTYzNDA4MTEyNyw1MDQ3MTQ0NCwxOTY3Mjc4
-Nzc5LC0xMjY0NDQ0NzczXX0=
+eyJoaXN0b3J5IjpbMTgxMDU2ODk5MiwtMTc4MzQ2NzA0NywtMT
+E0Nzc4NDIzNiwtMTE3ODI3NTcyNSwxNjM0MDgxMTI3LDUwNDcx
+NDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3NzNdfQ==
 -->
