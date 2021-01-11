@@ -92,14 +92,16 @@ public void m(){
 * Lock/Sleep 방법 :: Object 클래스의 wait()와 notify()을 이용하여 동기화 성능을 향상시킴
 
 
+# 12장 자바 I/O
 
+자바 스트림은 자바 애플리케이션의 입장에서 데이터가 입력 / 출력해 주는 매개체와 같은 역할을 한다. 개발자는 각 장치에 해당하는 스트림의 사용방법만 
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDM4MzI5OTgsLTExNzgyNzU3MjUsMT
-YzNDA4MTEyNyw1MDQ3MTQ0NCwxOTY3Mjc4Nzc5LC0xMjY0NDQ0
-NzczXX0=
+eyJoaXN0b3J5IjpbLTIwNjkyNjMzNiwtMTE3ODI3NTcyNSwxNj
+M0MDgxMTI3LDUwNDcxNDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3
+NzNdfQ==
 -->
