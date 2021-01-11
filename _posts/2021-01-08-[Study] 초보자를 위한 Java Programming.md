@@ -136,15 +136,16 @@ public void m(){
 * java.io.BufferedInputStream :: 입력받은 데이터를 buffer에 저장한 후 가공할 수 있다.
 * java.io.DataInputStream :: 기본형 데이터를 입력받을 때 사용함
 
->OutputStream :: 
+>OutputStream 클래스 :: java.io.OutputStream :: byte 데이터를 출력하는 스트림 클래스의 최상위 추상 클래스
 
+* java.io.FileOutputStream :: 데이터를 파일로 출력하는 기
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTcyNDk3NDMsMTgxMDU2ODk5MiwtMT
-c4MzQ2NzA0NywtMTE0Nzc4NDIzNiwtMTE3ODI3NTcyNSwxNjM0
-MDgxMTI3LDUwNDcxNDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3Nz
-NdfQ==
+eyJoaXN0b3J5IjpbLTEzNTk4MDI3NjUsLTEzNTcyNDk3NDMsMT
+gxMDU2ODk5MiwtMTc4MzQ2NzA0NywtMTE0Nzc4NDIzNiwtMTE3
+ODI3NTcyNSwxNjM0MDgxMTI3LDUwNDcxNDQ0LDE5NjcyNzg3Nz
+ksLTEyNjQ0NDQ3NzNdfQ==
 -->
