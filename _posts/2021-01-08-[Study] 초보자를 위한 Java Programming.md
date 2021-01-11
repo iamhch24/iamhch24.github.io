@@ -138,13 +138,17 @@ public void m(){
 
 >OutputStream 클래스 :: java.io.OutputStream :: byte 데이터를 출력하는 스트림 클래스의 최상위 추상 클래스
 
-* java.io.FileOutputStream :: 데이터를 파일로 출력하는 기
+* java.io.FileOutputStream :: 데이터를 파일로 출력하는 기능을 하는 클래스
+* java.io.BufferedOutputStream :: 출력 데이터를 일단 buffer에 저장한 후 가공한다. flussh 기능을 이용하여 버퍼에 채워지지 않더라도 출력할 수 있다.
+* java.io.PrintStream :: 모든 데이터를 화면에 출력해주는 print(), println()을 정의한다.
+
+> Reader ::
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTk4MDI3NjUsLTEzNTcyNDk3NDMsMT
+eyJoaXN0b3J5IjpbLTE1MjEyNTAwODMsLTEzNTcyNDk3NDMsMT
 gxMDU2ODk5MiwtMTc4MzQ2NzA0NywtMTE0Nzc4NDIzNiwtMTE3
 ODI3NTcyNSwxNjM0MDgxMTI3LDUwNDcxNDQ0LDE5NjcyNzg3Nz
 ksLTEyNjQ0NDQ3NzNdfQ==
