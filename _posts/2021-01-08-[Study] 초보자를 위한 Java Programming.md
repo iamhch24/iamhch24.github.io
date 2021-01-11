@@ -94,14 +94,17 @@ public void m(){
 
 # 12장 자바 I/O
 
-자바 스트림은 자바 애플리케이션의 입장에서 데이터가 입력 / 출력해 주는 매개체와 같은 역할을 한다. 개발자는 각 장치에 해당하는 스트림의 사용방법만 
+> 자바 스트림 :: 자바의 입출력을 도와주는 매개체
+
+자바 스트림은 자바 애플리케이션의 입장에서 데이터가 입력 / 출력해 주는 매개체와 같은 역할을 한다. 개발자는 각 장치에 해당하는 스트림의 사용방법만 알면 된다. 
+입출력 기능뿐만 아니라 뒤에 배우는 대부분의 기능을 이러한 방식으로 세부적인 기능을 샙슐화시키면서 개발자에게는 해당 기능을 수행하는 클래스(API)를 제공하여 작업을 쉽게 할 수 있게 한다. 
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjkyNjMzNiwtMTE3ODI3NTcyNSwxNj
-M0MDgxMTI3LDUwNDcxNDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3
-NzNdfQ==
+eyJoaXN0b3J5IjpbLTEyNTA2MDkxODEsLTExNzgyNzU3MjUsMT
+YzNDA4MTEyNyw1MDQ3MTQ0NCwxOTY3Mjc4Nzc5LC0xMjY0NDQ0
+NzczXX0=
 -->
