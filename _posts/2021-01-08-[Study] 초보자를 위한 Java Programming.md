@@ -238,11 +238,18 @@ public class SimpleServer {
 }
 
 ```
+*위에서 보면 클라이언트와의 연결되어 소켓 객체가 생성된 후 OutputStream 객체를 얻고  OutputStreamWriter --> BufferedWriter --> PrintWiter --> println 순으로 데이터를 전송한다.
 
+>SimpleClient.java
+
+```Java
+
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNzk1NDUzMCwtMzU2NDc4MTE2LDE2Nz
-k4NDEyNjQsMTc0MDAwNDI5OCwtNDQxODc4OTQ1LC0xMzU3MjQ5
-NzQzLDE4MTA1Njg5OTIsLTE3ODM0NjcwNDcsLTExNDc3ODQyMz
-YsLTExNzgyNzU3MjUsMTYzNDA4MTEyNyw1MDQ3MTQ0NCwxOTY3
-Mjc4Nzc5LC0xMjY0NDQ0NzczXX0=
+eyJoaXN0b3J5IjpbLTIwMzM2NzIyNDIsLTM1NjQ3ODExNiwxNj
+c5ODQxMjY0LDE3NDAwMDQyOTgsLTQ0MTg3ODk0NSwtMTM1NzI0
+OTc0MywxODEwNTY4OTkyLC0xNzgzNDY3MDQ3LC0xMTQ3Nzg0Mj
+M2LC0xMTc4Mjc1NzI1LDE2MzQwODExMjcsNTA0NzE0NDQsMTk2
+NzI3ODc3OSwtMTI2NDQ0NDc3M119
 -->
