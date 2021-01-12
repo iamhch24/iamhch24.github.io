@@ -384,20 +384,21 @@ public int compareTo(object o){
 1 은닉화 효과가 있음. 내부적으로 구현되기 때문에 외부에서는 볼 수가 없음. 노출이 안됨
 2 주로 자바 화면에서 사용자가 발생시킨 이벤트를 처리하는 이벤트 핸들러로 사용함 (익명 내부 클래스)
 
-### 내부 클래스 종류
+### 내부 클래스 종류와 생성 방법
 * 인스턴스 내부 클래스 :: 외부 클래스를 먼저 만든 후 내부 클래스 생성됨
 * 정적 내부 클래스 :: 외부 클래스와 무관하게 생성됨
 * 지역 내부 클래스 :: 메서드를 호출할 때 생성됨
-* 익명 내부 클래스 ::
+* 익명 내부 클래스 :: 메서드를 호출할 때 생성되거나, 인터페이스 타입 변수에 대입할 때 new 예약어를 사용하여 생성됨
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzY4MzgyNTgsMTU4MzYxNTIyNiwtMT
-c5NzcyNzQ5MywxNDg1ODM4MDksMjEzODIzMTM4NCwyMDY3Mzc1
-OTc0LDE3MTUyNTE1NzUsMjQyODU3MTUzLC0xMDc0NjE1MDA5LC
-0xODAzMzc3MTYyLC0xMTA0MDYwNjY3LC0xNzMwNDQ0MjY2LC0x
-MjUxMTQ5NDEsLTk3MzM3NzAwMCwyMDMwNDc4NTIsMTY1MTQ0OD
-Q3MCwxMTY5ODUyMjMsNTI1ODE1NTQwLDEzMzg0NjkxNDQsODEw
-MDY5MjA1XX0=
+eyJoaXN0b3J5IjpbMTAwNjk5MTgwNiwxNTgzNjE1MjI2LC0xNz
+k3NzI3NDkzLDE0ODU4MzgwOSwyMTM4MjMxMzg0LDIwNjczNzU5
+NzQsMTcxNTI1MTU3NSwyNDI4NTcxNTMsLTEwNzQ2MTUwMDksLT
+E4MDMzNzcxNjIsLTExMDQwNjA2NjcsLTE3MzA0NDQyNjYsLTEy
+NTExNDk0MSwtOTczMzc3MDAwLDIwMzA0Nzg1MiwxNjUxNDQ4ND
+cwLDExNjk4NTIyMyw1MjU4MTU1NDAsMTMzODQ2OTE0NCw4MTAw
+NjkyMDVdfQ==
 -->
