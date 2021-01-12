@@ -332,10 +332,17 @@ public class SerServer {
 	}
 }
 ```
+* 서버쪽에서 소캣 생성 후 outputStream 객체를 받고 ObjectOuputStream (객체 직렬화 스트림)--> writeObject() 로 객체 (Employee)를 전송한다.
 
+> SerClient.java
+
+```Java
+
+
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4OTAxODcyMiwtMzU2NDc4MTE2LDE2Nz
+eyJoaXN0b3J5IjpbMTc3MzQ5MDU3OSwtMzU2NDc4MTE2LDE2Nz
 k4NDEyNjQsMTc0MDAwNDI5OCwtNDQxODc4OTQ1LC0xMzU3MjQ5
 NzQzLDE4MTA1Njg5OTIsLTE3ODM0NjcwNDcsLTExNDc3ODQyMz
 YsLTExNzgyNzU3MjUsMTYzNDA4MTEyNyw1MDQ3MTQ0NCwxOTY3
