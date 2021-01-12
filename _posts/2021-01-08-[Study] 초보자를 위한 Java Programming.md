@@ -374,13 +374,55 @@ public class SerClient {
 > SimpleServer.java
 
 ```Java
+package sec13.ex03;
+
+import java.net.*;
+import java.io.*;
+
+public class SimpleServer {
+	public static void main(String args[]) {
+		try {
+			System.out.println("서비스하기위해 준비중입니다.");
+			ServerSocket s = new ServerSocket(5434);
+			System.out.println("서버가 동작중입니다.");
+
+			Socket s1 = s.accept(); // 클라이언트의 접속을 허락한다.
+			BufferedReader in = new BufferedReader(new InputStreamReader(System.in)); // 키보드로 문자열 입력
+
+			ObjectInputStream ois = new ObjectInputStream(s1.getInputStream()); // 객체입출력 스트림을 생성
+			ObjectOutputStream oos = new ObjectOutputStream(s1.getOutputStream());
+
+			oos.writeObject("Simple server에 접속하신걸 환영합니다.!!");
+			while (true) {
+
+				System.out.println((String) ois.readObject()); // 클라이언트에서 전송된 데이터를 출력한다.
+
+				System.out.print("<Server> :");
+				String temp = in.readLine();
+				if (temp.equals("exit")) {
+					System.out.println("bye");
+					break;
+				}
+				oos.writeObject("<Server> :" + temp); // 입력한 문자열을 클라이언트로 전송한다.
+			}
+			oos.close();
+			s1.close();
+		} catch (ClassNotFoundException eof) {
+			System.out.println("Client로 부터 연결이 끊어졌습니다. 종료합니다...");
+			System.exit(0);
+		} catch (IOException io) {
+			io.printStackTrace();
+		}
+	}
+}
 
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE1NjUzMDQ3LDI1NzQyNzY5OCwtMzU2ND
-c4MTE2LDE2Nzk4NDEyNjQsMTc0MDAwNDI5OCwtNDQxODc4OTQ1
-LC0xMzU3MjQ5NzQzLDE4MTA1Njg5OTIsLTE3ODM0NjcwNDcsLT
-ExNDc3ODQyMzYsLTExNzgyNzU3MjUsMTYzNDA4MTEyNyw1MDQ3
-MTQ0NCwxOTY3Mjc4Nzc5LC0xMjY0NDQ0NzczXX0=
+eyJoaXN0b3J5IjpbLTE2NjYzMjgwNjIsMzE1NjUzMDQ3LDI1Nz
+QyNzY5OCwtMzU2NDc4MTE2LDE2Nzk4NDEyNjQsMTc0MDAwNDI5
+OCwtNDQxODc4OTQ1LC0xMzU3MjQ5NzQzLDE4MTA1Njg5OTIsLT
+E3ODM0NjcwNDcsLTExNDc3ODQyMzYsLTExNzgyNzU3MjUsMTYz
+NDA4MTEyNyw1MDQ3MTQ0NCwxOTY3Mjc4Nzc5LC0xMjY0NDQ0Nz
+czXX0=
 -->
