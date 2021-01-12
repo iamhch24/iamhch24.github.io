@@ -551,13 +551,68 @@ public class SimpleServer {
 		}
 	}
 }
+```
+
+>SimpleClient.java
+
+```Java
+package sec13.ex04;
+
+import java.io.*;
+import java.net.*;
+
+public class SimpleClient {
+	public static void main(String[] args) {
+		OutputStream os;
+		BufferedReader br_in;
+		BufferedWriter bw = null;
+		PrintWriter pw = null;
+		String outMessage = null;
+
+		try {
+			Socket s1 = new Socket("127.0.0.1", 5434);
+			os = s1.getOutputStream();
+			// 메시지 수신을 위한 쓰레드를 생성후 실행
+			RecvThread rThread = new RecvThread(s1);
+			rThread.start();
+
+			br_in = new BufferedReader(new InputStreamReader(System.in));
+			bw = new BufferedWriter(new OutputStreamWriter(os));
+			pw = new PrintWriter(bw, true); // 자동으로 flush 한다.
+			while (true) {
+				outMessage = br_in.readLine();
+				if (outMessage.equals("exit"))
+					break;
+				pw.println("client: " + outMessage);
+
+			}
+			pw.close();
+			s1.close();
+
+			if (rThread.isAlive()) {
+				rThread.interrupt();
+				rThread = null;
+			}
+
+		} catch (SocketException e) {
+			System.out.println("서버로 부터 연결이 끊어졌습니다. 종료합니다...");
+			System.exit(0);
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.exit(0);
+		}
+	}
+
+}
 
 ```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyODA0Njg0NSw4NDMxODk1OSwtMTY2Nj
-MyODA2MiwzMTU2NTMwNDcsMjU3NDI3Njk4LC0zNTY0NzgxMTYs
-MTY3OTg0MTI2NCwxNzQwMDA0Mjk4LC00NDE4Nzg5NDUsLTEzNT
-cyNDk3NDMsMTgxMDU2ODk5MiwtMTc4MzQ2NzA0NywtMTE0Nzc4
-NDIzNiwtMTE3ODI3NTcyNSwxNjM0MDgxMTI3LDUwNDcxNDQ0LD
-E5NjcyNzg3NzksLTEyNjQ0NDQ3NzNdfQ==
+eyJoaXN0b3J5IjpbLTE4OTIzMDQyOTgsODQzMTg5NTksLTE2Nj
+YzMjgwNjIsMzE1NjUzMDQ3LDI1NzQyNzY5OCwtMzU2NDc4MTE2
+LDE2Nzk4NDEyNjQsMTc0MDAwNDI5OCwtNDQxODc4OTQ1LC0xMz
+U3MjQ5NzQzLDE4MTA1Njg5OTIsLTE3ODM0NjcwNDcsLTExNDc3
+ODQyMzYsLTExNzgyNzU3MjUsMTYzNDA4MTEyNyw1MDQ3MTQ0NC
+wxOTY3Mjc4Nzc5LC0xMjY0NDQ0NzczXX0=
 -->
