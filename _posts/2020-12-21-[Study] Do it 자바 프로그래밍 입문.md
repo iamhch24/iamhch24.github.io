@@ -385,19 +385,19 @@ public int compareTo(object o){
 2 주로 자바 화면에서 사용자가 발생시킨 이벤트를 처리하는 이벤트 핸들러로 사용함 (익명 내부 클래스)
 
 ### 내부 클래스 종류
-* 인스턴스 내부 클래스
-* 정적 내부 클래스
-* 지역 내부 클래스
-* 익명 내부 클래스
+* 인스턴스 내부 클래스 :: 외부 클래스를 먼저 만든 후 내부 클래스 생성됨
+* 정적 내부 클래스 :: 외부 클래스와 무관하게 생성됨
+* 지역 내부 클래스 :: 메서드를 호출할 때 생성됨
+* 익명 내부 클래스 ::
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MzYxNTIyNiwtMTc5NzcyNzQ5MywxND
-g1ODM4MDksMjEzODIzMTM4NCwyMDY3Mzc1OTc0LDE3MTUyNTE1
-NzUsMjQyODU3MTUzLC0xMDc0NjE1MDA5LC0xODAzMzc3MTYyLC
-0xMTA0MDYwNjY3LC0xNzMwNDQ0MjY2LC0xMjUxMTQ5NDEsLTk3
-MzM3NzAwMCwyMDMwNDc4NTIsMTY1MTQ0ODQ3MCwxMTY5ODUyMj
-MsNTI1ODE1NTQwLDEzMzg0NjkxNDQsODEwMDY5MjA1LDEzOTQ1
-MjY4NThdfQ==
+eyJoaXN0b3J5IjpbLTEyMzY4MzgyNTgsMTU4MzYxNTIyNiwtMT
+c5NzcyNzQ5MywxNDg1ODM4MDksMjEzODIzMTM4NCwyMDY3Mzc1
+OTc0LDE3MTUyNTE1NzUsMjQyODU3MTUzLC0xMDc0NjE1MDA5LC
+0xODAzMzc3MTYyLC0xMTA0MDYwNjY3LC0xNzMwNDQ0MjY2LC0x
+MjUxMTQ5NDEsLTk3MzM3NzAwMCwyMDMwNDc4NTIsMTY1MTQ0OD
+Q3MCwxMTY5ODUyMjMsNTI1ODE1NTQwLDEzMzg0NjkxNDQsODEw
+MDY5MjA1XX0=
 -->
