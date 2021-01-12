@@ -710,10 +710,81 @@ public class SimpleClient {
 
 ```
 
+```Java
+package sec13.ex04;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.lang.reflect.Field;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.net.SocketException;
+import java.nio.charset.Charset;
+
+
+public class SimpleServer {
+	public static void main(String[] args) {
+		BufferedReader br_out;
+		BufferedWriter bw;
+		PrintWriter pw = null;
+		OutputStream os;
+		ServerSocket serverSocket;
+		Socket s1 = null;
+		String outMessage = null;
+
+		
+		try {
+			System.setProperty("file.encoding","UTF-8");
+			Field charset = Charset.class.getDeclaredField("defaultCharset");
+			charset.setAccessible(true);
+			charset.set(null,null);
+
+			
+			serverSocket = new ServerSocket(5434);
+			System.out.println("서버 실행 중...");
+			s1 = serverSocket.accept();
+			os = s1.getOutputStream();
+
+			// 메시지 수신을 위한 쓰레드를 생성후 실행
+			RecvThread rThread = new RecvThread(s1);
+			rThread.start();
+
+			br_out = new BufferedReader(new InputStreamReader(System.in, "UTF-8"));
+			bw = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+			pw = new PrintWriter(bw, true); // 자동으로 flush 한다.
+			pw.println("server: 접속을 환영합니다.");
+			while (true) {
+				outMessage = br_out.readLine();
+				if (outMessage.equals("exit"))
+					break;
+				pw.println("server: " + outMessage);
+			}
+			pw.close();
+			s1.close();
+
+			if (rThread.isAlive()) {
+				rThread.interrupt();
+				rThread = null;
+			}
+		} catch (SocketException e) {
+			System.out.println("클라이언트로 부터 연결이 끊어졌습니다. 종료합니다...");
+			System.exit(0);
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.exit(0);
+		}
+	}
+}
+
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MjMxNTg0MCwyMjI5NjgzMTMsODQzMT
+eyJoaXN0b3J5IjpbMTA4NDY3Mzc0OCwyMjI5NjgzMTMsODQzMT
 g5NTksLTE2NjYzMjgwNjIsMzE1NjUzMDQ3LDI1NzQyNzY5OCwt
 MzU2NDc4MTE2LDE2Nzk4NDEyNjQsMTc0MDAwNDI5OCwtNDQxOD
 c4OTQ1LC0xMzU3MjQ5NzQzLDE4MTA1Njg5OTIsLTE3ODM0Njcw
