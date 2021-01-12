@@ -172,13 +172,16 @@ public void m(){
 > 역직렬화 시 주의할 점
 * 역직렬화 시 다운캐스팅하는 클래스 타입은 직렬화 시 사용된 클래스와 일치하는 클래스로 수행해야 한다.
 
+# 13장 네트워크
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MDAwNDI5OCwtNDQxODc4OTQ1LC0xMz
-U3MjQ5NzQzLDE4MTA1Njg5OTIsLTE3ODM0NjcwNDcsLTExNDc3
-ODQyMzYsLTExNzgyNzU3MjUsMTYzNDA4MTEyNyw1MDQ3MTQ0NC
-wxOTY3Mjc4Nzc5LC0xMjY0NDQ0NzczXX0=
+eyJoaXN0b3J5IjpbLTEzODU0NDY3NjAsMTc0MDAwNDI5OCwtND
+QxODc4OTQ1LC0xMzU3MjQ5NzQzLDE4MTA1Njg5OTIsLTE3ODM0
+NjcwNDcsLTExNDc3ODQyMzYsLTExNzgyNzU3MjUsMTYzNDA4MT
+EyNyw1MDQ3MTQ0NCwxOTY3Mjc4Nzc5LC0xMjY0NDQ0NzczXX0=
+
 -->
