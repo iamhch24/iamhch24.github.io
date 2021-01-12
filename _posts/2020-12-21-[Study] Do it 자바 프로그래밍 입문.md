@@ -382,14 +382,22 @@ public int compareTo(object o){
 
 ### 내부클래스를 사용하는 이유
 1 은닉화 효과가 있음. 내부적으로 구현되기 때문에 외부에서는 볼 수가 없음. 노출이 안됨
-2 주로 자바 화면에
+2 주로 자바 화면에서 사용자가 발생시킨 이벤트를 처리하는 이벤트 핸들러로 사용함 (익명 내부 클래스)
+
+### 내부 클래스 종류
+* 인스턴스 내부 클래스
+* 정적 내부 클래스
+* 지역 내부 클래스
+* 익명 내부 클래스
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ1OTcyODU5LC0xNzk3NzI3NDkzLDE0OD
-U4MzgwOSwyMTM4MjMxMzg0LDIwNjczNzU5NzQsMTcxNTI1MTU3
-NSwyNDI4NTcxNTMsLTEwNzQ2MTUwMDksLTE4MDMzNzcxNjIsLT
-ExMDQwNjA2NjcsLTE3MzA0NDQyNjYsLTEyNTExNDk0MSwtOTcz
-Mzc3MDAwLDIwMzA0Nzg1MiwxNjUxNDQ4NDcwLDExNjk4NTIyMy
-w1MjU4MTU1NDAsMTMzODQ2OTE0NCw4MTAwNjkyMDUsMTM5NDUy
-Njg1OF19
+eyJoaXN0b3J5IjpbMTU4MzYxNTIyNiwtMTc5NzcyNzQ5MywxND
+g1ODM4MDksMjEzODIzMTM4NCwyMDY3Mzc1OTc0LDE3MTUyNTE1
+NzUsMjQyODU3MTUzLC0xMDc0NjE1MDA5LC0xODAzMzc3MTYyLC
+0xMTA0MDYwNjY3LC0xNzMwNDQ0MjY2LC0xMjUxMTQ5NDEsLTk3
+MzM3NzAwMCwyMDMwNDc4NTIsMTY1MTQ0ODQ3MCwxMTY5ODUyMj
+MsNTI1ODE1NTQwLDEzMzg0NjkxNDQsODEwMDY5MjA1LDEzOTQ1
+MjY4NThdfQ==
 -->
