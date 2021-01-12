@@ -194,12 +194,13 @@ JVM과 JVM 사이의 통신을 의미한다. JVM이 다른 원격지에 위치�
 * 서버 기능 (java.net.ServerSocket 클래스) :: 서버는 항상 실행되어 있어야 한다. 다수의 클라이언트 요청을 동시에 처리한다. 자바 Stream 클래스를 이용하여 통신한다.
 
 
-
+```Java
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3OTg0MTI2NCwxNzQwMDA0Mjk4LC00ND
-E4Nzg5NDUsLTEzNTcyNDk3NDMsMTgxMDU2ODk5MiwtMTc4MzQ2
-NzA0NywtMTE0Nzc4NDIzNiwtMTE3ODI3NTcyNSwxNjM0MDgxMT
-I3LDUwNDcxNDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3NzNdfQ==
-
+eyJoaXN0b3J5IjpbLTM4MDI1MDA0NCwxNjc5ODQxMjY0LDE3ND
+AwMDQyOTgsLTQ0MTg3ODk0NSwtMTM1NzI0OTc0MywxODEwNTY4
+OTkyLC0xNzgzNDY3MDQ3LC0xMTQ3Nzg0MjM2LC0xMTc4Mjc1Nz
+I1LDE2MzQwODExMjcsNTA0NzE0NDQsMTk2NzI3ODc3OSwtMTI2
+NDQ0NDc3M119
 -->
