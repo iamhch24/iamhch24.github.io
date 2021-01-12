@@ -178,12 +178,14 @@ public void m(){
 JVM과 JVM 사이의 통신을 의미한다. JVM이 다른 원격지에 위치하면 일반적인 네트워크 통신과 같지만, 하나의 PC에서 2개의 JVM이 통신을 할 수도 있다.
 
 ### 네트워크 통신 구성요소
-* 
+* IP 주소 + 도메인네임
+* 포트 번호 :: 하나의 컴퓨터에서 여러 프로세스를 구분하는 번호. 포트 번호는 0~65535번까지 할당 할 수 있으며, 0~1023까지는 시스템에서 사용함. ex) 80(HTTP), 21(FTP), 23(TELNET)
+* 프로토콜 :: 여러 다른 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NDA2NjkwNywxNzQwMDA0Mjk4LC00ND
+eyJoaXN0b3J5IjpbMTE2Nzg5ODcyOCwxNzQwMDA0Mjk4LC00ND
 E4Nzg5NDUsLTEzNTcyNDk3NDMsMTgxMDU2ODk5MiwtMTc4MzQ2
 NzA0NywtMTE0Nzc4NDIzNiwtMTE3ODI3NTcyNSwxNjM0MDgxMT
 I3LDUwNDcxNDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3NzNdfQ==
