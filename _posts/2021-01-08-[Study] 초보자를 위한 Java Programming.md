@@ -608,7 +608,8 @@ public class SimpleClient {
 ```
 
 * 문제가 생긴 것은 통신하면서 한글이 깨지는 현상이다. 어떻게 인코딩을 맞춰줄 수 있을까???
-⇒ 아래와 같이 인코딩을 맞추어 보지만 결국 실행 환경의 인코딩을 전부 맞추지 않는 한 결국 깨짐이 발생할 수 밖에 없다.
+⇒ 아래와 같이 인코딩을 맞추어 보지만 결국 실행 환경의 인코딩을 전부 맞추지 않는 한 결국 깨짐이 발생할 수 밖에 없다. 이클립스 환경까지 맞추어 주니 되었다. 이클립스 환경은 preference와 프로젝트 리소스까지 맞춰줘야 한다. 
+이클립스 인코딩 서ㅏㄹ참고 :: https://sesok808.tistory.com/357
 
 ```Java
 package sec13.ex04;
@@ -784,10 +785,11 @@ public class SimpleServer {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NDY3Mzc0OCwyMjI5NjgzMTMsODQzMT
-g5NTksLTE2NjYzMjgwNjIsMzE1NjUzMDQ3LDI1NzQyNzY5OCwt
-MzU2NDc4MTE2LDE2Nzk4NDEyNjQsMTc0MDAwNDI5OCwtNDQxOD
-c4OTQ1LC0xMzU3MjQ5NzQzLDE4MTA1Njg5OTIsLTE3ODM0Njcw
-NDcsLTExNDc3ODQyMzYsLTExNzgyNzU3MjUsMTYzNDA4MTEyNy
-w1MDQ3MTQ0NCwxOTY3Mjc4Nzc5LC0xMjY0NDQ0NzczXX0=
+eyJoaXN0b3J5IjpbLTE5NTE0NzQ4ODMsMTA4NDY3Mzc0OCwyMj
+I5NjgzMTMsODQzMTg5NTksLTE2NjYzMjgwNjIsMzE1NjUzMDQ3
+LDI1NzQyNzY5OCwtMzU2NDc4MTE2LDE2Nzk4NDEyNjQsMTc0MD
+AwNDI5OCwtNDQxODc4OTQ1LC0xMzU3MjQ5NzQzLDE4MTA1Njg5
+OTIsLTE3ODM0NjcwNDcsLTExNDc3ODQyMzYsLTExNzgyNzU3Mj
+UsMTYzNDA4MTEyNyw1MDQ3MTQ0NCwxOTY3Mjc4Nzc5LC0xMjY0
+NDQ0NzczXX0=
 -->
