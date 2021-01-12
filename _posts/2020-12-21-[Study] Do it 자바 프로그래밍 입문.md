@@ -378,14 +378,18 @@ public int compareTo(object o){
 참고 :: https://www.daleseo.com/java-comparable-comparator/
 
 
+# 13장 내부클래스, 람다식, 스트림
 
+### 내부클래스를 사용하는 이유
+1 은닉화 효과가 있음. 내부적으로 구현되기 때문에 외부에서는 볼 수가 없음. 노출이 안됨
+2 주로 자바 화면에
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTc3Mjc0OTMsMTQ4NTgzODA5LDIxMz
-gyMzEzODQsMjA2NzM3NTk3NCwxNzE1MjUxNTc1LDI0Mjg1NzE1
-MywtMTA3NDYxNTAwOSwtMTgwMzM3NzE2MiwtMTEwNDA2MDY2Ny
-wtMTczMDQ0NDI2NiwtMTI1MTE0OTQxLC05NzMzNzcwMDAsMjAz
-MDQ3ODUyLDE2NTE0NDg0NzAsMTE2OTg1MjIzLDUyNTgxNTU0MC
-wxMzM4NDY5MTQ0LDgxMDA2OTIwNSwxMzk0NTI2ODU4LC0yNDE5
-NzEwMjFdfQ==
+eyJoaXN0b3J5IjpbNTQ1OTcyODU5LC0xNzk3NzI3NDkzLDE0OD
+U4MzgwOSwyMTM4MjMxMzg0LDIwNjczNzU5NzQsMTcxNTI1MTU3
+NSwyNDI4NTcxNTMsLTEwNzQ2MTUwMDksLTE4MDMzNzcxNjIsLT
+ExMDQwNjA2NjcsLTE3MzA0NDQyNjYsLTEyNTExNDk0MSwtOTcz
+Mzc3MDAwLDIwMzA0Nzg1MiwxNjUxNDQ4NDcwLDExNjk4NTIyMy
+w1MjU4MTU1NDAsMTMzODQ2OTE0NCw4MTAwNjkyMDUsMTM5NDUy
+Njg1OF19
 -->
