@@ -217,11 +217,12 @@ public class SimpleServer {
 			System.out.println("서버 실행 중... ");
 
 			while (true) {
+			while (true) {
 				// 클라이언트의 접속을 인지 시에 accept()메소드를 호출해서 소켓 객체를 생성한다.
-				s1 = serverSocket.accept();
+				s1 = serverSocket.accept(); // 클라이언트와의 연결된 소켓 객체를 생성
 
-				os = s1.getOutputStream();
-				ipAddrs = s1.getInetAddress();
+				os = s1.getOutputStream();  // 클라이언트의 OutputStream 객체를 얻는다.
+				ipAddrs = s1.getInetAddress();  // 클라이언트의 인터넷 주소를 얻는다.
 
 				connectedClient = ipAddrs.toString();
 				bw = new BufferedWriter(new OutputStreamWriter(os));
@@ -239,9 +240,9 @@ public class SimpleServer {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NjQ3ODExNiwxNjc5ODQxMjY0LDE3ND
-AwMDQyOTgsLTQ0MTg3ODk0NSwtMTM1NzI0OTc0MywxODEwNTY4
-OTkyLC0xNzgzNDY3MDQ3LC0xMTQ3Nzg0MjM2LC0xMTc4Mjc1Nz
-I1LDE2MzQwODExMjcsNTA0NzE0NDQsMTk2NzI3ODc3OSwtMTI2
-NDQ0NDc3M119
+eyJoaXN0b3J5IjpbMTAyNzk1NDUzMCwtMzU2NDc4MTE2LDE2Nz
+k4NDEyNjQsMTc0MDAwNDI5OCwtNDQxODc4OTQ1LC0xMzU3MjQ5
+NzQzLDE4MTA1Njg5OTIsLTE3ODM0NjcwNDcsLTExNDc3ODQyMz
+YsLTExNzgyNzU3MjUsMTYzNDA4MTEyNyw1MDQ3MTQ0NCwxOTY3
+Mjc4Nzc5LC0xMjY0NDQ0NzczXX0=
 -->
