@@ -174,14 +174,18 @@ public void m(){
 
 # 13장 네트워크
 
+### 자바에서 네트워크 통신이란?
+JVM과 JVM 사이의 통신을 의미한다. JVM이 다른 원격지에 위치하면 일반적인 네트워크 통신과 같지만, 하나의 PC에서 2개의 JVM이 통신을 할 수도 있다.
 
+### 네트워크 통신 구성요소
+* 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODU0NDY3NjAsMTc0MDAwNDI5OCwtND
-QxODc4OTQ1LC0xMzU3MjQ5NzQzLDE4MTA1Njg5OTIsLTE3ODM0
-NjcwNDcsLTExNDc3ODQyMzYsLTExNzgyNzU3MjUsMTYzNDA4MT
-EyNyw1MDQ3MTQ0NCwxOTY3Mjc4Nzc5LC0xMjY0NDQ0NzczXX0=
+eyJoaXN0b3J5IjpbMTE2NDA2NjkwNywxNzQwMDA0Mjk4LC00ND
+E4Nzg5NDUsLTEzNTcyNDk3NDMsMTgxMDU2ODk5MiwtMTc4MzQ2
+NzA0NywtMTE0Nzc4NDIzNiwtMTE3ODI3NTcyNSwxNjM0MDgxMT
+I3LDUwNDcxNDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3NzNdfQ==
 
 -->
