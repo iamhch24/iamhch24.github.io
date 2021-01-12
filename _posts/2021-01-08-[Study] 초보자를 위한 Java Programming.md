@@ -431,9 +431,7 @@ public class SimpleClient {
 		}
 		try {
 			Socket s1 = new Socket(args[0], 5434); // 소켓 객체를 생성한다.
-
 			BufferedReader in = new BufferedReader(new InputStreamReader(System.in)); // 키보드로 문자열을 입력 받는다.
-
 			ObjectOutputStream oos = new ObjectOutputStream(s1.getOutputStream()); // 네트워크로 입,출력을 위해서 객체 입출력 스트림을 생성한다.
 			ObjectInputStream ois = new ObjectInputStream(s1.getInputStream());
 			System.out.println("접속완료..");
@@ -460,13 +458,14 @@ public class SimpleClient {
 		}
 	}
 }
-
 ```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTU5MzcyNywtMTY2NjMyODA2MiwzMT
-U2NTMwNDcsMjU3NDI3Njk4LC0zNTY0NzgxMTYsMTY3OTg0MTI2
-NCwxNzQwMDA0Mjk4LC00NDE4Nzg5NDUsLTEzNTcyNDk3NDMsMT
-gxMDU2ODk5MiwtMTc4MzQ2NzA0NywtMTE0Nzc4NDIzNiwtMTE3
-ODI3NTcyNSwxNjM0MDgxMTI3LDUwNDcxNDQ0LDE5NjcyNzg3Nz
-ksLTEyNjQ0NDQ3NzNdfQ==
+eyJoaXN0b3J5IjpbODQzMTg5NTksLTE2NjYzMjgwNjIsMzE1Nj
+UzMDQ3LDI1NzQyNzY5OCwtMzU2NDc4MTE2LDE2Nzk4NDEyNjQs
+MTc0MDAwNDI5OCwtNDQxODc4OTQ1LC0xMzU3MjQ5NzQzLDE4MT
+A1Njg5OTIsLTE3ODM0NjcwNDcsLTExNDc3ODQyMzYsLTExNzgy
+NzU3MjUsMTYzNDA4MTEyNyw1MDQ3MTQ0NCwxOTY3Mjc4Nzc5LC
+0xMjY0NDQ0NzczXX0=
 -->
