@@ -383,7 +383,7 @@ public int compareTo(object o){
 ### 내부클래스를 사용하는 이유
 1 은닉화 효과가 있음. 내부적으로 구현되기 때문에 외부에서는 볼 수가 없음. 노출이 안됨
 2 주로 자바 화면에서 사용자가 발생시킨 이벤트를 처리하는 이벤트 핸들러로 사용함 (익명 내부 클래스)
-3 마치 외부 클래스를 상속해서 내부 클래스에서 확장하듯이 사용함. ex) 외부클래스인스턴스.내부클래스메서드(); 호출 가능
+3 마치 외부 클래스를 상속해서 내부 클래스에서 확장하듯이 사용함. -- 약간 싱글턴 느낌이 남
 
 ### 내부 클래스 종류와 생성 방법
 * 인스턴스 내부 클래스 :: 외부 클래스를 먼저 만든 후 내부 클래스 생성됨
@@ -395,11 +395,11 @@ public int compareTo(object o){
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MDA2NjUzOCwxMDA2OTkxODA2LDE1OD
-M2MTUyMjYsLTE3OTc3Mjc0OTMsMTQ4NTgzODA5LDIxMzgyMzEz
-ODQsMjA2NzM3NTk3NCwxNzE1MjUxNTc1LDI0Mjg1NzE1MywtMT
-A3NDYxNTAwOSwtMTgwMzM3NzE2MiwtMTEwNDA2MDY2NywtMTcz
-MDQ0NDI2NiwtMTI1MTE0OTQxLC05NzMzNzcwMDAsMjAzMDQ3OD
-UyLDE2NTE0NDg0NzAsMTE2OTg1MjIzLDUyNTgxNTU0MCwxMzM4
-NDY5MTQ0XX0=
+eyJoaXN0b3J5IjpbLTk4MzQ5MjkwNywxOTUwMDY2NTM4LDEwMD
+Y5OTE4MDYsMTU4MzYxNTIyNiwtMTc5NzcyNzQ5MywxNDg1ODM4
+MDksMjEzODIzMTM4NCwyMDY3Mzc1OTc0LDE3MTUyNTE1NzUsMj
+QyODU3MTUzLC0xMDc0NjE1MDA5LC0xODAzMzc3MTYyLC0xMTA0
+MDYwNjY3LC0xNzMwNDQ0MjY2LC0xMjUxMTQ5NDEsLTk3MzM3Nz
+AwMCwyMDMwNDc4NTIsMTY1MTQ0ODQ3MCwxMTY5ODUyMjMsNTI1
+ODE1NTQwXX0=
 -->
