@@ -183,13 +183,17 @@ JVM과 JVM 사이의 통신을 의미한다. JVM이 다른 원격지에 위치�
 * 프로토콜 :: 클라이언트와 서버 간의 일정한 방식으로 통신하기 위한 규약이다. 상호간의 접속방식, 데이터 형식, 오류 검출 방식 등을 표준화 한 후 통신한다.
 
 ### 자바의 네트워크 통신 구현 기술
-* java SE :: 소켓 통신, RMI (Remote Method Invoc
+* java SE :: 소켓 통신, RMI (Remote Method Invocation)
+* java EE :: 웹 기술(JSP&Servlet), Web Service 기술
+
+### 자바 소켓 통신
+* 소켓 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNTIzNzE2OCwxNzQwMDA0Mjk4LC00ND
-E4Nzg5NDUsLTEzNTcyNDk3NDMsMTgxMDU2ODk5MiwtMTc4MzQ2
-NzA0NywtMTE0Nzc4NDIzNiwtMTE3ODI3NTcyNSwxNjM0MDgxMT
-I3LDUwNDcxNDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3NzNdfQ==
+eyJoaXN0b3J5IjpbLTE1NjkwNzE0ODcsMTc0MDAwNDI5OCwtND
+QxODc4OTQ1LC0xMzU3MjQ5NzQzLDE4MTA1Njg5OTIsLTE3ODM0
+NjcwNDcsLTExNDc3ODQyMzYsLTExNzgyNzU3MjUsMTYzNDA4MT
+EyNyw1MDQ3MTQ0NCwxOTY3Mjc4Nzc5LC0xMjY0NDQ0NzczXX0=
 
 -->
