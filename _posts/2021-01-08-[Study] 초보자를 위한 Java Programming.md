@@ -275,7 +275,8 @@ public class SimpleClient {
 
 ### 객체 직렬화
 
-> Employee.java :: Serializable을 구현한다.
+> Employee.java :: Serializable 인터페이스를 구현한다.
+
 ```Java
 package sec13.ex02;
 
@@ -297,10 +298,46 @@ public class Employee implements Serializable {
 	}
 ```
 
+> SerServer.java 
+
+```Java
+package sec13.ex02;
+
+import java.net.*;
+import java.io.*;
+
+public class SerServer {
+	public static void main(String args[]) {
+		ServerSocket s = null;
+
+		try {
+			s = new ServerSocket(5433);
+		} catch (IOException e) {
+		}
+
+		while (true) {
+			try {
+				System.out.println("서버 실행 중!!!!");
+				Socket s1 = s.accept();
+				OutputStream out = s1.getOutputStream();
+				ObjectOutputStream dos = new ObjectOutputStream(out); // 객체를 출력할 스트림 생성
+				Employee p = new Employee("박지성", "서울시 강남구", "111111-2222222", "123-1234");
+				dos.writeObject(p); // 객체를 전송함
+				dos.close();
+				s1.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzcxNjQ4Nzg1LC0zNTY0NzgxMTYsMTY3OT
-g0MTI2NCwxNzQwMDA0Mjk4LC00NDE4Nzg5NDUsLTEzNTcyNDk3
-NDMsMTgxMDU2ODk5MiwtMTc4MzQ2NzA0NywtMTE0Nzc4NDIzNi
-wtMTE3ODI3NTcyNSwxNjM0MDgxMTI3LDUwNDcxNDQ0LDE5Njcy
-Nzg3NzksLTEyNjQ0NDQ3NzNdfQ==
+eyJoaXN0b3J5IjpbLTc4OTAxODcyMiwtMzU2NDc4MTE2LDE2Nz
+k4NDEyNjQsMTc0MDAwNDI5OCwtNDQxODc4OTQ1LC0xMzU3MjQ5
+NzQzLDE4MTA1Njg5OTIsLTE3ODM0NjcwNDcsLTExNDc3ODQyMz
+YsLTExNzgyNzU3MjUsMTYzNDA4MTEyNyw1MDQ3MTQ0NCwxOTY3
+Mjc4Nzc5LC0xMjY0NDQ0NzczXX0=
 -->
