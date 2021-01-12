@@ -460,12 +460,48 @@ public class SimpleClient {
 }
 ```
 
+### 쓰레드를 이용한 채팅 프로그램
 
+>RecvThread.java
+
+```Java
+package sec13.ex04;
+
+import java.io.*;
+import java.net.*;
+
+public class RecvThread extends Thread {
+	InputStream is;
+	BufferedReader br_in;
+	ServerSocket serverSocket;
+	Socket socket = null;
+	String inMessage = null;
+
+	public RecvThread(Socket s) {
+		this.socket = s;
+	}
+
+	public void run() {
+		try {
+			is = socket.getInputStream();
+			br_in = new BufferedReader(new InputStreamReader(is));
+			while (true) {
+				inMessage = br_in.readLine();
+				System.out.println(inMessage);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
+
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQzMTg5NTksLTE2NjYzMjgwNjIsMzE1Nj
-UzMDQ3LDI1NzQyNzY5OCwtMzU2NDc4MTE2LDE2Nzk4NDEyNjQs
-MTc0MDAwNDI5OCwtNDQxODc4OTQ1LC0xMzU3MjQ5NzQzLDE4MT
-A1Njg5OTIsLTE3ODM0NjcwNDcsLTExNDc3ODQyMzYsLTExNzgy
-NzU3MjUsMTYzNDA4MTEyNyw1MDQ3MTQ0NCwxOTY3Mjc4Nzc5LC
-0xMjY0NDQ0NzczXX0=
+eyJoaXN0b3J5IjpbLTQwODI1OTU1OSw4NDMxODk1OSwtMTY2Nj
+MyODA2MiwzMTU2NTMwNDcsMjU3NDI3Njk4LC0zNTY0NzgxMTYs
+MTY3OTg0MTI2NCwxNzQwMDA0Mjk4LC00NDE4Nzg5NDUsLTEzNT
+cyNDk3NDMsMTgxMDU2ODk5MiwtMTc4MzQ2NzA0NywtMTE0Nzc4
+NDIzNiwtMTE3ODI3NTcyNSwxNjM0MDgxMTI3LDUwNDcxNDQ0LD
+E5NjcyNzg3NzksLTEyNjQ0NDQ3NzNdfQ==
 -->
