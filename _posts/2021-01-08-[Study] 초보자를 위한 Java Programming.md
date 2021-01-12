@@ -180,12 +180,14 @@ JVM과 JVM 사이의 통신을 의미한다. JVM이 다른 원격지에 위치�
 ### 네트워크 통신 구성요소
 * IP 주소 + 도메인네임
 * 포트 번호 :: 하나의 컴퓨터에서 여러 프로세스를 구분하는 번호. 포트 번호는 0~65535번까지 할당 할 수 있으며, 0~1023까지는 시스템에서 사용함. ex) 80(HTTP), 21(FTP), 23(TELNET)
-* 프로토콜 :: 여러 다른 
+* 프로토콜 :: 클라이언트와 서버 간의 일정한 방식으로 통신하기 위한 규약이다. 상호간의 접속방식, 데이터 형식, 오류 검출 방식 등을 표준화 한 후 통신한다.
 
+### 자바의 네트워크 통신 구현 기술
+* java SE :: 소켓 통신, RMI (Remote Method Invoc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2Nzg5ODcyOCwxNzQwMDA0Mjk4LC00ND
+eyJoaXN0b3J5IjpbLTUwNTIzNzE2OCwxNzQwMDA0Mjk4LC00ND
 E4Nzg5NDUsLTEzNTcyNDk3NDMsMTgxMDU2ODk5MiwtMTc4MzQ2
 NzA0NywtMTE0Nzc4NDIzNiwtMTE3ODI3NTcyNSwxNjM0MDgxMT
 I3LDUwNDcxNDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3NzNdfQ==
