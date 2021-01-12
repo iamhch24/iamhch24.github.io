@@ -273,11 +273,34 @@ public class SimpleClient {
 
 * 클라이언트 쪽에서는 소캣 생성 후 InputStream 객체를 받고 InputStreamReader --> BufferedReader --> readLine() 으로 데이터를 받는다.
 
+### 객체 직렬화
+
+> Employee.java :: Serializable을 구현한다.
+```Java
+package sec13.ex02;
+
+import java.io.Serializable;
+
+public class Employee implements Serializable {
+
+	String name;
+	String addr;
+	String jumin;
+	String phone;
+
+	public Employee(String name, String addr, String jumin, String phone) {
+
+		this.name = name;
+		this.addr = addr;
+		this.jumin = jumin;
+		this.phone = phone;
+	}
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTg5NDY4NjAsLTM1NjQ3ODExNiwxNj
-c5ODQxMjY0LDE3NDAwMDQyOTgsLTQ0MTg3ODk0NSwtMTM1NzI0
-OTc0MywxODEwNTY4OTkyLC0xNzgzNDY3MDQ3LC0xMTQ3Nzg0Mj
-M2LC0xMTc4Mjc1NzI1LDE2MzQwODExMjcsNTA0NzE0NDQsMTk2
-NzI3ODc3OSwtMTI2NDQ0NDc3M119
+eyJoaXN0b3J5IjpbNzcxNjQ4Nzg1LC0zNTY0NzgxMTYsMTY3OT
+g0MTI2NCwxNzQwMDA0Mjk4LC00NDE4Nzg5NDUsLTEzNTcyNDk3
+NDMsMTgxMDU2ODk5MiwtMTc4MzQ2NzA0NywtMTE0Nzc4NDIzNi
+wtMTE3ODI3NTcyNSwxNjM0MDgxMTI3LDUwNDcxNDQ0LDE5Njcy
+Nzg3NzksLTEyNjQ0NDQ3NzNdfQ==
 -->
