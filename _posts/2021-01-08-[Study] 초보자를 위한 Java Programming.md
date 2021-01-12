@@ -257,7 +257,7 @@ public class SimpleClient {
 		BufferedReader br;
 		String message = null;
 		try {
-			Socket s1 = new Socket("127.0.0.1", 5434);
+			Socket s1 = new Socket("127.0.0.1", 5434); // 소켓 생성
 			is = s1.getInputStream();
 			br = new BufferedReader(new InputStreamReader(is));
 			message = br.readLine();
@@ -270,10 +270,14 @@ public class SimpleClient {
 
 }
 ```
+
+* 클라이언트 쪽에서는 소캣 생성 후 InputStream 객체를 받고 InputStreamReader --> BufferedReader --> readLine() 으로 데이터를 받는다.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTk2Njc5NiwtMzU2NDc4MTE2LDE2Nz
-k4NDEyNjQsMTc0MDAwNDI5OCwtNDQxODc4OTQ1LC0xMzU3MjQ5
-NzQzLDE4MTA1Njg5OTIsLTE3ODM0NjcwNDcsLTExNDc3ODQyMz
-YsLTExNzgyNzU3MjUsMTYzNDA4MTEyNyw1MDQ3MTQ0NCwxOTY3
-Mjc4Nzc5LC0xMjY0NDQ0NzczXX0=
+eyJoaXN0b3J5IjpbLTE0OTg5NDY4NjAsLTM1NjQ3ODExNiwxNj
+c5ODQxMjY0LDE3NDAwMDQyOTgsLTQ0MTg3ODk0NSwtMTM1NzI0
+OTc0MywxODEwNTY4OTkyLC0xNzgzNDY3MDQ3LC0xMTQ3Nzg0Mj
+M2LC0xMTc4Mjc1NzI1LDE2MzQwODExMjcsNTA0NzE0NDQsMTk2
+NzI3ODc3OSwtMTI2NDQ0NDc3M119
 -->
