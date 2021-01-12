@@ -191,11 +191,13 @@ JVM과 JVM 사이의 통신을 의미한다. JVM이 다른 원격지에 위치�
 
 ### 클라이언트와 서버 프로그램
 * 클라이언트의 기능 (java.net.Socekt 클래스) :: IP주소와 포트 번호로 서버에 서비스를 요청한다. 데이터를 서버에서 수신한다. 자바 Stream 클래스를 이용하여 통신하다.
-* 서버 기능 (java
+* 서버 기능 (java.net.ServerSocket 클래스) :: 서버는 항상 실행되어 있어야 한다. 다수의 클라이언트 요청을 동시에 처리한다. 자바 Stream 클래스를 이용하여 통신한다.
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjQ3NDg4MSwxNzQwMDA0Mjk4LC00ND
+eyJoaXN0b3J5IjpbMTY3OTg0MTI2NCwxNzQwMDA0Mjk4LC00ND
 E4Nzg5NDUsLTEzNTcyNDk3NDMsMTgxMDU2ODk5MiwtMTc4MzQ2
 NzA0NywtMTE0Nzc4NDIzNiwtMTE3ODI3NTcyNSwxNjM0MDgxMT
 I3LDUwNDcxNDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3NzNdfQ==
