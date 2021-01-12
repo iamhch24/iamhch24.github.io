@@ -369,11 +369,18 @@ public class SerClient {
 * 클라이언트쪽에서는 소캣 생성 후 InputStream 객체를 얻은 후 ObjectInputStream --> readObject() 를 통해 객체 정보를 받는다.
 
 
+### 채팅 프로그램
 
+> SimpleServer.java
+
+```Java
+
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzUyODQ3ODYsMjU3NDI3Njk4LC0zNT
-Y0NzgxMTYsMTY3OTg0MTI2NCwxNzQwMDA0Mjk4LC00NDE4Nzg5
-NDUsLTEzNTcyNDk3NDMsMTgxMDU2ODk5MiwtMTc4MzQ2NzA0Ny
-wtMTE0Nzc4NDIzNiwtMTE3ODI3NTcyNSwxNjM0MDgxMTI3LDUw
-NDcxNDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3NzNdfQ==
+eyJoaXN0b3J5IjpbMzE1NjUzMDQ3LDI1NzQyNzY5OCwtMzU2ND
+c4MTE2LDE2Nzk4NDEyNjQsMTc0MDAwNDI5OCwtNDQxODc4OTQ1
+LC0xMzU3MjQ5NzQzLDE4MTA1Njg5OTIsLTE3ODM0NjcwNDcsLT
+ExNDc3ODQyMzYsLTExNzgyNzU3MjUsMTYzNDA4MTEyNyw1MDQ3
+MTQ0NCwxOTY3Mjc4Nzc5LC0xMjY0NDQ0NzczXX0=
 -->
