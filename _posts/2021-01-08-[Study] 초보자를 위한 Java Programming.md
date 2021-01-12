@@ -243,13 +243,37 @@ public class SimpleServer {
 >SimpleClient.java
 
 ```Java
+package sec13.ex01;
 
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.Socket;
 
+public class SimpleClient {
+	public static void main(String[] args) {
+
+		InputStream is;
+		BufferedReader br;
+		String message = null;
+		try {
+			Socket s1 = new Socket("127.0.0.1", 5434);
+			is = s1.getInputStream();
+			br = new BufferedReader(new InputStreamReader(is));
+			message = br.readLine();
+			System.out.println(message);
+			s1.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzM2NzIyNDIsLTM1NjQ3ODExNiwxNj
-c5ODQxMjY0LDE3NDAwMDQyOTgsLTQ0MTg3ODk0NSwtMTM1NzI0
-OTc0MywxODEwNTY4OTkyLC0xNzgzNDY3MDQ3LC0xMTQ3Nzg0Mj
-M2LC0xMTc4Mjc1NzI1LDE2MzQwODExMjcsNTA0NzE0NDQsMTk2
-NzI3ODc3OSwtMTI2NDQ0NDc3M119
+eyJoaXN0b3J5IjpbLTE1NTk2Njc5NiwtMzU2NDc4MTE2LDE2Nz
+k4NDEyNjQsMTc0MDAwNDI5OCwtNDQxODc4OTQ1LC0xMzU3MjQ5
+NzQzLDE4MTA1Njg5OTIsLTE3ODM0NjcwNDcsLTExNDc3ODQyMz
+YsLTExNzgyNzU3MjUsMTYzNDA4MTEyNyw1MDQ3MTQ0NCwxOTY3
+Mjc4Nzc5LC0xMjY0NDQ0NzczXX0=
 -->
