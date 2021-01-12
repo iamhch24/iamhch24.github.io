@@ -608,13 +608,115 @@ public class SimpleClient {
 ```
 
 * 문제가 생긴 것은 통신하면서 한글이 깨지는 현상이다. 어떻게 인코딩을 맞춰줄 수 있을까???
+⇒ 아래와 같이 인코딩을 맞추어 보지만 결국 실행 환경의 인코딩을 전부 맞추지 않는 한 결국 깨짐이 발생할 수 밖에 없다.
+
+```Java
+package sec13.ex04;
+
+import java.io.*;
+import java.net.*;
+
+public class RecvThread extends Thread {
+	InputStream is;
+	BufferedReader br_in;
+	ServerSocket serverSocket;
+	Socket socket = null;
+	String inMessage = null;
+
+	public RecvThread(Socket s) {
+		this.socket = s;
+	}
+
+	public void run() {
+		try {
+			is = socket.getInputStream();
+			br_in = new BufferedReader(new InputStreamReader(is,"UTF-8"));
+			while (true) {
+				inMessage = br_in.readLine();
+				System.out.println(inMessage);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
+```
+```Java
+package sec13.ex04;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.lang.reflect.Field;
+import java.net.Socket;
+import java.net.SocketException;
+import java.nio.charset.Charset;
+
+
+
+public class SimpleClient {
+	public static void main(String[] args) {
+		OutputStream os;
+		BufferedReader br_in;
+		BufferedWriter bw = null;
+		PrintWriter pw = null;
+		String outMessage = null;
+
+
+		try {
+			System.setProperty("file.encoding","UTF-8");
+			Field charset = Charset.class.getDeclaredField("defaultCharset");
+			charset.setAccessible(true);
+			charset.set(null,null);
+
+			
+			Socket s1 = new Socket("127.0.0.1", 5434);
+			os = s1.getOutputStream();
+			// 메시지 수신을 위한 쓰레드를 생성후 실행
+			RecvThread rThread = new RecvThread(s1);
+			rThread.start();
+
+			br_in = new BufferedReader(new InputStreamReader(System.in,"UTF-8"));
+			bw = new BufferedWriter(new OutputStreamWriter(os,"UTF-8"));
+			pw = new PrintWriter(bw, true); // 자동으로 flush 한다.
+			while (true) {
+				outMessage = br_in.readLine();
+				if (outMessage.equals("exit"))
+					break;
+				pw.println("client: " + outMessage);
+
+			}
+			pw.close();
+			s1.close();
+
+			if (rThread.isAlive()) {
+				rThread.interrupt();
+				rThread = null;
+			}
+
+		} catch (SocketException e) {
+			System.out.println("서버로 부터 연결이 끊어졌습니다. 종료합니다...");
+			System.exit(0);
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.exit(0);
+		}
+	}
+
+}
+
+```
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIyOTY4MzEzLDg0MzE4OTU5LC0xNjY2Mz
-I4MDYyLDMxNTY1MzA0NywyNTc0Mjc2OTgsLTM1NjQ3ODExNiwx
-Njc5ODQxMjY0LDE3NDAwMDQyOTgsLTQ0MTg3ODk0NSwtMTM1Nz
-I0OTc0MywxODEwNTY4OTkyLC0xNzgzNDY3MDQ3LC0xMTQ3Nzg0
-MjM2LC0xMTc4Mjc1NzI1LDE2MzQwODExMjcsNTA0NzE0NDQsMT
-k2NzI3ODc3OSwtMTI2NDQ0NDc3M119
+eyJoaXN0b3J5IjpbMjA5MjMxNTg0MCwyMjI5NjgzMTMsODQzMT
+g5NTksLTE2NjYzMjgwNjIsMzE1NjUzMDQ3LDI1NzQyNzY5OCwt
+MzU2NDc4MTE2LDE2Nzk4NDEyNjQsMTc0MDAwNDI5OCwtNDQxOD
+c4OTQ1LC0xMzU3MjQ5NzQzLDE4MTA1Njg5OTIsLTE3ODM0Njcw
+NDcsLTExNDc3ODQyMzYsLTExNzgyNzU3MjUsMTYzNDA4MTEyNy
+w1MDQ3MTQ0NCwxOTY3Mjc4Nzc5LC0xMjY0NDQ0NzczXX0=
 -->
