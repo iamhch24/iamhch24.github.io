@@ -193,12 +193,53 @@ JVM과 JVM 사이의 통신을 의미한다. JVM이 다른 원격지에 위치�
 * 클라이언트의 기능 (java.net.Socekt 클래스) :: IP주소와 포트 번호로 서버에 서비스를 요청한다. 데이터를 서버에서 수신한다. 자바 Stream 클래스를 이용하여 통신하다.
 * 서버 기능 (java.net.ServerSocket 클래스) :: 서버는 항상 실행되어 있어야 한다. 다수의 클라이언트 요청을 동시에 처리한다. 자바 Stream 클래스를 이용하여 통신한다.
 
+>SimpleServer.Java
 
 ```Java
+package sec13.ex01;
+
+import java.io.*;
+import java.net.*;
+
+public class SimpleServer {
+	public static void main(String[] args) {
+
+		BufferedWriter bw;
+		PrintWriter pw = null;
+		OutputStream os;
+		ServerSocket serverSocket;
+		Socket s1 = null;
+		InetAddress ipAddrs = null;
+		String connectedClient = null;
+		String outMessage = null;
+		try {
+			serverSocket = new ServerSocket(5434);	// 서버소켓 생성
+			System.out.println("서버 실행 중... ");
+
+			while (true) {
+				// 클라이언트의 접속을 인지 시에 accept()메소드를 호출해서 소켓 객체를 생성한다.
+				s1 = serverSocket.accept();
+
+				os = s1.getOutputStream();
+				ipAddrs = s1.getInetAddress();
+
+				connectedClient = ipAddrs.toString();
+				bw = new BufferedWriter(new OutputStreamWriter(os));
+				pw = new PrintWriter(bw, true);
+				pw.println(connectedClient + " 에서 서버에 접속하셨습니다.");
+				pw.close();
+				s1.close();
+			}
+		} catch (IOException ie) {
+			ie.printStackTrace();
+		}
+	}
+}
+
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MDI1MDA0NCwxNjc5ODQxMjY0LDE3ND
+eyJoaXN0b3J5IjpbLTM1NjQ3ODExNiwxNjc5ODQxMjY0LDE3ND
 AwMDQyOTgsLTQ0MTg3ODk0NSwtMTM1NzI0OTc0MywxODEwNTY4
 OTkyLC0xNzgzNDY3MDQ3LC0xMTQ3Nzg0MjM2LC0xMTc4Mjc1Nz
 I1LDE2MzQwODExMjcsNTA0NzE0NDQsMTk2NzI3ODc3OSwtMTI2
