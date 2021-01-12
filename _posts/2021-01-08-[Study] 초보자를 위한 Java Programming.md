@@ -337,14 +337,41 @@ public class SerServer {
 > SerClient.java
 
 ```Java
+package sec13.ex02;
 
+import java.net.*;
+import java.io.*;
 
+public class SerClient {
+	public static void main(String args[]) {
+		try {
+			Socket s1 = new Socket("127.0.0.1", 5433);
+
+			InputStream is = s1.getInputStream();
+			ObjectInputStream dis = new ObjectInputStream(is);
+
+			Employee p = (Employee) dis.readObject();
+			System.out.println("이름: " + p.getName());
+			System.out.println("주소: " + p.getAddr());
+			System.out.println("주민번호: " + p.getJumin());
+			System.out.println("전화번호: " + p.getPhone());
+
+			dis.close();
+			s1.close();
+		} catch (ConnectException connExc) {
+			System.err.println("연결실패.");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
 ```
+* 클라이언트쪽에서는 소캣 생성 후 InputStream 객체를 얻은 후 ObjectInputStream --> readObject() 를 통해 객체 정보를 받는다.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MzQ5MDU3OSwtMzU2NDc4MTE2LDE2Nz
-k4NDEyNjQsMTc0MDAwNDI5OCwtNDQxODc4OTQ1LC0xMzU3MjQ5
-NzQzLDE4MTA1Njg5OTIsLTE3ODM0NjcwNDcsLTExNDc3ODQyMz
-YsLTExNzgyNzU3MjUsMTYzNDA4MTEyNyw1MDQ3MTQ0NCwxOTY3
-Mjc4Nzc5LC0xMjY0NDQ0NzczXX0=
+eyJoaXN0b3J5IjpbMjU3NDI3Njk4LC0zNTY0NzgxMTYsMTY3OT
+g0MTI2NCwxNzQwMDA0Mjk4LC00NDE4Nzg5NDUsLTEzNTcyNDk3
+NDMsMTgxMDU2ODk5MiwtMTc4MzQ2NzA0NywtMTE0Nzc4NDIzNi
+wtMTE3ODI3NTcyNSwxNjM0MDgxMTI3LDUwNDcxNDQ0LDE5Njcy
+Nzg3NzksLTEyNjQ0NDQ3NzNdfQ==
 -->
