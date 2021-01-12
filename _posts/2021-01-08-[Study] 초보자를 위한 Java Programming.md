@@ -187,13 +187,17 @@ JVM과 JVM 사이의 통신을 의미한다. JVM이 다른 원격지에 위치�
 * java EE :: 웹 기술(JSP&Servlet), Web Service 기술
 
 ### 자바 소켓 통신
-* 소켓 
+* 소켓 :: 네트워크 말단 부분을 의미하며, 네트워크 통신 기능을 캡슐화하여 제공한다.
+
+### 클라이언트와 서버 프로그램
+* 클라이언트의 기능 (java.net.Socekt 클래스) :: IP주소와 포트 번호로 서버에 서비스를 요청한다. 데이터를 서버에서 수신한다. 자바 Stream 클래스를 이용하여 통신하다.
+* 서버 기능 (java
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjkwNzE0ODcsMTc0MDAwNDI5OCwtND
-QxODc4OTQ1LC0xMzU3MjQ5NzQzLDE4MTA1Njg5OTIsLTE3ODM0
-NjcwNDcsLTExNDc3ODQyMzYsLTExNzgyNzU3MjUsMTYzNDA4MT
-EyNyw1MDQ3MTQ0NCwxOTY3Mjc4Nzc5LC0xMjY0NDQ0NzczXX0=
+eyJoaXN0b3J5IjpbLTEyNjQ3NDg4MSwxNzQwMDA0Mjk4LC00ND
+E4Nzg5NDUsLTEzNTcyNDk3NDMsMTgxMDU2ODk5MiwtMTc4MzQ2
+NzA0NywtMTE0Nzc4NDIzNiwtMTE3ODI3NTcyNSwxNjM0MDgxMT
+I3LDUwNDcxNDQ0LDE5NjcyNzg3NzksLTEyNjQ0NDQ3NzNdfQ==
 
 -->
