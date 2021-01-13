@@ -434,8 +434,9 @@ new  Thread(()->{
 ```
 
 > 실습 
-* 기존 인터페이스 - 클래스 구현으로 메서드를 실행하려면 1) StringConcat 인터페이스 선언 + 2) 인터페이스 구현한 클래스 StringConcatImpl 생성 --> 메서드 실행 가능 
-* 
+* 기존 방식 :: 인터페이스 - 클래스 구현으로 메서드를 실행하려면 1) StringConcat 인터페이스 선언 + 2) 인터페이스 구현한 클래스 StringConcatImpl 생성 --> 메서드 실행 가능 
+* 람다식 :: 인터페이스를 실제 받아 클래스로 구현하여 new 생성자 부분을 람다함수로 처리 하여 코드를 확실히 줄일 수 있음
+
 ```Java
 package lambda;
 
@@ -458,11 +459,11 @@ public class StringConcatTest {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NzA3ODE5MiwxMzI5NDA5OTYxLC0xMj
-Y1MTUzNDAxLC05ODM0OTI5MDcsMTk1MDA2NjUzOCwxMDA2OTkx
-ODA2LDE1ODM2MTUyMjYsLTE3OTc3Mjc0OTMsMTQ4NTgzODA5LD
-IxMzgyMzEzODQsMjA2NzM3NTk3NCwxNzE1MjUxNTc1LDI0Mjg1
-NzE1MywtMTA3NDYxNTAwOSwtMTgwMzM3NzE2MiwtMTEwNDA2MD
-Y2NywtMTczMDQ0NDI2NiwtMTI1MTE0OTQxLC05NzMzNzcwMDAs
-MjAzMDQ3ODUyXX0=
+eyJoaXN0b3J5IjpbLTIwNjQ5OTc3NTUsMTMyOTQwOTk2MSwtMT
+I2NTE1MzQwMSwtOTgzNDkyOTA3LDE5NTAwNjY1MzgsMTAwNjk5
+MTgwNiwxNTgzNjE1MjI2LC0xNzk3NzI3NDkzLDE0ODU4MzgwOS
+wyMTM4MjMxMzg0LDIwNjczNzU5NzQsMTcxNTI1MTU3NSwyNDI4
+NTcxNTMsLTEwNzQ2MTUwMDksLTE4MDMzNzcxNjIsLTExMDQwNj
+A2NjcsLTE3MzA0NDQyNjYsLTEyNTExNDk0MSwtOTczMzc3MDAw
+LDIwMzA0Nzg1Ml19
 -->
