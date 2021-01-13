@@ -657,14 +657,13 @@ public class Predicate_Run {
 
 ```
 
+> Consumer를 합성함수처럼 호출하기 :: andThen()사용
 
 ```Java
 package lambda;
-
 import java.util.function.Consumer;
 
 public class Consumer_Run {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Consumer<Member> consumer1 = (_s)->{
@@ -673,23 +672,19 @@ public class Consumer_Run {
 		Consumer<Member> consumer2 = (_s)->{
 			System.out.println(_s.getId());
 		};
-		
 		Consumer<Member> consumer2_1 = consumer1.andThen(consumer2); // consumer2을 하고 consumer1를 실행 (합성함수 처럼)
 		consumer2_1.accept(new Member("Karl","1234"));
-		
 	}
-
 }
-
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NjIzMjQ0OCwxNzI0MjYzNTE3LDE1MD
-IxNjA3NjIsLTk3ODkwMTk0MSw2MDUyNTY1MDAsMTAxNjAxOTMw
-MSwxMzAwODgyMjQ1LDUxMzE3MjQ5NCw5NTk0NzUyMzMsOTcxMz
-E4NjUsMTUxNTU5OTIxNiw5NjU0MzI2NTgsNTc0ODQyMzQsNzU0
-Mjk4NDQ4LC0xNTU5MDkxNjM4LC0xNTExNzE0MjA1LC0xMjk4Mz
-UxMjkyLDIxNzI4ODI1NywtMjA2NDk5Nzc1NSwxMzI5NDA5OTYx
-XX0=
+eyJoaXN0b3J5IjpbLTEwMzEwMzM1MzIsMTcyNDI2MzUxNywxNT
+AyMTYwNzYyLC05Nzg5MDE5NDEsNjA1MjU2NTAwLDEwMTYwMTkz
+MDEsMTMwMDg4MjI0NSw1MTMxNzI0OTQsOTU5NDc1MjMzLDk3MT
+MxODY1LDE1MTU1OTkyMTYsOTY1NDMyNjU4LDU3NDg0MjM0LDc1
+NDI5ODQ0OCwtMTU1OTA5MTYzOCwtMTUxMTcxNDIwNSwtMTI5OD
+M1MTI5MiwyMTcyODgyNTcsLTIwNjQ5OTc3NTUsMTMyOTQwOTk2
+MV19
 -->
