@@ -552,12 +552,12 @@ public interface Runnable {
 * (1-1) BiConsumer 인터페이스 :: (소비형) :: 인풋 2개 아웃풋 0개 :: accept() 로 호출
 * (2) Supplier 인터페이스 :: (공급형) :: 인풋 0, 아웃풋 1개 :: get() 로 호출
 * (3) Function 인터페이스 :: (함수형) :: 인풋 1, 아웃풋 1개 :: apply() 로 호출
-* (3-2) BiFunction 인터페이스 :: (함수형) :: 인풋 2, 아웃풋 1개 :: 
+* (3-2) BiFunction 인터페이스 :: (함수형) :: 인풋 2, 아웃풋 1개 :: apply() 로 호출
 * (4) 
 * (5) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NDg4NDEyNiw1MTMxNzI0OTQsOTU5ND
+eyJoaXN0b3J5IjpbMTMwMDg4MjI0NSw1MTMxNzI0OTQsOTU5ND
 c1MjMzLDk3MTMxODY1LDE1MTU1OTkyMTYsOTY1NDMyNjU4LDU3
 NDg0MjM0LDc1NDI5ODQ0OCwtMTU1OTA5MTYzOCwtMTUxMTcxND
 IwNSwtMTI5ODM1MTI5MiwyMTcyODgyNTcsLTIwNjQ5OTc3NTUs
