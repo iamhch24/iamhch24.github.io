@@ -419,7 +419,7 @@ public  class  Lambda02 {
 
 참고 :: http://www.tcpschool.com/java/java_lambda_concept
 
-* 람다식의 장점 --- 코드가 한결 줄어든다 + 기존의 메서드가 하나인 인
+* 람다식의 장점 --- 코드가 한결 줄어든다 + 기존의 메서드가 하나인 인터페이스는 람다로 구현해서 곧바로 실행가능함.
 
 ```Java
 new  Thread(new  Runnable() {
@@ -446,7 +446,7 @@ public class StringConcatTest {
 		// TODO Auto-generated method stub
 		String s1 = "Hello";
 		String s2 = "World";
-		StringConcat concat = (s,v) -> System.out.println(s+", "+v); // new 생성자 대신 람다식으로 메서드를 구현한다. 중간 단계 생략하는 효과
+		StringConcat concat = (s,v) -> System.out.println(s+", "+v); // new 생성자 대신 람다식으로 메서드를 구현한다. 중간 단계 생략하는 효과 --> 마치 변수화된 것처럼 보임
 		concat.makeString(s1,s2);
 	}
 	
@@ -460,11 +460,11 @@ public class StringConcatTest {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2ODk0MzUyNCwyMTcyODgyNTcsLTIwNj
-Q5OTc3NTUsMTMyOTQwOTk2MSwtMTI2NTE1MzQwMSwtOTgzNDky
-OTA3LDE5NTAwNjY1MzgsMTAwNjk5MTgwNiwxNTgzNjE1MjI2LC
-0xNzk3NzI3NDkzLDE0ODU4MzgwOSwyMTM4MjMxMzg0LDIwNjcz
-NzU5NzQsMTcxNTI1MTU3NSwyNDI4NTcxNTMsLTEwNzQ2MTUwMD
-ksLTE4MDMzNzcxNjIsLTExMDQwNjA2NjcsLTE3MzA0NDQyNjYs
-LTEyNTExNDk0MV19
+eyJoaXN0b3J5IjpbLTEyOTgzNTEyOTIsMjE3Mjg4MjU3LC0yMD
+Y0OTk3NzU1LDEzMjk0MDk5NjEsLTEyNjUxNTM0MDEsLTk4MzQ5
+MjkwNywxOTUwMDY2NTM4LDEwMDY5OTE4MDYsMTU4MzYxNTIyNi
+wtMTc5NzcyNzQ5MywxNDg1ODM4MDksMjEzODIzMTM4NCwyMDY3
+Mzc1OTc0LDE3MTUyNTE1NzUsMjQyODU3MTUzLC0xMDc0NjE1MD
+A5LC0xODAzMzc3MTYyLC0xMTA0MDYwNjY3LC0xNzMwNDQ0MjY2
+LC0xMjUxMTQ5NDFdfQ==
 -->
