@@ -477,7 +477,7 @@ public class Runnable_Ex {
 				
 			}
 		};
-		Thread thread = new Thread(run);  // 스레드 생성자 안에 run 넣어줌
+		Thread thread = new Thread(run);  // 스레드 생성자 안에 매개변수 Runnable 넣어줌 :: Thread(runnable r)
 		thread.start();
 		
 		Thread thread2 = new Thread(() -> {
@@ -520,11 +520,11 @@ public class Runnable_Ex {
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzU3ODA0Nyw1NzQ4NDIzNCw3NTQyOT
-g0NDgsLTE1NTkwOTE2MzgsLTE1MTE3MTQyMDUsLTEyOTgzNTEy
-OTIsMjE3Mjg4MjU3LC0yMDY0OTk3NzU1LDEzMjk0MDk5NjEsLT
-EyNjUxNTM0MDEsLTk4MzQ5MjkwNywxOTUwMDY2NTM4LDEwMDY5
-OTE4MDYsMTU4MzYxNTIyNiwtMTc5NzcyNzQ5MywxNDg1ODM4MD
-ksMjEzODIzMTM4NCwyMDY3Mzc1OTc0LDE3MTUyNTE1NzUsMjQy
-ODU3MTUzXX0=
+eyJoaXN0b3J5IjpbLTE2MjI5MDg2NDEsNTc0ODQyMzQsNzU0Mj
+k4NDQ4LC0xNTU5MDkxNjM4LC0xNTExNzE0MjA1LC0xMjk4MzUx
+MjkyLDIxNzI4ODI1NywtMjA2NDk5Nzc1NSwxMzI5NDA5OTYxLC
+0xMjY1MTUzNDAxLC05ODM0OTI5MDcsMTk1MDA2NjUzOCwxMDA2
+OTkxODA2LDE1ODM2MTUyMjYsLTE3OTc3Mjc0OTMsMTQ4NTgzOD
+A5LDIxMzgyMzEzODQsMjA2NzM3NTk3NCwxNzE1MjUxNTc1LDI0
+Mjg1NzE1M119
 -->
