@@ -413,6 +413,7 @@ public  class  Lambda02 {
 		System.out.println(minNum.min(3,  4)); // 함수형 인터페이스의 사용
 	}
 }
+
 ```
 
 * 인터페이스를 다른 파일로 선언해 줄 수 있으나 위 코드 처럼 내부 파일에 생성하는 것이 더 편해 보임
@@ -515,10 +516,10 @@ public class Runnable_Ex {
 			}
 		}
 	}
-
 }
 
 ```
+
 * 위의 코드에서 람다식이 가능한 이유는 Runnable 인터페이스의 메서드가 run() 하나 밖에 없기 때문이다. // void run();
 
 > 아래는 Runnable 인터페이스 정의이다.
@@ -540,11 +541,12 @@ public interface Runnable {
      */
     public abstract void run();
 }
+
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjM1ODkxNjUsNTc0ODQyMzQsNzU0Mj
+eyJoaXN0b3J5IjpbLTExMTI0NDY5ODUsNTc0ODQyMzQsNzU0Mj
 k4NDQ4LC0xNTU5MDkxNjM4LC0xNTExNzE0MjA1LC0xMjk4MzUx
 MjkyLDIxNzI4ODI1NywtMjA2NDk5Nzc1NSwxMzI5NDA5OTYxLC
 0xMjY1MTUzNDAxLC05ODM0OTI5MDcsMTk1MDA2NjUzOCwxMDA2
