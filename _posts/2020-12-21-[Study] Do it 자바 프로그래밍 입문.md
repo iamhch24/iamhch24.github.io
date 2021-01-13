@@ -419,7 +419,7 @@ public  class  Lambda02 {
 
 참고 :: http://www.tcpschool.com/java/java_lambda_concept
 
-* 람다식의 장점 --- 코드가 한결 줄어든다
+* 람다식의 장점 --- 코드가 한결 줄어든다 + 기존의 메서드가 하나인 인
 
 ```Java
 new  Thread(new  Runnable() {
@@ -460,11 +460,11 @@ public class StringConcatTest {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE3Mjg4MjU3LC0yMDY0OTk3NzU1LDEzMj
-k0MDk5NjEsLTEyNjUxNTM0MDEsLTk4MzQ5MjkwNywxOTUwMDY2
-NTM4LDEwMDY5OTE4MDYsMTU4MzYxNTIyNiwtMTc5NzcyNzQ5My
-wxNDg1ODM4MDksMjEzODIzMTM4NCwyMDY3Mzc1OTc0LDE3MTUy
-NTE1NzUsMjQyODU3MTUzLC0xMDc0NjE1MDA5LC0xODAzMzc3MT
-YyLC0xMTA0MDYwNjY3LC0xNzMwNDQ0MjY2LC0xMjUxMTQ5NDEs
-LTk3MzM3NzAwMF19
+eyJoaXN0b3J5IjpbLTg2ODk0MzUyNCwyMTcyODgyNTcsLTIwNj
+Q5OTc3NTUsMTMyOTQwOTk2MSwtMTI2NTE1MzQwMSwtOTgzNDky
+OTA3LDE5NTAwNjY1MzgsMTAwNjk5MTgwNiwxNTgzNjE1MjI2LC
+0xNzk3NzI3NDkzLDE0ODU4MzgwOSwyMTM4MjMxMzg0LDIwNjcz
+NzU5NzQsMTcxNTI1MTU3NSwyNDI4NTcxNTMsLTEwNzQ2MTUwMD
+ksLTE4MDMzNzcxNjIsLTExMDQwNjA2NjcsLTE3MzA0NDQyNjYs
+LTEyNTExNDk0MV19
 -->
