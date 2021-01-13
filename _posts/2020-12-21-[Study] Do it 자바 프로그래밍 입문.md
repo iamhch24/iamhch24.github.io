@@ -548,17 +548,17 @@ public interface Runnable {
 
 #### 람다식 인터페이스 5개
 
-* (1) Consumer 인터페이스 :: 들어가는 것은 있는데 나오는 게 없는 구조 :: accept()
-* (1-1) BiConsumer 인터페이스 :: 인풋 2개 아웃풋 0개 :: accept() 로 호출
-* (2) Supplier 인터페이스 :: 인풋 0, 아웃풋 1개 :: get() 로 호출
-* (3) 
+* (1) Consumer 인터페이스 :: (소비형) :: 들어가는 것은 있는데 나오는 게 없는 구조 :: accept()
+* (1-1) BiConsumer 인터페이스 :: (소비형) :: 인풋 2개 아웃풋 0개 :: accept() 로 호출
+* (2) Supplier 인터페이스 :: (공급형) :: 인풋 0, 아웃풋 1개 :: get() 로 호출
+* (3) Function 인터페이스 :: (함수형) :: 인풋 1, 아웃풋 1개 :: 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU5NDc1MjMzLDk3MTMxODY1LDE1MTU1OT
-kyMTYsOTY1NDMyNjU4LDU3NDg0MjM0LDc1NDI5ODQ0OCwtMTU1
-OTA5MTYzOCwtMTUxMTcxNDIwNSwtMTI5ODM1MTI5MiwyMTcyOD
-gyNTcsLTIwNjQ5OTc3NTUsMTMyOTQwOTk2MSwtMTI2NTE1MzQw
-MSwtOTgzNDkyOTA3LDE5NTAwNjY1MzgsMTAwNjk5MTgwNiwxNT
-gzNjE1MjI2LC0xNzk3NzI3NDkzLDE0ODU4MzgwOSwyMTM4MjMx
-Mzg0XX0=
+eyJoaXN0b3J5IjpbNTEzMTcyNDk0LDk1OTQ3NTIzMyw5NzEzMT
+g2NSwxNTE1NTk5MjE2LDk2NTQzMjY1OCw1NzQ4NDIzNCw3NTQy
+OTg0NDgsLTE1NTkwOTE2MzgsLTE1MTE3MTQyMDUsLTEyOTgzNT
+EyOTIsMjE3Mjg4MjU3LC0yMDY0OTk3NzU1LDEzMjk0MDk5NjEs
+LTEyNjUxNTM0MDEsLTk4MzQ5MjkwNywxOTUwMDY2NTM4LDEwMD
+Y5OTE4MDYsMTU4MzYxNTIyNiwtMTc5NzcyNzQ5MywxNDg1ODM4
+MDldfQ==
 -->
