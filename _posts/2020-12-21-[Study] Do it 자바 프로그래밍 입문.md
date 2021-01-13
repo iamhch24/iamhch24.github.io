@@ -566,13 +566,74 @@ int result = c.compare("xxx", "yyy");  //-1
 ```
 (참고 :: https://dinfree.com/blog/2019/03/27/javafp-1.html)
 
+>실습
+
+```Java
+package lambda;
+
+import java.util.function.BiConsumer;
+import java.util.function.BiFunction;
+import java.util.function.BinaryOperator;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Supplier;
+import java.util.function.UnaryOperator;
+
+public class ConsumerRunnable {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Consumer<String> consumer = t -> System.out.println(t+" Java 8"); 
+		consumer.accept("Hello");
+		BiConsumer<String,String> biconsumer = (t,v) -> System.out.println(t+v);
+		biconsumer.accept("Hello"," Java 8");
+		BiConsumer<Integer,Integer> biconsumer2 = (t,v) -> System.out.println(t+v);
+		biconsumer2.accept(100,500);
+		
+		Supplier<String> supplier = () -> "Hello Java 8"; 
+		System.out.println(supplier.get());
+		
+		Supplier<Integer> supplier2 = () -> {
+			int random_number = (int)(Math.random() * 6) +1;
+			return random_number;
+		};
+		System.out.println("주사위의 번호는 "+ supplier2.get());
+		
+		Function<String,String> function = (_s) -> "Hello "+_s;
+		System.out.println(function.apply("Java 8"));
+		
+		BiFunction<Integer,Integer, Integer> bifunction = (t,u) -> {
+			Integer sum = t +u;
+			return sum;
+		};
+		System.out.println(bifunction.apply(100,500));
+		
+		UnaryOperator<Integer> unaryoperator = (_t) -> { 
+			return _t + 500;
+		};
+		System.out.println(unaryoperator.apply(100));
+		
+		BinaryOperator<String> binaryoperator = (t, u) ->{
+			return t+u;
+		};
+		System.out.println(binaryoperator.apply("Hello", " Java 8"));
+		
+		System.out.println(function1.apply(100_000));
+	
+	}
+	private static Function<Integer, String> function1 = (t) -> {
+		return t.toString();
+	};
+
+}
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA1MjU2NTAwLDEwMTYwMTkzMDEsMTMwMD
-g4MjI0NSw1MTMxNzI0OTQsOTU5NDc1MjMzLDk3MTMxODY1LDE1
-MTU1OTkyMTYsOTY1NDMyNjU4LDU3NDg0MjM0LDc1NDI5ODQ0OC
-wtMTU1OTA5MTYzOCwtMTUxMTcxNDIwNSwtMTI5ODM1MTI5Miwy
-MTcyODgyNTcsLTIwNjQ5OTc3NTUsMTMyOTQwOTk2MSwtMTI2NT
-E1MzQwMSwtOTgzNDkyOTA3LDE5NTAwNjY1MzgsMTAwNjk5MTgw
-Nl19
+eyJoaXN0b3J5IjpbLTk3ODkwMTk0MSw2MDUyNTY1MDAsMTAxNj
+AxOTMwMSwxMzAwODgyMjQ1LDUxMzE3MjQ5NCw5NTk0NzUyMzMs
+OTcxMzE4NjUsMTUxNTU5OTIxNiw5NjU0MzI2NTgsNTc0ODQyMz
+QsNzU0Mjk4NDQ4LC0xNTU5MDkxNjM4LC0xNTExNzE0MjA1LC0x
+Mjk4MzUxMjkyLDIxNzI4ODI1NywtMjA2NDk5Nzc1NSwxMzI5ND
+A5OTYxLC0xMjY1MTUzNDAxLC05ODM0OTI5MDcsMTk1MDA2NjUz
+OF19
 -->
