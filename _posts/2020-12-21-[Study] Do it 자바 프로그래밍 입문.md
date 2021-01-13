@@ -446,7 +446,7 @@ public class StringConcatTest {
 		// TODO Auto-generated method stub
 		String s1 = "Hello";
 		String s2 = "World";
-		StringConcat concat = (s,v) -> System.out.println(s+", "+v);
+		StringConcat concat = (s,v) -> System.out.println(s+", "+v); // new 생성자 대신 람다식으로 메서드를 구현한다. 중간 단계 생략하는 효과
 		concat.makeString(s1,s2);
 	}
 	
@@ -459,11 +459,11 @@ public class StringConcatTest {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjQ5OTc3NTUsMTMyOTQwOTk2MSwtMT
-I2NTE1MzQwMSwtOTgzNDkyOTA3LDE5NTAwNjY1MzgsMTAwNjk5
-MTgwNiwxNTgzNjE1MjI2LC0xNzk3NzI3NDkzLDE0ODU4MzgwOS
-wyMTM4MjMxMzg0LDIwNjczNzU5NzQsMTcxNTI1MTU3NSwyNDI4
-NTcxNTMsLTEwNzQ2MTUwMDksLTE4MDMzNzcxNjIsLTExMDQwNj
-A2NjcsLTE3MzA0NDQyNjYsLTEyNTExNDk0MSwtOTczMzc3MDAw
-LDIwMzA0Nzg1Ml19
+eyJoaXN0b3J5IjpbLTc5NTA4ODM4MywtMjA2NDk5Nzc1NSwxMz
+I5NDA5OTYxLC0xMjY1MTUzNDAxLC05ODM0OTI5MDcsMTk1MDA2
+NjUzOCwxMDA2OTkxODA2LDE1ODM2MTUyMjYsLTE3OTc3Mjc0OT
+MsMTQ4NTgzODA5LDIxMzgyMzEzODQsMjA2NzM3NTk3NCwxNzE1
+MjUxNTc1LDI0Mjg1NzE1MywtMTA3NDYxNTAwOSwtMTgwMzM3Nz
+E2MiwtMTEwNDA2MDY2NywtMTczMDQ0NDI2NiwtMTI1MTE0OTQx
+LC05NzMzNzcwMDBdfQ==
 -->
