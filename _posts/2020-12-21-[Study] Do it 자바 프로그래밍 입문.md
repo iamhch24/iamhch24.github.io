@@ -392,7 +392,10 @@ public int compareTo(object o){
 * 익명 내부 클래스 :: 메서드를 호출할 때 생성되거나, 인터페이스 타입 변수에 대입할 때 new 예약어를 사용하여 생성됨
 
 
-### 자바 람다식 :: 클래스 개념 때문에 어쩔 수 없이 인터페이스로 미리 선언되어 ㅇ
+### 자바 람다식 :: 클래스 개념 때문에 어쩔 수 없이 인터페이스로 미리 선언되어야 사용할 수 있음
+그럼에도 자바에서 람다식을 사용하는 이유는 함수형 프로그래밍이 원본을 수정하지 않고, 원본을 보존하기 때문에 독립성이 보존되고 이를 기반으로 병렬처리가 가능함.
+
+* str -> { System.out.println(str); }    // 한 문장이라도 맅
 
 ```Java
 @FunctionalInterface
@@ -409,11 +412,11 @@ public  class  Lambda02 {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5NzAxMDAwMywtOTgzNDkyOTA3LDE5NT
-AwNjY1MzgsMTAwNjk5MTgwNiwxNTgzNjE1MjI2LC0xNzk3NzI3
-NDkzLDE0ODU4MzgwOSwyMTM4MjMxMzg0LDIwNjczNzU5NzQsMT
-cxNTI1MTU3NSwyNDI4NTcxNTMsLTEwNzQ2MTUwMDksLTE4MDMz
-NzcxNjIsLTExMDQwNjA2NjcsLTE3MzA0NDQyNjYsLTEyNTExND
-k0MSwtOTczMzc3MDAwLDIwMzA0Nzg1MiwxNjUxNDQ4NDcwLDEx
-Njk4NTIyM119
+eyJoaXN0b3J5IjpbNjYwNjUxNTgwLC05ODM0OTI5MDcsMTk1MD
+A2NjUzOCwxMDA2OTkxODA2LDE1ODM2MTUyMjYsLTE3OTc3Mjc0
+OTMsMTQ4NTgzODA5LDIxMzgyMzEzODQsMjA2NzM3NTk3NCwxNz
+E1MjUxNTc1LDI0Mjg1NzE1MywtMTA3NDYxNTAwOSwtMTgwMzM3
+NzE2MiwtMTEwNDA2MDY2NywtMTczMDQ0NDI2NiwtMTI1MTE0OT
+QxLC05NzMzNzcwMDAsMjAzMDQ3ODUyLDE2NTE0NDg0NzAsMTE2
+OTg1MjIzXX0=
 -->
