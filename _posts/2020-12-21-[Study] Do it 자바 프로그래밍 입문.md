@@ -553,15 +553,16 @@ public interface Runnable {
 * (2) Supplier 인터페이스 :: (공급형) :: 인풋 0, 아웃풋 1개 :: get() 로 호출
 * (3) Function 인터페이스 :: (함수형) :: 인풋 1, 아웃풋 1개 :: apply() 로 호출
 * (3-2) BiFunction 인터페이스 :: (함수형) :: 인풋 2, 아웃풋 1개 :: apply() 로 호출
-* (4) ㅒ
+* (4) UnaryOperator 인터페이스 :: (오퍼레이터형) :: 인풋 1, 아웃풋 1개 -- 같은 타입 :: apply()로 호출
+* (4-1) BiOperator 인터페이스 :: (오퍼레이터형) :: 인풋 2, 아웃풋 1개 -- 같은 타입 :: apply()로 호출
 * (5) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ4Mjk3NDQxLDEzMDA4ODIyNDUsNTEzMT
-cyNDk0LDk1OTQ3NTIzMyw5NzEzMTg2NSwxNTE1NTk5MjE2LDk2
-NTQzMjY1OCw1NzQ4NDIzNCw3NTQyOTg0NDgsLTE1NTkwOTE2Mz
-gsLTE1MTE3MTQyMDUsLTEyOTgzNTEyOTIsMjE3Mjg4MjU3LC0y
-MDY0OTk3NzU1LDEzMjk0MDk5NjEsLTEyNjUxNTM0MDEsLTk4Mz
-Q5MjkwNywxOTUwMDY2NTM4LDEwMDY5OTE4MDYsMTU4MzYxNTIy
-Nl19
+eyJoaXN0b3J5IjpbLTEyODkzMzUwNTEsMTMwMDg4MjI0NSw1MT
+MxNzI0OTQsOTU5NDc1MjMzLDk3MTMxODY1LDE1MTU1OTkyMTYs
+OTY1NDMyNjU4LDU3NDg0MjM0LDc1NDI5ODQ0OCwtMTU1OTA5MT
+YzOCwtMTUxMTcxNDIwNSwtMTI5ODM1MTI5MiwyMTcyODgyNTcs
+LTIwNjQ5OTc3NTUsMTMyOTQwOTk2MSwtMTI2NTE1MzQwMSwtOT
+gzNDkyOTA3LDE5NTAwNjY1MzgsMTAwNjk5MTgwNiwxNTgzNjE1
+MjI2XX0=
 -->
