@@ -625,13 +625,10 @@ public class ConsumerRunnable {
 		
 		BiPredicate<Integer, Integer> bipredicate = (t,u) -> t>u;
 		System.out.println(bipredicate.test(-100,-90));
-		
-	
 	}
 	private static Function<Integer, String> function1 = (t) -> {
 		return t.toString();
 	};
-
 }
 ```
 
@@ -680,11 +677,11 @@ public class Consumer_Run {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk4MTE0MjUwLDE3MjQyNjM1MTcsMTUwMj
-E2MDc2MiwtOTc4OTAxOTQxLDYwNTI1NjUwMCwxMDE2MDE5MzAx
-LDEzMDA4ODIyNDUsNTEzMTcyNDk0LDk1OTQ3NTIzMyw5NzEzMT
-g2NSwxNTE1NTk5MjE2LDk2NTQzMjY1OCw1NzQ4NDIzNCw3NTQy
-OTg0NDgsLTE1NTkwOTE2MzgsLTE1MTE3MTQyMDUsLTEyOTgzNT
-EyOTIsMjE3Mjg4MjU3LC0yMDY0OTk3NzU1LDEzMjk0MDk5NjFd
-fQ==
+eyJoaXN0b3J5IjpbLTIwOTU1NDUyNjgsMTcyNDI2MzUxNywxNT
+AyMTYwNzYyLC05Nzg5MDE5NDEsNjA1MjU2NTAwLDEwMTYwMTkz
+MDEsMTMwMDg4MjI0NSw1MTMxNzI0OTQsOTU5NDc1MjMzLDk3MT
+MxODY1LDE1MTU1OTkyMTYsOTY1NDMyNjU4LDU3NDg0MjM0LDc1
+NDI5ODQ0OCwtMTU1OTA5MTYzOCwtMTUxMTcxNDIwNSwtMTI5OD
+M1MTI5MiwyMTcyODgyNTcsLTIwNjQ5OTc3NTUsMTMyOTQwOTk2
+MV19
 -->
