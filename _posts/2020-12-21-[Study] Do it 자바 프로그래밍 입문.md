@@ -458,14 +458,38 @@ public class StringConcatTest {
 ```
 * 코딩의 인식을 편하게 위해 람다를 쓸 때 _s 처럼 언더바를 표기하기도 한다.
 
+> 스레드 예제에서 람다식 사용
+```Java
+package lambda;
 
-`
+public class Runnable_Ex {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Runnable run = () -> {
+			for(int i=0; i<10;i++) {
+				System.out.println(i);
+				try {
+					Thread.sleep(1000);
+				}catch(InterruptedException e) {
+					e.printStackTrace();
+				}
+				
+			}
+		};
+		Thread thread = new Thread(run); // 스레드 생성자 안에 run을 넣었음.
+		thread.start();
+	}
+
+}
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNDgyMTQ1MCw3NTQyOTg0NDgsLTE1NT
-kwOTE2MzgsLTE1MTE3MTQyMDUsLTEyOTgzNTEyOTIsMjE3Mjg4
-MjU3LC0yMDY0OTk3NzU1LDEzMjk0MDk5NjEsLTEyNjUxNTM0MD
-EsLTk4MzQ5MjkwNywxOTUwMDY2NTM4LDEwMDY5OTE4MDYsMTU4
-MzYxNTIyNiwtMTc5NzcyNzQ5MywxNDg1ODM4MDksMjEzODIzMT
-M4NCwyMDY3Mzc1OTc0LDE3MTUyNTE1NzUsMjQyODU3MTUzLC0x
-MDc0NjE1MDA5XX0=
+eyJoaXN0b3J5IjpbNTc0ODQyMzQsNzU0Mjk4NDQ4LC0xNTU5MD
+kxNjM4LC0xNTExNzE0MjA1LC0xMjk4MzUxMjkyLDIxNzI4ODI1
+NywtMjA2NDk5Nzc1NSwxMzI5NDA5OTYxLC0xMjY1MTUzNDAxLC
+05ODM0OTI5MDcsMTk1MDA2NjUzOCwxMDA2OTkxODA2LDE1ODM2
+MTUyMjYsLTE3OTc3Mjc0OTMsMTQ4NTgzODA5LDIxMzgyMzEzOD
+QsMjA2NzM3NTk3NCwxNzE1MjUxNTc1LDI0Mjg1NzE1MywtMTA3
+NDYxNTAwOV19
 -->
