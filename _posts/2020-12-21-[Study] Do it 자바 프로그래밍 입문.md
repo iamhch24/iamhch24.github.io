@@ -468,7 +468,7 @@ public class Runnable_Ex {
 		// TODO Auto-generated method stub
 		Runnable run = () -> {
 			for(int i=0; i<10;i++) {
-				System.out.println(i);
+				System.out.println("a " + i);
 				try {
 					Thread.sleep(1000);
 				}catch(InterruptedException e) {
@@ -477,19 +477,54 @@ public class Runnable_Ex {
 				
 			}
 		};
-		Thread thread = new Thread(run); // 스레드 생성자 안에 run을 넣었음.
+		Thread thread = new Thread(run);  // 스레드 생성자 안에 run 넣어줌
 		thread.start();
+		
+		Thread thread2 = new Thread(() -> {
+			for(int i=0; i<10;i++) {
+				System.out.println("b " + i);
+				try {
+					Thread.sleep(1000);
+				}catch(InterruptedException e) {
+					e.printStackTrace();
+				}
+				
+			}
+		} );
+		thread2.start();
+		
+		new Thread(() -> {
+			for(int i=0; i<10;i++) {
+				System.out.println("c " + i);
+				try {
+					Thread.sleep(1000);
+				}catch(InterruptedException e) {
+					e.printStackTrace();
+				}
+				
+			}
+		} ).start();
+	
+		
+		for(int i=0;i<10;i++) {
+			System.out.println("d " + i);
+			try {
+				Thread.sleep(1000);
+			}catch(InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 
 }
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc0ODQyMzQsNzU0Mjk4NDQ4LC0xNTU5MD
-kxNjM4LC0xNTExNzE0MjA1LC0xMjk4MzUxMjkyLDIxNzI4ODI1
-NywtMjA2NDk5Nzc1NSwxMzI5NDA5OTYxLC0xMjY1MTUzNDAxLC
-05ODM0OTI5MDcsMTk1MDA2NjUzOCwxMDA2OTkxODA2LDE1ODM2
-MTUyMjYsLTE3OTc3Mjc0OTMsMTQ4NTgzODA5LDIxMzgyMzEzOD
-QsMjA2NzM3NTk3NCwxNzE1MjUxNTc1LDI0Mjg1NzE1MywtMTA3
-NDYxNTAwOV19
+eyJoaXN0b3J5IjpbLTEwNzU3ODA0Nyw1NzQ4NDIzNCw3NTQyOT
+g0NDgsLTE1NTkwOTE2MzgsLTE1MTE3MTQyMDUsLTEyOTgzNTEy
+OTIsMjE3Mjg4MjU3LC0yMDY0OTk3NzU1LDEzMjk0MDk5NjEsLT
+EyNjUxNTM0MDEsLTk4MzQ5MjkwNywxOTUwMDY2NTM4LDEwMDY5
+OTE4MDYsMTU4MzYxNTIyNiwtMTc5NzcyNzQ5MywxNDg1ODM4MD
+ksMjEzODIzMTM4NCwyMDY3Mzc1OTc0LDE3MTUyNTE1NzUsMjQy
+ODU3MTUzXX0=
 -->
