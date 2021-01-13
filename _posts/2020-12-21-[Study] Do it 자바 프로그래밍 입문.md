@@ -521,12 +521,33 @@ public class Runnable_Ex {
 ```
 * 위의 코드에서 람다식이 가능한 이유는 Runnable 인터페이스의 메서드가 run() 하나 밖에 없기 때문이다. // void run();
 
+> 아래는 Runnable 인터페이스 정의이다.
+
+```Java
+package java.lang;
+@FunctionalInterface
+public interface Runnable {
+    /**
+     * When an object implementing interface {@code Runnable} is used
+     * to create a thread, starting the thread causes the object's
+     * {@code run} method to be called in that separately executing
+     * thread.
+     * <p>
+     * The general contract of the method {@code run} is that it may
+     * take any action whatsoever.
+     *
+     * @see     java.lang.Thread#run()
+     */
+    public abstract void run();
+}
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI4MzQzMTIzLDU3NDg0MjM0LDc1NDI5OD
-Q0OCwtMTU1OTA5MTYzOCwtMTUxMTcxNDIwNSwtMTI5ODM1MTI5
-MiwyMTcyODgyNTcsLTIwNjQ5OTc3NTUsMTMyOTQwOTk2MSwtMT
-I2NTE1MzQwMSwtOTgzNDkyOTA3LDE5NTAwNjY1MzgsMTAwNjk5
-MTgwNiwxNTgzNjE1MjI2LC0xNzk3NzI3NDkzLDE0ODU4MzgwOS
-wyMTM4MjMxMzg0LDIwNjczNzU5NzQsMTcxNTI1MTU3NSwyNDI4
-NTcxNTNdfQ==
+eyJoaXN0b3J5IjpbLTQwNTU2MTExNSw1NzQ4NDIzNCw3NTQyOT
+g0NDgsLTE1NTkwOTE2MzgsLTE1MTE3MTQyMDUsLTEyOTgzNTEy
+OTIsMjE3Mjg4MjU3LC0yMDY0OTk3NzU1LDEzMjk0MDk5NjEsLT
+EyNjUxNTM0MDEsLTk4MzQ5MjkwNywxOTUwMDY2NTM4LDEwMDY5
+OTE4MDYsMTU4MzYxNTIyNiwtMTc5NzcyNzQ5MywxNDg1ODM4MD
+ksMjEzODIzMTM4NCwyMDY3Mzc1OTc0LDE3MTUyNTE1NzUsMjQy
+ODU3MTUzXX0=
 -->
