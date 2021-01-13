@@ -508,7 +508,7 @@ public class Runnable_Ex {
 	
 		
 		for(int i=0;i<10;i++) {
-			System.out.println("d " + i);
+			System.out.println("main " + i);
 			try {
 				Thread.sleep(1000);
 			}catch(InterruptedException e) {
@@ -546,11 +546,11 @@ public interface Runnable {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTI0NDY5ODUsNTc0ODQyMzQsNzU0Mj
-k4NDQ4LC0xNTU5MDkxNjM4LC0xNTExNzE0MjA1LC0xMjk4MzUx
-MjkyLDIxNzI4ODI1NywtMjA2NDk5Nzc1NSwxMzI5NDA5OTYxLC
-0xMjY1MTUzNDAxLC05ODM0OTI5MDcsMTk1MDA2NjUzOCwxMDA2
-OTkxODA2LDE1ODM2MTUyMjYsLTE3OTc3Mjc0OTMsMTQ4NTgzOD
-A5LDIxMzgyMzEzODQsMjA2NzM3NTk3NCwxNzE1MjUxNTc1LDI0
-Mjg1NzE1M119
+eyJoaXN0b3J5IjpbOTY1NDMyNjU4LDU3NDg0MjM0LDc1NDI5OD
+Q0OCwtMTU1OTA5MTYzOCwtMTUxMTcxNDIwNSwtMTI5ODM1MTI5
+MiwyMTcyODgyNTcsLTIwNjQ5OTc3NTUsMTMyOTQwOTk2MSwtMT
+I2NTE1MzQwMSwtOTgzNDkyOTA3LDE5NTAwNjY1MzgsMTAwNjk5
+MTgwNiwxNTgzNjE1MjI2LC0xNzk3NzI3NDkzLDE0ODU4MzgwOS
+wyMTM4MjMxMzg0LDIwNjczNzU5NzQsMTcxNTI1MTU3NSwyNDI4
+NTcxNTNdfQ==
 -->
