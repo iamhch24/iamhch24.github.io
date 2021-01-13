@@ -399,6 +399,7 @@ public int compareTo(object o){
 * (x,y) -> { System.out.println(x+y);} // 매개변수가 2개 이상이면 ()를 생략X
 * (x,y) -> x + y    // x+y 반환 == 리턴이 하나인 경우 { return  ;} 가 함께 생략 가능 
 * MyNumber max = (x,y) -> (x>y) ? x: y;  // 왼쪽에 인터페이스 인스턴스를 받는 경우 마지막에 ;로 문장의 끝을 표현함. 이 경우도 { return ; } 생략된 케이스
+* 인터페이스 선언에서 람다식이 이름이 없기 때문에 람다식 하나에 인터페이스 하나가 매칭되어야 함. 그래서 @FunctionalInterface 애노테이션을 선언해 주어 하나의 인터페이스 내에 람다식 여러개 선언되면 에러를 보여주게 함.
 
 ```Java
 @FunctionalInterface
@@ -419,11 +420,11 @@ public  class  Lambda02 {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzODk4MTIwMywtOTgzNDkyOTA3LDE5NT
-AwNjY1MzgsMTAwNjk5MTgwNiwxNTgzNjE1MjI2LC0xNzk3NzI3
-NDkzLDE0ODU4MzgwOSwyMTM4MjMxMzg0LDIwNjczNzU5NzQsMT
-cxNTI1MTU3NSwyNDI4NTcxNTMsLTEwNzQ2MTUwMDksLTE4MDMz
-NzcxNjIsLTExMDQwNjA2NjcsLTE3MzA0NDQyNjYsLTEyNTExND
-k0MSwtOTczMzc3MDAwLDIwMzA0Nzg1MiwxNjUxNDQ4NDcwLDEx
-Njk4NTIyM119
+eyJoaXN0b3J5IjpbLTEyNjUxNTM0MDEsLTk4MzQ5MjkwNywxOT
+UwMDY2NTM4LDEwMDY5OTE4MDYsMTU4MzYxNTIyNiwtMTc5Nzcy
+NzQ5MywxNDg1ODM4MDksMjEzODIzMTM4NCwyMDY3Mzc1OTc0LD
+E3MTUyNTE1NzUsMjQyODU3MTUzLC0xMDc0NjE1MDA5LC0xODAz
+Mzc3MTYyLC0xMTA0MDYwNjY3LC0xNzMwNDQ0MjY2LC0xMjUxMT
+Q5NDEsLTk3MzM3NzAwMCwyMDMwNDc4NTIsMTY1MTQ0ODQ3MCwx
+MTY5ODUyMjNdfQ==
 -->
