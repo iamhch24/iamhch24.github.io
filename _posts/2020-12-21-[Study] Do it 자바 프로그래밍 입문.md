@@ -558,12 +558,18 @@ public interface Runnable {
 * (5) Predicate 인터페이스 :: (예언형) :: 인풋 있고, 리턴값은 boolean, 매개값을 조사하고 true/false를 리턴
 * (5-1) BiPredicate 인터페이스 :: (예언형) :: 
 
+* `Comparator`
+보통 객체간 우선순위를 비교할때 Comparable 인터페이스를 사용하는데 그때 그때 적용할 로직을 1회성으로 구현하는데 많이 사용했습니다. Comparator는 간단하게 Comparable 인터페이스를 대신해 사용할 수 있습니다.
+```
+Comparator<String> c = (str1, str2) -> str1.compareTo(str2);
+int result = c.compare("xxx", "yyy");  //-1
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNjAxOTMwMSwxMzAwODgyMjQ1LDUxMz
-E3MjQ5NCw5NTk0NzUyMzMsOTcxMzE4NjUsMTUxNTU5OTIxNiw5
-NjU0MzI2NTgsNTc0ODQyMzQsNzU0Mjk4NDQ4LC0xNTU5MDkxNj
-M4LC0xNTExNzE0MjA1LC0xMjk4MzUxMjkyLDIxNzI4ODI1Nywt
-MjA2NDk5Nzc1NSwxMzI5NDA5OTYxLC0xMjY1MTUzNDAxLC05OD
-M0OTI5MDcsMTk1MDA2NjUzOCwxMDA2OTkxODA2LDE1ODM2MTUy
-MjZdfQ==
+eyJoaXN0b3J5IjpbNjI2NDkxNzcyLDEwMTYwMTkzMDEsMTMwMD
+g4MjI0NSw1MTMxNzI0OTQsOTU5NDc1MjMzLDk3MTMxODY1LDE1
+MTU1OTkyMTYsOTY1NDMyNjU4LDU3NDg0MjM0LDc1NDI5ODQ0OC
+wtMTU1OTA5MTYzOCwtMTUxMTcxNDIwNSwtMTI5ODM1MTI5Miwy
+MTcyODgyNTcsLTIwNjQ5OTc3NTUsMTMyOTQwOTk2MSwtMTI2NT
+E1MzQwMSwtOTgzNDkyOTA3LDE5NTAwNjY1MzgsMTAwNjk5MTgw
+Nl19
 -->
