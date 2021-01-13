@@ -619,6 +619,13 @@ public class ConsumerRunnable {
 		System.out.println(binaryoperator.apply("Hello", " Java 8"));
 		
 		System.out.println(function1.apply(100_000));
+
+		Predicate<Integer> predicate = (t) -> t > 10;
+		System.out.println(predicate.test(100));
+		
+		BiPredicate<Integer, Integer> bipredicate = (t,u) -> t>u;
+		System.out.println(bipredicate.test(-100,-90));
+		
 	
 	}
 	private static Function<Integer, String> function1 = (t) -> {
@@ -628,12 +635,33 @@ public class ConsumerRunnable {
 }
 ```
 
+```Java
+package lambda;
+import java.util.function.Predicate;
+
+public class Predicate_Run {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Predicate<Integer> predicate1 = (t) -> t%2 ==0;	// 2의 배수
+		Predicate<Integer> predicate2 = (t) -> t%3 ==0;	// 3의 배수
+		
+		Predicate<Integer> predicate1and2 = predicate1.and(predicate2);	// 2이면서 3의 배수
+		System.out.println(predicate1and2.test(33));  	// false
+		
+		Predicate<Integer> predicate1or2 = predicate1.or(predicate2);	// 2의 배수 이거나 3의 배수
+		System.out.println(predicate1or2.test(33));		// true
+	}
+}
+
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3ODkwMTk0MSw2MDUyNTY1MDAsMTAxNj
-AxOTMwMSwxMzAwODgyMjQ1LDUxMzE3MjQ5NCw5NTk0NzUyMzMs
-OTcxMzE4NjUsMTUxNTU5OTIxNiw5NjU0MzI2NTgsNTc0ODQyMz
-QsNzU0Mjk4NDQ4LC0xNTU5MDkxNjM4LC0xNTExNzE0MjA1LC0x
-Mjk4MzUxMjkyLDIxNzI4ODI1NywtMjA2NDk5Nzc1NSwxMzI5ND
-A5OTYxLC0xMjY1MTUzNDAxLC05ODM0OTI5MDcsMTk1MDA2NjUz
-OF19
+eyJoaXN0b3J5IjpbMTUwMjE2MDc2MiwtOTc4OTAxOTQxLDYwNT
+I1NjUwMCwxMDE2MDE5MzAxLDEzMDA4ODIyNDUsNTEzMTcyNDk0
+LDk1OTQ3NTIzMyw5NzEzMTg2NSwxNTE1NTk5MjE2LDk2NTQzMj
+Y1OCw1NzQ4NDIzNCw3NTQyOTg0NDgsLTE1NTkwOTE2MzgsLTE1
+MTE3MTQyMDUsLTEyOTgzNTEyOTIsMjE3Mjg4MjU3LC0yMDY0OT
+k3NzU1LDEzMjk0MDk5NjEsLTEyNjUxNTM0MDEsLTk4MzQ5Mjkw
+N119
 -->
