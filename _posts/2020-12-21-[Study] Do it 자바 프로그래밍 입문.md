@@ -658,12 +658,38 @@ public class Predicate_Run {
 ```
 
 
+```Java
+package lambda;
+
+import java.util.function.Consumer;
+
+public class Consumer_Run {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Consumer<Member> consumer1 = (_s)->{
+			System.out.println(_s.getName());
+		};
+		Consumer<Member> consumer2 = (_s)->{
+			System.out.println(_s.getId());
+		};
+		
+		Consumer<Member> consumer2_1 = consumer1.andThen(consumer2); // consumer2을 하고 consumer1를 실행 (합성함수 처럼)
+		consumer2_1.accept(new Member("Karl","1234"));
+		
+	}
+
+}
+
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNDI2MzUxNywxNTAyMTYwNzYyLC05Nz
-g5MDE5NDEsNjA1MjU2NTAwLDEwMTYwMTkzMDEsMTMwMDg4MjI0
-NSw1MTMxNzI0OTQsOTU5NDc1MjMzLDk3MTMxODY1LDE1MTU1OT
-kyMTYsOTY1NDMyNjU4LDU3NDg0MjM0LDc1NDI5ODQ0OCwtMTU1
-OTA5MTYzOCwtMTUxMTcxNDIwNSwtMTI5ODM1MTI5MiwyMTcyOD
-gyNTcsLTIwNjQ5OTc3NTUsMTMyOTQwOTk2MSwtMTI2NTE1MzQw
-MV19
+eyJoaXN0b3J5IjpbMTI5NjIzMjQ0OCwxNzI0MjYzNTE3LDE1MD
+IxNjA3NjIsLTk3ODkwMTk0MSw2MDUyNTY1MDAsMTAxNjAxOTMw
+MSwxMzAwODgyMjQ1LDUxMzE3MjQ5NCw5NTk0NzUyMzMsOTcxMz
+E4NjUsMTUxNTU5OTIxNiw5NjU0MzI2NTgsNTc0ODQyMzQsNzU0
+Mjk4NDQ4LC0xNTU5MDkxNjM4LC0xNTExNzE0MjA1LC0xMjk4Mz
+UxMjkyLDIxNzI4ODI1NywtMjA2NDk5Nzc1NSwxMzI5NDA5OTYx
+XX0=
 -->
