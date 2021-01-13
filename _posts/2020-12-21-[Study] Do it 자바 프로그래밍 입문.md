@@ -392,14 +392,28 @@ public int compareTo(object o){
 * 익명 내부 클래스 :: 메서드를 호출할 때 생성되거나, 인터페이스 타입 변수에 대입할 때 new 예약어를 사용하여 생성됨
 
 
+### 자바 람다식 :: 클래스 개념 때문에 어쩔 수 없이 인터페이스로 미리 선언되어 ㅇ
 
+```Java
+@FunctionalInterface
+interface  Calc {  // 함수형 인터페이스의 선언
+	public  int  min(int  x,  int  y);
+}
+
+public  class  Lambda02 {
+	public  static  void  main(String[]  args){
+		Calc  minNum  =  (x, y)  ->  x  <  y  ?  x  :  y;  // 추상 메소드의 구현
+		System.out.println(minNum.min(3,  4)); // 함수형 인터페이스의 사용
+	}
+}
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MzQ5MjkwNywxOTUwMDY2NTM4LDEwMD
-Y5OTE4MDYsMTU4MzYxNTIyNiwtMTc5NzcyNzQ5MywxNDg1ODM4
-MDksMjEzODIzMTM4NCwyMDY3Mzc1OTc0LDE3MTUyNTE1NzUsMj
-QyODU3MTUzLC0xMDc0NjE1MDA5LC0xODAzMzc3MTYyLC0xMTA0
-MDYwNjY3LC0xNzMwNDQ0MjY2LC0xMjUxMTQ5NDEsLTk3MzM3Nz
-AwMCwyMDMwNDc4NTIsMTY1MTQ0ODQ3MCwxMTY5ODUyMjMsNTI1
-ODE1NTQwXX0=
+eyJoaXN0b3J5IjpbLTQ5NzAxMDAwMywtOTgzNDkyOTA3LDE5NT
+AwNjY1MzgsMTAwNjk5MTgwNiwxNTgzNjE1MjI2LC0xNzk3NzI3
+NDkzLDE0ODU4MzgwOSwyMTM4MjMxMzg0LDIwNjczNzU5NzQsMT
+cxNTI1MTU3NSwyNDI4NTcxNTMsLTEwNzQ2MTUwMDksLTE4MDMz
+NzcxNjIsLTExMDQwNjA2NjcsLTE3MzA0NDQyNjYsLTEyNTExND
+k0MSwtOTczMzc3MDAwLDIwMzA0Nzg1MiwxNjUxNDQ4NDcwLDEx
+Njk4NTIyM119
 -->
