@@ -551,14 +551,16 @@ public interface Runnable {
 * (1) Consumer 인터페이스 :: (소비형) :: 들어가는 것은 있는데 나오는 게 없는 구조 :: accept()
 * (1-1) BiConsumer 인터페이스 :: (소비형) :: 인풋 2개 아웃풋 0개 :: accept() 로 호출
 * (2) Supplier 인터페이스 :: (공급형) :: 인풋 0, 아웃풋 1개 :: get() 로 호출
-* (3) Function 인터페이스 :: (함수형) :: 인풋 1, 아웃풋 1개 :: 
+* (3) Function 인터페이스 :: (함수형) :: 인풋 1, 아웃풋 1개 :: apply() 로 호출
+* (4) 
+* (5) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEzMTcyNDk0LDk1OTQ3NTIzMyw5NzEzMT
-g2NSwxNTE1NTk5MjE2LDk2NTQzMjY1OCw1NzQ4NDIzNCw3NTQy
-OTg0NDgsLTE1NTkwOTE2MzgsLTE1MTE3MTQyMDUsLTEyOTgzNT
-EyOTIsMjE3Mjg4MjU3LC0yMDY0OTk3NzU1LDEzMjk0MDk5NjEs
-LTEyNjUxNTM0MDEsLTk4MzQ5MjkwNywxOTUwMDY2NTM4LDEwMD
-Y5OTE4MDYsMTU4MzYxNTIyNiwtMTc5NzcyNzQ5MywxNDg1ODM4
-MDldfQ==
+eyJoaXN0b3J5IjpbLTY2MzYwOTc5NCw1MTMxNzI0OTQsOTU5ND
+c1MjMzLDk3MTMxODY1LDE1MTU1OTkyMTYsOTY1NDMyNjU4LDU3
+NDg0MjM0LDc1NDI5ODQ0OCwtMTU1OTA5MTYzOCwtMTUxMTcxND
+IwNSwtMTI5ODM1MTI5MiwyMTcyODgyNTcsLTIwNjQ5OTc3NTUs
+MTMyOTQwOTk2MSwtMTI2NTE1MzQwMSwtOTgzNDkyOTA3LDE5NT
+AwNjY1MzgsMTAwNjk5MTgwNiwxNTgzNjE1MjI2LC0xNzk3NzI3
+NDkzXX0=
 -->
