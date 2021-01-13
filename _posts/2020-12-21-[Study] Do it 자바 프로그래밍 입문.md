@@ -419,11 +419,25 @@ public  class  Lambda02 {
 
 참고 :: http://www.tcpschool.com/java/java_lambda_concept
 
-* 람다식의 장점 --- 코드가 ㅎ
+* 람다식의 장점 --- 코드가 한결 줄어든다
+
+```Java
+new  Thread(new  Runnable() {
+	public  void  run() {
+	System.out.println("전통적인 방식의 일회용 스레드 생성");
+}
+}).start();
+
+new  Thread(()->{
+	System.out.println("람다 표현식을 사용한 일회용 스레드 생성");
+}).start();
+```
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4Mjc4NzQ2OCwtMTI2NTE1MzQwMSwtOT
+eyJoaXN0b3J5IjpbMTMyOTQwOTk2MSwtMTI2NTE1MzQwMSwtOT
 gzNDkyOTA3LDE5NTAwNjY1MzgsMTAwNjk5MTgwNiwxNTgzNjE1
 MjI2LC0xNzk3NzI3NDkzLDE0ODU4MzgwOSwyMTM4MjMxMzg0LD
 IwNjczNzU5NzQsMTcxNTI1MTU3NSwyNDI4NTcxNTMsLTEwNzQ2
