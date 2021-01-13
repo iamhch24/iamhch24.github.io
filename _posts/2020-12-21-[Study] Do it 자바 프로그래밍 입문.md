@@ -546,14 +546,15 @@ public interface Runnable {
 
 * 모나드 monad 기법 :: 함수형 기법 = 람다식
 
-람다식 인터페이스 5개
+### 람다식 인터페이스 5개
 
 #### (1) Consumer 인터페이스 :: 들어가는 것은 있는데 나오는 게 없는 구조 :: accept()
 #### (1-1) BiConsumer 인터페이스 :: 인풋 2개 아웃풋 0개 :: accept() 로 호출
-#### (2) Supplier 인터페이스 :: 인풋 0, 아웃풋 1개 :: 
+#### (2) Supplier 인터페이스 :: 인풋 0, 아웃풋 1개 :: get() 로 호출
+#### 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNzkwNzAyOCw5NzEzMTg2NSwxNTE1NT
+eyJoaXN0b3J5IjpbMTgxOTUzMzU0Niw5NzEzMTg2NSwxNTE1NT
 k5MjE2LDk2NTQzMjY1OCw1NzQ4NDIzNCw3NTQyOTg0NDgsLTE1
 NTkwOTE2MzgsLTE1MTE3MTQyMDUsLTEyOTgzNTEyOTIsMjE3Mj
 g4MjU3LC0yMDY0OTk3NzU1LDEzMjk0MDk5NjEsLTEyNjUxNTM0
