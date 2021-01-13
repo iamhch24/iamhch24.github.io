@@ -397,7 +397,8 @@ public int compareTo(object o){
 
 * str -> { System.out.println(str); }    // 한 문장이라도 리턴이 없는 경우는 {} 을 생략X
 * (x,y) -> { System.out.println(x+y);} // 매개변수가 2개 이상이면 ()를 생략X
-* (x,y) -> x + y    // 리턴이 하나인 경우 return 과 ; 가
+* (x,y) -> x + y    // x+y 반환 == 리턴이 하나인 경우 { return  ;} 가 함께 생략 가능 
+* MyNumber max = (x,y) -> (x>y) ? x: y;  // 왼쪽에 인터페이스 인스턴스를 받는 경우 마지막에 ;로 문장의 ㄲ
 
 ```Java
 @FunctionalInterface
@@ -414,11 +415,11 @@ public  class  Lambda02 {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNzkwMzc2MiwtOTgzNDkyOTA3LDE5NT
-AwNjY1MzgsMTAwNjk5MTgwNiwxNTgzNjE1MjI2LC0xNzk3NzI3
-NDkzLDE0ODU4MzgwOSwyMTM4MjMxMzg0LDIwNjczNzU5NzQsMT
-cxNTI1MTU3NSwyNDI4NTcxNTMsLTEwNzQ2MTUwMDksLTE4MDMz
-NzcxNjIsLTExMDQwNjA2NjcsLTE3MzA0NDQyNjYsLTEyNTExND
-k0MSwtOTczMzc3MDAwLDIwMzA0Nzg1MiwxNjUxNDQ4NDcwLDEx
-Njk4NTIyM119
+eyJoaXN0b3J5IjpbODkzMDczNzE1LC05ODM0OTI5MDcsMTk1MD
+A2NjUzOCwxMDA2OTkxODA2LDE1ODM2MTUyMjYsLTE3OTc3Mjc0
+OTMsMTQ4NTgzODA5LDIxMzgyMzEzODQsMjA2NzM3NTk3NCwxNz
+E1MjUxNTc1LDI0Mjg1NzE1MywtMTA3NDYxNTAwOSwtMTgwMzM3
+NzE2MiwtMTEwNDA2MDY2NywtMTczMDQ0NDI2NiwtMTI1MTE0OT
+QxLC05NzMzNzcwMDAsMjAzMDQ3ODUyLDE2NTE0NDg0NzAsMTE2
+OTg1MjIzXX0=
 -->
