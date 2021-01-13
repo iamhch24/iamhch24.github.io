@@ -446,8 +446,8 @@ public class StringConcatTest {
 		// TODO Auto-generated method stub
 		String s1 = "Hello";
 		String s2 = "World";
-		StringConcat concat = (s,v) -> System.out.println(s+", "+v); // new 생성자 대신 람다식으로 메서드를 구현한다. 중간 단계 생략하는 효과 --> 마치 변수화된 것처럼 보임 == 람다함수를 다른 곳의 변수처럼 던져질 수 있음.
-		concat.makeString(s1,s2);
+		StringConcat concat = (s,v) -> System.out.println(s+", "+v); // new 생성자 대신 람다식으로 메서드를 구현한다. 중간 단계 생략하는 효과 --> 마치 변수화된 것처럼 보임 == 당장 실행되는 것이 아니라서 람다함수를 다른 곳의 변수처럼 던져질 수 있음.
+		concat.makeString(s1,s2); // 여기서 람다함수가 실제실행이 됨
 	}
 	
 	@FunctionalInterface
@@ -460,11 +460,11 @@ public class StringConcatTest {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTE3MTQyMDUsLTEyOTgzNTEyOTIsMj
-E3Mjg4MjU3LC0yMDY0OTk3NzU1LDEzMjk0MDk5NjEsLTEyNjUx
-NTM0MDEsLTk4MzQ5MjkwNywxOTUwMDY2NTM4LDEwMDY5OTE4MD
-YsMTU4MzYxNTIyNiwtMTc5NzcyNzQ5MywxNDg1ODM4MDksMjEz
-ODIzMTM4NCwyMDY3Mzc1OTc0LDE3MTUyNTE1NzUsMjQyODU3MT
-UzLC0xMDc0NjE1MDA5LC0xODAzMzc3MTYyLC0xMTA0MDYwNjY3
-LC0xNzMwNDQ0MjY2XX0=
+eyJoaXN0b3J5IjpbMzg2MDE2NTE2LC0xNTExNzE0MjA1LC0xMj
+k4MzUxMjkyLDIxNzI4ODI1NywtMjA2NDk5Nzc1NSwxMzI5NDA5
+OTYxLC0xMjY1MTUzNDAxLC05ODM0OTI5MDcsMTk1MDA2NjUzOC
+wxMDA2OTkxODA2LDE1ODM2MTUyMjYsLTE3OTc3Mjc0OTMsMTQ4
+NTgzODA5LDIxMzgyMzEzODQsMjA2NzM3NTk3NCwxNzE1MjUxNT
+c1LDI0Mjg1NzE1MywtMTA3NDYxNTAwOSwtMTgwMzM3NzE2Miwt
+MTEwNDA2MDY2N119
 -->
