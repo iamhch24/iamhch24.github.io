@@ -555,14 +555,15 @@ public interface Runnable {
 * (3-2) BiFunction 인터페이스 :: (함수형) :: 인풋 2, 아웃풋 1개 :: apply() 로 호출
 * (4) UnaryOperator 인터페이스 :: (오퍼레이터형) :: 인풋 1, 아웃풋 1개 -- 같은 타입 :: apply()로 호출
 * (4-1) BiOperator 인터페이스 :: (오퍼레이터형) :: 인풋 2, 아웃풋 1개 -- 같은 타입 :: apply()로 호출
-* (5) 
+* (5) Predicate 인터페이스 :: (예언형) :: 인풋 있고, 리턴값은 boolean, 매개값을 조사하고 true/false를 리턴
+* (5-1) BiPredicate 인터페이스 :: (예언형) :: 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODkzMzUwNTEsMTMwMDg4MjI0NSw1MT
-MxNzI0OTQsOTU5NDc1MjMzLDk3MTMxODY1LDE1MTU1OTkyMTYs
-OTY1NDMyNjU4LDU3NDg0MjM0LDc1NDI5ODQ0OCwtMTU1OTA5MT
-YzOCwtMTUxMTcxNDIwNSwtMTI5ODM1MTI5MiwyMTcyODgyNTcs
-LTIwNjQ5OTc3NTUsMTMyOTQwOTk2MSwtMTI2NTE1MzQwMSwtOT
-gzNDkyOTA3LDE5NTAwNjY1MzgsMTAwNjk5MTgwNiwxNTgzNjE1
-MjI2XX0=
+eyJoaXN0b3J5IjpbMTAxNjAxOTMwMSwxMzAwODgyMjQ1LDUxMz
+E3MjQ5NCw5NTk0NzUyMzMsOTcxMzE4NjUsMTUxNTU5OTIxNiw5
+NjU0MzI2NTgsNTc0ODQyMzQsNzU0Mjk4NDQ4LC0xNTU5MDkxNj
+M4LC0xNTExNzE0MjA1LC0xMjk4MzUxMjkyLDIxNzI4ODI1Nywt
+MjA2NDk5Nzc1NSwxMzI5NDA5OTYxLC0xMjY1MTUzNDAxLC05OD
+M0OTI5MDcsMTk1MDA2NjUzOCwxMDA2OTkxODA2LDE1ODM2MTUy
+MjZdfQ==
 -->
