@@ -846,9 +846,14 @@ ex) Button, Checkbox, Choice, Label, List, Scrollbar, TextField
 ### 애플릿  Applet
 :: 웹 서버에서 다운로드되어 클라이언트 웹브라우저에서 실행되는 자바 프로그램
 :: 독자적으로 실행될 수 없고, 웹브라우저나 애플릿 뷰어에서만 실행가능
-:: 지금은 자바 ㅈ
+:: 지금은 자바 데모 프로그램 실행 시에 주로 사용된다. 
+
+
+# 16장 스윙 Swing
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzkxOTc1MDMsLTE3OTY0NjQyNTAsLT
+eyJoaXN0b3J5IjpbLTIwMTU4MDYyOTUsLTE3OTY0NjQyNTAsLT
 ExODAwMzEzMCwxMjI0ODkxMjUyLDEwODQ2NzM3NDgsMjIyOTY4
 MzEzLDg0MzE4OTU5LC0xNjY2MzI4MDYyLDMxNTY1MzA0NywyNT
 c0Mjc2OTgsLTM1NjQ3ODExNiwxNjc5ODQxMjY0LDE3NDAwMDQy
