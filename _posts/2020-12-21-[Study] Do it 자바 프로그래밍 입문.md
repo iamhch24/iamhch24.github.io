@@ -694,12 +694,66 @@ public static <T> Stream<T> stream(T[] array) {
 
 * 최종연산 :: forEach, sum, count, max, min, average
 
-optional
+> 실습
+
+```Java
+package stream;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+import java.util.stream.Stream;
+
+public class StreamEx_Run {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] array1 = {1,2,3,4,5,6,7};
+		for(int i : array1) {
+			System.out.print(i+" ");
+		}
+		System.out.println();
+		
+		Arrays
+		.stream(array1)
+		.forEach(it->System.out.print(it+" "));
+		System.out.println();
+		
+		Arrays
+		.stream(array1)
+		.filter(s->s>3).forEach(it->System.out.print(it+" "));
+		System.out.println();
+		
+		System.out.println(Arrays.stream(array1).max().orElse(0)); // orElse(0)은 null값을 0으로 -- null check optional 넣어줌
+		
+		List<String> list = Arrays.asList("홍길동","신용권","김자바");  // List :: Collection 중 하나
+		Stream<String> stream = list.stream();
+		Long count_number = list.stream().count();
+		Long count_number2 = stream.count();
+		System.out.println(count_number);
+		System.out.println(count_number2);
+		
+		ArrayList<String> list2 = new ArrayList<>();
+		list2.add("홍길동");
+		list2.add("신용권");
+		list2.add("김자바");
+		Iterator<String> iterator = list2.iterator();
+		
+		while(iterator.hasNext()) {
+			System.out.println(iterator.next());
+		}
+
+	}
+
+}
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMzI2NDg2MywtNDAwOTY5MTY5LDEwMz
-MxMzA0NTEsLTM3MDYyNDI2LC0zODc0NTk2OTIsMTY0MTE3Niw0
-OTAyMDIyMDYsMTcyNDI2MzUxNywxNTAyMTYwNzYyLC05Nzg5MD
-E5NDEsNjA1MjU2NTAwLDEwMTYwMTkzMDEsMTMwMDg4MjI0NSw1
-MTMxNzI0OTQsOTU5NDc1MjMzLDk3MTMxODY1LDE1MTU1OTkyMT
-YsOTY1NDMyNjU4LDU3NDg0MjM0LDc1NDI5ODQ0OF19
+eyJoaXN0b3J5IjpbNzE0MzU1OTM3LDE1MDMyNjQ4NjMsLTQwMD
+k2OTE2OSwxMDMzMTMwNDUxLC0zNzA2MjQyNiwtMzg3NDU5Njky
+LDE2NDExNzYsNDkwMjAyMjA2LDE3MjQyNjM1MTcsMTUwMjE2MD
+c2MiwtOTc4OTAxOTQxLDYwNTI1NjUwMCwxMDE2MDE5MzAxLDEz
+MDA4ODIyNDUsNTEzMTcyNDk0LDk1OTQ3NTIzMyw5NzEzMTg2NS
+wxNTE1NTk5MjE2LDk2NTQzMjY1OCw1NzQ4NDIzNF19
 -->
