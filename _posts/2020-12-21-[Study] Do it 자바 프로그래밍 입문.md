@@ -781,7 +781,7 @@ ArrayList 생성자는 **java.util.Arrays.ArrayList의  상위(super) 클래스�
 * peek() :: 결과 스트림으로부터 각 요소를 소모하여 추가로 명시된 동작(action)을 수행하여 새로운 스트림을 생성하여 반환 -- 디버깅용으로 많이 쓰임
 * skip() :: 해당 스트림의 첫 번째 요소부터 전달된 개수만큼의 요소를 제외한 나머지 요소만으로 이루어진 새로운 스트림을 반환함.
 * sorted() :: 해당 스트림을 주어진 비교자(comparator)를 이용하여 정렬함. 비교자를 전달하지 않으면 영문 사전 순(natural order)으로 정렬함.
-
+참고 :: https://blog.naver.com/ddk94/222156069191
 
 #### 최종 연산 메서드 요약 :
 * forEach() :: 요소의 출력
@@ -794,34 +794,18 @@ noneMatch(): 해당 스트림의 모든 요소가 특정 조건을 만족하지 
 * count(), min(), max() :: 요소의 통계 -- count() 메서드는 해당 스트림의 요소의 총개수를 long 탕비의 값으로 반환한다. max()와 min() 메서드는 스트림의 해당 요소들 중 가장 큰 값과 가장 작은 값을 가지는 요소를 참조할 수 있다. 이때 반환되는 값은 Optional 객체로 반환된다.
 * sum(), average() :: 요소의 연산 -- IntStream이나 DoubleStream과 가 은 기본 타입 스트림에는 해당 스트림의 모든 요소에 대한 합과 평균을 구할 수 있는 sum()과 average() 메서드가 각각 정의되어 있다. 이때 average() 메서드는 각 기본 타입으로 래핑 된 Optional 객체를 반환한다.
 * collect() :: 요소의 수집 -- collect() 메서드는 인수로 전달되는 Collectors 객체에 구현된 방법대로 스트림의 요소를 수집한다. 또한, Collectors 클래스에는 미리 정의된 다양한 방법이 클래스 메서드로 정의되어 있다. 이 외에도 사용자가 직접 Collector 인터페이스를 구현하여 자신만의 수집 방법을 정의하는 것도 가능하다.
-
-메서드
-
-설명
-
-toArray(), toCollection(), toList(), toSet(), toMap()
-
-스트림을 배열이나 컬렉션으로 변환
-
-counting(), maxBy(), minBy(), summingInt(), averagingInt()
-
-요소의 통계와 연산 메서드와 같은 동작을 수행
-
-reducing(), joining()
-
-요소의 소모와 같은 동작을 수행
-
-groupingBy(), partitioningBy()
-
-요소의 그룹화와 분할
-
+toArray(), toCollection(), toList(), toSet(), toMap() :: 스트림을 배열이나 컬렉션으로 변환
+counting(), maxBy(), minBy(), summingInt(), averagingInt() :: 요소의 통계와 연산 메서드와 같은 동작을 수행
+reducing(), joining() :: 요소의 소모와 같은 동작을 수행
+groupingBy(), partitioningBy() :: 요소의 그룹화와 분할
+참고 :: https://blog.naver.com/ddk94/222157757762
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NTg1MTk5MSwtMTYyMjY2MzY5OSwtNj
-U0NzQyOTI1LDExMjkyMzg0MjksNzE0MzU1OTM3LDE1MDMyNjQ4
-NjMsLTQwMDk2OTE2OSwxMDMzMTMwNDUxLC0zNzA2MjQyNiwtMz
-g3NDU5NjkyLDE2NDExNzYsNDkwMjAyMjA2LDE3MjQyNjM1MTcs
-MTUwMjE2MDc2MiwtOTc4OTAxOTQxLDYwNTI1NjUwMCwxMDE2MD
-E5MzAxLDEzMDA4ODIyNDUsNTEzMTcyNDk0LDk1OTQ3NTIzM119
-
+eyJoaXN0b3J5IjpbLTEwNDY1MTgzOTcsLTE2MjI2NjM2OTksLT
+Y1NDc0MjkyNSwxMTI5MjM4NDI5LDcxNDM1NTkzNywxNTAzMjY0
+ODYzLC00MDA5NjkxNjksMTAzMzEzMDQ1MSwtMzcwNjI0MjYsLT
+M4NzQ1OTY5MiwxNjQxMTc2LDQ5MDIwMjIwNiwxNzI0MjYzNTE3
+LDE1MDIxNjA3NjIsLTk3ODkwMTk0MSw2MDUyNTY1MDAsMTAxNj
+AxOTMwMSwxMzAwODgyMjQ1LDUxMzE3MjQ5NCw5NTk0NzUyMzNd
+fQ==
 -->
