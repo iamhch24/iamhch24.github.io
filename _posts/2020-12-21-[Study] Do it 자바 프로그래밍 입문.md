@@ -770,12 +770,44 @@ ArrayList 생성자는 **java.util.Arrays.ArrayList의  상위(super) 클래스�
 ```List<String> list = new ArrayList<String>(Arrays.asList(arr));```
  참고 :: https://m.blog.naver.com/roropoly1/221140156345
 
+
+#### 중개 연산 메서드 요약:
+
+filter() :: 해당 스트림에서 주어진 조건(predicate)에 맞는 요소만으로 구성된 새로운 스트림을 반환.
+map() ::
+
+해당 스트림의 요소들을 주어 함수에 인수로 전달하여, 그 반환 값으로 이루어진 새로운 스트림을 반환함
+
+flatMap()
+
+해당 스트림의 요소가 배열일 경우, 배열의 각 요소를 주어진 함수에 인수로 전달하여, 그 반환값으로 이루어진 새로운 스트림을 반환한다.
+
+distinct()
+
+해당 스트림에서 중복된 요소가 제거된 새로운 스트림을 반환함. 내부적으로 Object 클래스의 equals() 메서드를 사용함.
+
+limit()
+
+해당 스트림에서 전달된 개수만큼의 요소만으로 이루어진 새로운 스트림을 반환
+
+peek()
+
+결과 스트림으로부터 각 요소를 소모하여 추가로 명시된 동작(actjion)을 수행하여 새로운 스트림을 생성하여 반환
+
+skip()
+
+해당 스트림의 첫 번째 요소부터 전달된 개수만큼의 요소를 제외한 나머지 요소만으로 이루어진 새로운 스트림을 반환함.
+
+sorted()
+
+해당 스트림을 주어진 비교자(comparator)를 이용하여 정렬함. 비교자를 전달하지 않으면 영문 사전 순(natural order)으로 정렬함.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDY4ODgzNDcsLTE2MjI2NjM2OTksLT
-Y1NDc0MjkyNSwxMTI5MjM4NDI5LDcxNDM1NTkzNywxNTAzMjY0
-ODYzLC00MDA5NjkxNjksMTAzMzEzMDQ1MSwtMzcwNjI0MjYsLT
-M4NzQ1OTY5MiwxNjQxMTc2LDQ5MDIwMjIwNiwxNzI0MjYzNTE3
-LDE1MDIxNjA3NjIsLTk3ODkwMTk0MSw2MDUyNTY1MDAsMTAxNj
-AxOTMwMSwxMzAwODgyMjQ1LDUxMzE3MjQ5NCw5NTk0NzUyMzNd
-fQ==
+eyJoaXN0b3J5IjpbNzIyODYyNTExLC0xNjIyNjYzNjk5LC02NT
+Q3NDI5MjUsMTEyOTIzODQyOSw3MTQzNTU5MzcsMTUwMzI2NDg2
+MywtNDAwOTY5MTY5LDEwMzMxMzA0NTEsLTM3MDYyNDI2LC0zOD
+c0NTk2OTIsMTY0MTE3Niw0OTAyMDIyMDYsMTcyNDI2MzUxNywx
+NTAyMTYwNzYyLC05Nzg5MDE5NDEsNjA1MjU2NTAwLDEwMTYwMT
+kzMDEsMTMwMDg4MjI0NSw1MTMxNzI0OTQsOTU5NDc1MjMzXX0=
+
 -->
