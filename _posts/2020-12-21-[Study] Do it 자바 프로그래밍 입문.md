@@ -749,8 +749,16 @@ public class StreamEx_Run {
 }
 
 ```
+
+> #### java.util.Arrays 클래스
+
+* Arrays 클래스에는 배열을 다루기 위한 다양한 메소드가 포함되어 있습니다.
+* Arrays 클래스의 모든 메소드는 클래스 메소드(static method)이므로, 객체를 생성하지 않고도 바로 사용할 수 있습니다.
+* 이 클래스는 java.util 패키지에 포함되므로, 반드시 import 문으로 java.util 패키지를 불러오고 나서 사용해야 합니다.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNzYzNTA0Nyw3MTQzNTU5MzcsMTUwMz
+eyJoaXN0b3J5IjpbMTEyOTIzODQyOSw3MTQzNTU5MzcsMTUwMz
 I2NDg2MywtNDAwOTY5MTY5LDEwMzMxMzA0NTEsLTM3MDYyNDI2
 LC0zODc0NTk2OTIsMTY0MTE3Niw0OTAyMDIyMDYsMTcyNDI2Mz
 UxNywxNTAyMTYwNzYyLC05Nzg5MDE5NDEsNjA1MjU2NTAwLDEw
