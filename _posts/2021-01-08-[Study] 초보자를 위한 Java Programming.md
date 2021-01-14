@@ -807,9 +807,13 @@ ex) Button, Checkbox, Choice, Label, List, Scrollbar, TextField
 
 
 ### 배치관리자 LayoutManager
-= 컨네이터 안에서 컴ㅍ
+= 컨네이터 안에서 컴포넌트를 원하는 위치에 배치를 할 수 있데 해 주는 요소.
+* 종류 :: BorderLayout, FlowLayout, CardLayout, GridLayout...
+
+#### BorderLayout
+= Frame의 기본 배치 관리자로, 화면을 5개의 영역으로 구분한다
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NTAwMDc4NSwtMTE4MDAzMTMwLDEyMj
+eyJoaXN0b3J5IjpbLTE4MzE2NDg2OCwtMTE4MDAzMTMwLDEyMj
 Q4OTEyNTIsMTA4NDY3Mzc0OCwyMjI5NjgzMTMsODQzMTg5NTks
 LTE2NjYzMjgwNjIsMzE1NjUzMDQ3LDI1NzQyNzY5OCwtMzU2ND
 c4MTE2LDE2Nzk4NDEyNjQsMTc0MDAwNDI5OCwtNDQxODc4OTQ1
