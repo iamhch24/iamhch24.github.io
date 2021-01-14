@@ -756,13 +756,16 @@ public class StreamEx_Run {
 * Arrays 클래스의 모든 메소드는 클래스 메소드(static method)이므로, 객체를 생성하지 않고도 바로 사용할 수 있습니다.
 * 이 클래스는 java.util 패키지에 포함되므로, 반드시 import 문으로 java.util 패키지를 불러오고 나서 사용해야 합니다.
 
-> Optional 자바
+> Optional 자바 :: `Optional`은 많은 사람들이 우리(자바 언어 설계자)에게 기대했던 범용적인 `Maybe` 타입과는 다르다. **라이브러리 메서드가 반환할 결과값이 ‘없음’을 명백하게 표현할 필요가 있는 곳에서 제한적으로 사용할 수 있는 메커니즘을 제공하는 것이  `Optional`을 만든 의도**였다.
 > 참고 :: http://homoefficio.github.io/2019/10/03/Java-Optional-%EB%B0%94%EB%A5%B4%EA%B2%8C-%EC%93%B0%EA%B8%B0/
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTAzNTUxNTA5LDExMjkyMzg0MjksNzE0Mz
-U1OTM3LDE1MDMyNjQ4NjMsLTQwMDk2OTE2OSwxMDMzMTMwNDUx
-LC0zNzA2MjQyNiwtMzg3NDU5NjkyLDE2NDExNzYsNDkwMjAyMj
-A2LDE3MjQyNjM1MTcsMTUwMjE2MDc2MiwtOTc4OTAxOTQxLDYw
-NTI1NjUwMCwxMDE2MDE5MzAxLDEzMDA4ODIyNDUsNTEzMTcyND
-k0LDk1OTQ3NTIzMyw5NzEzMTg2NSwxNTE1NTk5MjE2XX0=
+eyJoaXN0b3J5IjpbLTY1NDc0MjkyNSwxMTI5MjM4NDI5LDcxND
+M1NTkzNywxNTAzMjY0ODYzLC00MDA5NjkxNjksMTAzMzEzMDQ1
+MSwtMzcwNjI0MjYsLTM4NzQ1OTY5MiwxNjQxMTc2LDQ5MDIwMj
+IwNiwxNzI0MjYzNTE3LDE1MDIxNjA3NjIsLTk3ODkwMTk0MSw2
+MDUyNTY1MDAsMTAxNjAxOTMwMSwxMzAwODgyMjQ1LDUxMzE3Mj
+Q5NCw5NTk0NzUyMzMsOTcxMzE4NjUsMTUxNTU5OTIxNl19
 -->
