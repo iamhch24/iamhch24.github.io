@@ -693,8 +693,10 @@ public static <T> Stream<T> stream(T[] array) {
 * 스트림 생성 + 중간 연산 (map, filter, sorted) + 최종 연산(forEach, sum, reduce ...)
 
 * 최종연산 :: forEach, sum, count, max, min, average
+
+optional
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMjQ3NDM5NywtNDAwOTY5MTY5LDEwMz
+eyJoaXN0b3J5IjpbMTUwMzI2NDg2MywtNDAwOTY5MTY5LDEwMz
 MxMzA0NTEsLTM3MDYyNDI2LC0zODc0NTk2OTIsMTY0MTE3Niw0
 OTAyMDIyMDYsMTcyNDI2MzUxNywxNTAyMTYwNzYyLC05Nzg5MD
 E5NDEsNjA1MjU2NTAwLDEwMTYwMTkzMDEsMTMwMDg4MjI0NSw1
