@@ -826,9 +826,9 @@ ex) Button, Checkbox, Choice, Label, List, Scrollbar, TextField
 ### AWT 이벤트 관련 개념
 * 이벤트 소스 (Event Source) :: 이벤트를 발생시킨 컴포넌트를 의미한다. 
 * 이벤트 처리자 (Event Handler) :: 이벤트 발생 시 실제 작업을 수행하는 주체(클래스) 
-* 이벤트 리스너 (Event Listener) ::
+* 이벤트 리스너 (Event Listener) :: 이벤트 소스에서 이벤트 발생 유무를 체크한다. interface로 제공되고 실제 이벤트를 처리하는 추상 메서드를 가지고 있다. 이벤트 처리자는 이벤트 리스너를 구현하여 이벤트를 처리한다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MTk5MzIxMSwtMTc5NjQ2NDI1MCwtMT
+eyJoaXN0b3J5IjpbLTI2MTIzNzc3NSwtMTc5NjQ2NDI1MCwtMT
 E4MDAzMTMwLDEyMjQ4OTEyNTIsMTA4NDY3Mzc0OCwyMjI5Njgz
 MTMsODQzMTg5NTksLTE2NjYzMjgwNjIsMzE1NjUzMDQ3LDI1Nz
 QyNzY5OCwtMzU2NDc4MTE2LDE2Nzk4NDEyNjQsMTc0MDAwNDI5
