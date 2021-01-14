@@ -9,7 +9,7 @@ toc: true
 
 ---
 
-## 1장 자바 프로그래밍 시작하기
+# 1장 자바 프로그래밍 시작하기
 
 * Java SE 1.8 설치
 * 이클립스 설치
@@ -238,6 +238,8 @@ abstract 예약어를 추가해야 함.
 System.exit(0); // 정상 종료
 System.exit(1); // 비정상 종료
 ```
+
+* 다형성의 완성은 오버라이드
 
 # 11 기본 클래스
 
@@ -692,10 +694,10 @@ public static <T> Stream<T> stream(T[] array) {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzMzEzMDQ1MSwtMzcwNjI0MjYsLTM4Nz
-Q1OTY5MiwxNjQxMTc2LDQ5MDIwMjIwNiwxNzI0MjYzNTE3LDE1
-MDIxNjA3NjIsLTk3ODkwMTk0MSw2MDUyNTY1MDAsMTAxNjAxOT
-MwMSwxMzAwODgyMjQ1LDUxMzE3MjQ5NCw5NTk0NzUyMzMsOTcx
-MzE4NjUsMTUxNTU5OTIxNiw5NjU0MzI2NTgsNTc0ODQyMzQsNz
-U0Mjk4NDQ4LC0xNTU5MDkxNjM4LC0xNTExNzE0MjA1XX0=
+eyJoaXN0b3J5IjpbLTQwMDk2OTE2OSwxMDMzMTMwNDUxLC0zNz
+A2MjQyNiwtMzg3NDU5NjkyLDE2NDExNzYsNDkwMjAyMjA2LDE3
+MjQyNjM1MTcsMTUwMjE2MDc2MiwtOTc4OTAxOTQxLDYwNTI1Nj
+UwMCwxMDE2MDE5MzAxLDEzMDA4ODIyNDUsNTEzMTcyNDk0LDk1
+OTQ3NTIzMyw5NzEzMTg2NSwxNTE1NTk5MjE2LDk2NTQzMjY1OC
+w1NzQ4NDIzNCw3NTQyOTg0NDgsLTE1NTkwOTE2MzhdfQ==
 -->
