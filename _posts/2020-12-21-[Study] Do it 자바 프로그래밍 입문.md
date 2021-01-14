@@ -673,7 +673,9 @@ public class Consumer_Run {
 	}
 }
 ```
-⇒ 람다식으로 인해 함수를 변수처럼 사용할 수 있어서 함수를 던질 수 있
+> 콜백함수
+
+⇒ 람다식으로 인해 함수를 변수처럼 사용할 수 있어서 함수를 던질 수 있다. 이렇게 던져진 함수를 콜백 함수라고 한다.
 
 ### 스트림 클래스 :: 원본 값을 수정하지 않는다.
 
@@ -690,7 +692,7 @@ public static <T> Stream<T> stream(T[] array) {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NDY1Mzk5NCwtMzcwNjI0MjYsLTM4Nz
+eyJoaXN0b3J5IjpbMTAzMzEzMDQ1MSwtMzcwNjI0MjYsLTM4Nz
 Q1OTY5MiwxNjQxMTc2LDQ5MDIwMjIwNiwxNzI0MjYzNTE3LDE1
 MDIxNjA3NjIsLTk3ODkwMTk0MSw2MDUyNTY1MDAsMTAxNjAxOT
 MwMSwxMzAwODgyMjQ1LDUxMzE3MjQ5NCw5NTk0NzUyMzMsOTcx
