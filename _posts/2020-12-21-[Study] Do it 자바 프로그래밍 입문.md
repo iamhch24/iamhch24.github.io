@@ -786,18 +786,42 @@ ArrayList 생성자는 **java.util.Arrays.ArrayList의  상위(super) 클래스�
 #### 최종 연산 메서드 요약 :
 * forEach() :: 요소의 출력
 * reduce() :: 요소의 소모 -- reduce() 메서드는 첫 번째와 두 번째 요소를 가지고 연산을 수행한 뒤, 그 결과와 세 번째 요소를 가지고 또다시 연산을 수행한다. 이런 식으로 해당 스트림의 첫 번째 요소와 연산을 시작하며, 그 결과와 두 번째 요소를 가지고 계속해서 연상을 수행하게 된다.
-* findFirst(), findAny() :: 요소의 검색
-* anyMatch(), allMatch(), noneMatch() :: 요소의 검사
-* count(), min(), max() :: 요소의 통계
-* sum(), average() :: 요소의 연산
-* collect() :: 요소의 수집
+* findFirst(), findAny() :: 요소의 검색 -- findFirst()와 findAny() 메서드는 해당 스트림에서 첫 번째 요소를 참조하는 Optional 객체를 반환한다. 두 메서드 모두 비어 있는 스트림에서는 비어있는 Optional 객체를 반환한다.
+* anyMatch(), allMatch(), noneMatch() :: 요소의 검사 -- 해당 스트림의 요소 중에서 특정 조건을 만족하는 요소가 있는지, 아니면 모두 만족하거나 모두 만족하지 않는지를 다음 anyMatch(), allMatch(); noneMatch() 메서드들을 이용하여 확인할 수 있다. 세 메서드 모두 인수로 Predicate 객체를 전달받으며, 요소의 검사 결과는 boolean 값으로 반환한다.
+anyMatch(): 해당 스트림의 일부 요소가 특정 조건을 만족할 경우에 true를 반환.
+allMatch(): 해당 스트림의 모든 요소가 특정 조건을 만족할 경우 true를 반환.
+noneMatch(): 해당 스트림의 모든 요소가 특정 조건을 만족하지 않을 경우에 true를 반환.
+* count(), min(), max() :: 요소의 통계 -- count() 메서드는 해당 스트림의 요소의 총개수를 long 탕비의 값으로 반환한다. max()와 min() 메서드는 스트림의 해당 요소들 중 가장 큰 값과 가장 작은 값을 가지는 요소를 참조할 수 있다. 이때 반환되는 값은 Optional 객체로 반환된다.
+* sum(), average() :: 요소의 연산 -- IntStream이나 DoubleStream과 가 은 기본 타입 스트림에는 해당 스트림의 모든 요소에 대한 합과 평균을 구할 수 있는 sum()과 average() 메서드가 각각 정의되어 있다. 이때 average() 메서드는 각 기본 타입으로 래핑 된 Optional 객체를 반환한다.
+* collect() :: 요소의 수집 -- collect() 메서드는 인수로 전달되는 Collectors 객체에 구현된 방법대로 스트림의 요소를 수집한다. 또한, Collectors 클래스에는 미리 정의된 다양한 방법이 클래스 메서드로 정의되어 있다. 이 외에도 사용자가 직접 Collector 인터페이스를 구현하여 자신만의 수집 방법을 정의하는 것도 가능하다.
+
+메서드
+
+설명
+
+toArray(), toCollection(), toList(), toSet(), toMap()
+
+스트림을 배열이나 컬렉션으로 변환
+
+counting(), maxBy(), minBy(), summingInt(), averagingInt()
+
+요소의 통계와 연산 메서드와 같은 동작을 수행
+
+reducing(), joining()
+
+요소의 소모와 같은 동작을 수행
+
+groupingBy(), partitioningBy()
+
+요소의 그룹화와 분할
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgxOTc1NDAyLC0xNjIyNjYzNjk5LC02NT
-Q3NDI5MjUsMTEyOTIzODQyOSw3MTQzNTU5MzcsMTUwMzI2NDg2
-MywtNDAwOTY5MTY5LDEwMzMxMzA0NTEsLTM3MDYyNDI2LC0zOD
-c0NTk2OTIsMTY0MTE3Niw0OTAyMDIyMDYsMTcyNDI2MzUxNywx
-NTAyMTYwNzYyLC05Nzg5MDE5NDEsNjA1MjU2NTAwLDEwMTYwMT
-kzMDEsMTMwMDg4MjI0NSw1MTMxNzI0OTQsOTU5NDc1MjMzXX0=
+eyJoaXN0b3J5IjpbMTk1NTg1MTk5MSwtMTYyMjY2MzY5OSwtNj
+U0NzQyOTI1LDExMjkyMzg0MjksNzE0MzU1OTM3LDE1MDMyNjQ4
+NjMsLTQwMDk2OTE2OSwxMDMzMTMwNDUxLC0zNzA2MjQyNiwtMz
+g3NDU5NjkyLDE2NDExNzYsNDkwMjAyMjA2LDE3MjQyNjM1MTcs
+MTUwMjE2MDc2MiwtOTc4OTAxOTQxLDYwNTI1NjUwMCwxMDE2MD
+E5MzAxLDEzMDA4ODIyNDUsNTEzMTcyNDk0LDk1OTQ3NTIzM119
 
 -->
