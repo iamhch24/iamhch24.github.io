@@ -759,13 +759,14 @@ public class StreamEx_Run {
 > Optional 자바 :: `Optional`은 많은 사람들이 우리(자바 언어 설계자)에게 기대했던 범용적인 `Maybe` 타입과는 다르다. **라이브러리 메서드가 반환할 결과값이 ‘없음’을 명백하게 표현할 필요가 있는 곳에서 제한적으로 사용할 수 있는 메커니즘을 제공하는 것이  `Optional`을 만든 의도**였다.
 > 참고 :: http://homoefficio.github.io/2019/10/03/Java-Optional-%EB%B0%94%EB%A5%B4%EA%B2%8C-%EC%93%B0%EA%B8%B0/
 
+> Arrays.asList()
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NDc0MjkyNSwxMTI5MjM4NDI5LDcxND
-M1NTkzNywxNTAzMjY0ODYzLC00MDA5NjkxNjksMTAzMzEzMDQ1
-MSwtMzcwNjI0MjYsLTM4NzQ1OTY5MiwxNjQxMTc2LDQ5MDIwMj
-IwNiwxNzI0MjYzNTE3LDE1MDIxNjA3NjIsLTk3ODkwMTk0MSw2
-MDUyNTY1MDAsMTAxNjAxOTMwMSwxMzAwODgyMjQ1LDUxMzE3Mj
-Q5NCw5NTk0NzUyMzMsOTcxMzE4NjUsMTUxNTU5OTIxNl19
+eyJoaXN0b3J5IjpbLTY3NTkzMjQwOCwtNjU0NzQyOTI1LDExMj
+kyMzg0MjksNzE0MzU1OTM3LDE1MDMyNjQ4NjMsLTQwMDk2OTE2
+OSwxMDMzMTMwNDUxLC0zNzA2MjQyNiwtMzg3NDU5NjkyLDE2ND
+ExNzYsNDkwMjAyMjA2LDE3MjQyNjM1MTcsMTUwMjE2MDc2Miwt
+OTc4OTAxOTQxLDYwNTI1NjUwMCwxMDE2MDE5MzAxLDEzMDA4OD
+IyNDUsNTEzMTcyNDk0LDk1OTQ3NTIzMyw5NzEzMTg2NV19
 -->
