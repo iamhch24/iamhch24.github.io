@@ -790,10 +790,14 @@ public class SimpleServer {
 * Container :: 화면 전체의 틀을 제공하고, Component를 표시한다. Window 및 Panel 계열로 나눌 수 있다.
 * LayoutManager :: 각 Container에서 Component들의 크기와 위치를 지정한다. 각 Container는 기본 LayoutManager를 가지고 있다.
 
-### 컨테이너
+### 컨테이너 Container
+* 종류 :: Window 계열 / Panel 계열 - 독립적으로 보이지 않고 주로 다른 컴포넌트를 그룹으로 보이도록 하는데 사용된다. ex) 애플릿
+
+> Frame의 특징
+> 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDA4MTMxOSwxMjI0ODkxMjUyLDEwOD
+eyJoaXN0b3J5IjpbMTgxNzI5ODA1OSwxMjI0ODkxMjUyLDEwOD
 Q2NzM3NDgsMjIyOTY4MzEzLDg0MzE4OTU5LC0xNjY2MzI4MDYy
 LDMxNTY1MzA0NywyNTc0Mjc2OTgsLTM1NjQ3ODExNiwxNjc5OD
 QxMjY0LDE3NDAwMDQyOTgsLTQ0MTg3ODk0NSwtMTM1NzI0OTc0
