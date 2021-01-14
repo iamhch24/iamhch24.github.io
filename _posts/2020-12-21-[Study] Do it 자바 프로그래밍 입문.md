@@ -821,13 +821,62 @@ public class ReduceTest {
 }
 ```
 
+> 연습문제 Q7
 
+```Java
+package stream;
+import java.util.ArrayList;
+import java.util.List;
+
+class Book {
+	private String name;
+	private int price;
+	
+	public Book(String name, int price) {
+		this.name = name;
+		this.setPrice(price);
+	}
+	public int getPrice() {
+		return price;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+}
+
+public class Q7 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Book> bookList = new ArrayList<>();
+		
+		bookList.add(new Book("자바",25_000));
+		bookList.add(new Book("파이썬",15_000));
+		bookList.add(new Book("안드로이드",30_000));
+		
+		int total = bookList.stream().mapToInt(c->c.getPrice()).sum();
+		System.out.println("== 모든 책의 가격의 합 ==");
+		System.out.printf("    %d 만원",(int)total/10000);
+		System.out.println();
+		System.out.println();
+		System.out.println("== 2만원 이상인 책 리스트 =="); 
+		bookList.stream().filter(c->c.getPrice() >= 20_000).map(s->s.getName()).forEach(it -> System.out.println("    "+it));
+	}
+
+}
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMDY1ODkxOCwtMTg4MzIxNjMwMCwtMT
-A0NjUxODM5NywtMTYyMjY2MzY5OSwtNjU0NzQyOTI1LDExMjky
-Mzg0MjksNzE0MzU1OTM3LDE1MDMyNjQ4NjMsLTQwMDk2OTE2OS
-wxMDMzMTMwNDUxLC0zNzA2MjQyNiwtMzg3NDU5NjkyLDE2NDEx
-NzYsNDkwMjAyMjA2LDE3MjQyNjM1MTcsMTUwMjE2MDc2MiwtOT
-c4OTAxOTQxLDYwNTI1NjUwMCwxMDE2MDE5MzAxLDEzMDA4ODIy
-NDVdfQ==
+eyJoaXN0b3J5IjpbNTU3MjM0MCwxNDMwNjU4OTE4LC0xODgzMj
+E2MzAwLC0xMDQ2NTE4Mzk3LC0xNjIyNjYzNjk5LC02NTQ3NDI5
+MjUsMTEyOTIzODQyOSw3MTQzNTU5MzcsMTUwMzI2NDg2MywtND
+AwOTY5MTY5LDEwMzMxMzA0NTEsLTM3MDYyNDI2LC0zODc0NTk2
+OTIsMTY0MTE3Niw0OTAyMDIyMDYsMTcyNDI2MzUxNywxNTAyMT
+YwNzYyLC05Nzg5MDE5NDEsNjA1MjU2NTAwLDEwMTYwMTkzMDFd
+fQ==
 -->
