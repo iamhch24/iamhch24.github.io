@@ -817,13 +817,19 @@ ex) Button, Checkbox, Choice, Label, List, Scrollbar, TextField
 #### FlowLayout
 :: 컴포넌트들을 수평으로 나열시킬 때 사용. 윈도우 화면 크기 변경시 컴포넌트 크기는 변하지 않지만, 위치는 변경될 수 있다.
 
+#### GridLayout 
+:: 컴포넌트를 행과 열로 나누어 배치하고 싶을 때 사용하여 레이아웃 관리자다
+:: 테이블 형태의 배치 관리
+:: 생성 시 행과 열을 지정함
+:: 컴포넌트 추가 시 왼쪽에서 오른쪽, 위에서 아래로 추가된다.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMjQ2NTE1NCwtMTE4MDAzMTMwLDEyMj
-Q4OTEyNTIsMTA4NDY3Mzc0OCwyMjI5NjgzMTMsODQzMTg5NTks
-LTE2NjYzMjgwNjIsMzE1NjUzMDQ3LDI1NzQyNzY5OCwtMzU2ND
-c4MTE2LDE2Nzk4NDEyNjQsMTc0MDAwNDI5OCwtNDQxODc4OTQ1
-LC0xMzU3MjQ5NzQzLDE4MTA1Njg5OTIsLTE3ODM0NjcwNDcsLT
-ExNDc3ODQyMzYsLTExNzgyNzU3MjUsMTYzNDA4MTEyNyw1MDQ3
-MTQ0NF19
+eyJoaXN0b3J5IjpbLTE3OTY0NjQyNTAsLTExODAwMzEzMCwxMj
+I0ODkxMjUyLDEwODQ2NzM3NDgsMjIyOTY4MzEzLDg0MzE4OTU5
+LC0xNjY2MzI4MDYyLDMxNTY1MzA0NywyNTc0Mjc2OTgsLTM1Nj
+Q3ODExNiwxNjc5ODQxMjY0LDE3NDAwMDQyOTgsLTQ0MTg3ODk0
+NSwtMTM1NzI0OTc0MywxODEwNTY4OTkyLC0xNzgzNDY3MDQ3LC
+0xMTQ3Nzg0MjM2LC0xMTc4Mjc1NzI1LDE2MzQwODExMjcsNTA0
+NzE0NDRdfQ==
 -->
