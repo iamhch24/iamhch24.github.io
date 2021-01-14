@@ -785,7 +785,7 @@ ArrayList 생성자는 **java.util.Arrays.ArrayList의  상위(super) 클래스�
 
 #### 최종 연산 메서드 요약 :
 * forEach() :: 요소의 출력
-* reduce() :: 요소의 소모 -- reduce() 메서드는 첫 번째와 두 번째 요소를 가지고 연산을 수행한 뒤, 그 결과와 세 번째 요소를 가지고 또다시 연산을 수행한다. 이런 식으로 해당 스트림의 첫 번째 요소와 연산을 시작하며, 그 결과와 두 번째 요소를 가지고 계속해서 연상을 수행하게 된다.
+* reduce() :: 요소의 소모 :: 누적연산 -- reduce() 메서드는 첫 번째와 두 번째 요소를 가지고 연산을 수행한 뒤, 그 결과와 세 번째 요소를 가지고 또다시 연산을 수행한다. 이런 식으로 해당 스트림의 첫 번째 요소와 연산을 시작하며, 그 결과와 두 번째 요소를 가지고 계속해서 연상을 수행하게 된다.
 * findFirst(), findAny() :: 요소의 검색 -- findFirst()와 findAny() 메서드는 해당 스트림에서 첫 번째 요소를 참조하는 Optional 객체를 반환한다. 두 메서드 모두 비어 있는 스트림에서는 비어있는 Optional 객체를 반환한다.
 * anyMatch(), allMatch(), noneMatch() :: 요소의 검사 -- 해당 스트림의 요소 중에서 특정 조건을 만족하는 요소가 있는지, 아니면 모두 만족하거나 모두 만족하지 않는지를 다음 anyMatch(), allMatch(); noneMatch() 메서드들을 이용하여 확인할 수 있다. 세 메서드 모두 인수로 Predicate 객체를 전달받으며, 요소의 검사 결과는 boolean 값으로 반환한다.
 anyMatch(): 해당 스트림의 일부 요소가 특정 조건을 만족할 경우에 true를 반환.
@@ -801,11 +801,11 @@ groupingBy(), partitioningBy() :: 요소의 그룹화와 분할
 참고 :: https://blog.naver.com/ddk94/222157757762
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDY1MTgzOTcsLTE2MjI2NjM2OTksLT
-Y1NDc0MjkyNSwxMTI5MjM4NDI5LDcxNDM1NTkzNywxNTAzMjY0
-ODYzLC00MDA5NjkxNjksMTAzMzEzMDQ1MSwtMzcwNjI0MjYsLT
-M4NzQ1OTY5MiwxNjQxMTc2LDQ5MDIwMjIwNiwxNzI0MjYzNTE3
-LDE1MDIxNjA3NjIsLTk3ODkwMTk0MSw2MDUyNTY1MDAsMTAxNj
-AxOTMwMSwxMzAwODgyMjQ1LDUxMzE3MjQ5NCw5NTk0NzUyMzNd
-fQ==
+eyJoaXN0b3J5IjpbLTE1Mjk5MzQ1OTIsLTEwNDY1MTgzOTcsLT
+E2MjI2NjM2OTksLTY1NDc0MjkyNSwxMTI5MjM4NDI5LDcxNDM1
+NTkzNywxNTAzMjY0ODYzLC00MDA5NjkxNjksMTAzMzEzMDQ1MS
+wtMzcwNjI0MjYsLTM4NzQ1OTY5MiwxNjQxMTc2LDQ5MDIwMjIw
+NiwxNzI0MjYzNTE3LDE1MDIxNjA3NjIsLTk3ODkwMTk0MSw2MD
+UyNTY1MDAsMTAxNjAxOTMwMSwxMzAwODgyMjQ1LDUxMzE3MjQ5
+NF19
 -->
