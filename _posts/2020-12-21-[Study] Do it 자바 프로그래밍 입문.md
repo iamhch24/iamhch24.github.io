@@ -785,34 +785,19 @@ ArrayList 생성자는 **java.util.Arrays.ArrayList의  상위(super) 클래스�
 
 #### 최종 연산 메서드 요약 :
 * forEach() :: 요소의 출력
-* reduce() :: 요소의 소모
-
-findFirst(), findAny()
-
-요소의 검색
-
-anyMatch(), allMatch(), noneMatch()
-
-요소의 검사
-
-count(), min(), max()
-
-요소의 동계
-
-sum(), average()
-
-요소의 연산
-
-collect()
-
-요소의 수집
+* reduce() :: 요소의 소모 -- reduce() 메서드는 첫 번째와 두 번째 요소를 가지고 연산을 수행한 뒤, 그 결과와 세 번째 요소를 가지고 또다시 연산을 수행한다. 이런 식으로 해당 스트림의 첫 번째 요소와 연산을 시작하며, 그 결과와 두 번째 요소를 가지고 계속해서 연상을 수행하게 된다.
+* findFirst(), findAny() :: 요소의 검색
+* anyMatch(), allMatch(), noneMatch() :: 요소의 검사
+* count(), min(), max() :: 요소의 통계
+* sum(), average() :: 요소의 연산
+* collect() :: 요소의 수집
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NzQ5MjIzMSwtMTYyMjY2MzY5OSwtNj
-U0NzQyOTI1LDExMjkyMzg0MjksNzE0MzU1OTM3LDE1MDMyNjQ4
-NjMsLTQwMDk2OTE2OSwxMDMzMTMwNDUxLC0zNzA2MjQyNiwtMz
-g3NDU5NjkyLDE2NDExNzYsNDkwMjAyMjA2LDE3MjQyNjM1MTcs
-MTUwMjE2MDc2MiwtOTc4OTAxOTQxLDYwNTI1NjUwMCwxMDE2MD
-E5MzAxLDEzMDA4ODIyNDUsNTEzMTcyNDk0LDk1OTQ3NTIzM119
+eyJoaXN0b3J5IjpbNTgxOTc1NDAyLC0xNjIyNjYzNjk5LC02NT
+Q3NDI5MjUsMTEyOTIzODQyOSw3MTQzNTU5MzcsMTUwMzI2NDg2
+MywtNDAwOTY5MTY5LDEwMzMxMzA0NTEsLTM3MDYyNDI2LC0zOD
+c0NTk2OTIsMTY0MTE3Niw0OTAyMDIyMDYsMTcyNDI2MzUxNywx
+NTAyMTYwNzYyLC05Nzg5MDE5NDEsNjA1MjU2NTAwLDEwMTYwMT
+kzMDEsMTMwMDg4MjI0NSw1MTMxNzI0OTQsOTU5NDc1MjMzXX0=
 
 -->
