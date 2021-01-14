@@ -787,14 +787,15 @@ public class SimpleServer {
 
 ### AWT의 구성요소
 * Component :: Box, Checkbox, Label 등과 같은 화면에서 사용자에게 기능을 제공한다. 반드시 container를 통해 보여진다.
-* Contai
+* Container :: 화면 전체의 틀을 제공하고, Component를 표시한다. Window 및 Panel 계열로 나눌 수 있다.
+* 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MDMxOTg2NiwxMjI0ODkxMjUyLDEwOD
-Q2NzM3NDgsMjIyOTY4MzEzLDg0MzE4OTU5LC0xNjY2MzI4MDYy
-LDMxNTY1MzA0NywyNTc0Mjc2OTgsLTM1NjQ3ODExNiwxNjc5OD
-QxMjY0LDE3NDAwMDQyOTgsLTQ0MTg3ODk0NSwtMTM1NzI0OTc0
-MywxODEwNTY4OTkyLC0xNzgzNDY3MDQ3LC0xMTQ3Nzg0MjM2LC
-0xMTc4Mjc1NzI1LDE2MzQwODExMjcsNTA0NzE0NDQsMTk2NzI3
-ODc3OV19
+eyJoaXN0b3J5IjpbLTExMDQxMjcwNzgsMTIyNDg5MTI1MiwxMD
+g0NjczNzQ4LDIyMjk2ODMxMyw4NDMxODk1OSwtMTY2NjMyODA2
+MiwzMTU2NTMwNDcsMjU3NDI3Njk4LC0zNTY0NzgxMTYsMTY3OT
+g0MTI2NCwxNzQwMDA0Mjk4LC00NDE4Nzg5NDUsLTEzNTcyNDk3
+NDMsMTgxMDU2ODk5MiwtMTc4MzQ2NzA0NywtMTE0Nzc4NDIzNi
+wtMTE3ODI3NTcyNSwxNjM0MDgxMTI3LDUwNDcxNDQ0LDE5Njcy
+Nzg3NzldfQ==
 -->
