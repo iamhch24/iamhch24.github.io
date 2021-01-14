@@ -783,13 +783,36 @@ ArrayList 생성자는 **java.util.Arrays.ArrayList의  상위(super) 클래스�
 * sorted() :: 해당 스트림을 주어진 비교자(comparator)를 이용하여 정렬함. 비교자를 전달하지 않으면 영문 사전 순(natural order)으로 정렬함.
 
 
+#### 최종 연산 메서드 요약 :
+* forEach() :: 요소의 출력
+* reduce() :: 요소의 소모
+
+findFirst(), findAny()
+
+요소의 검색
+
+anyMatch(), allMatch(), noneMatch()
+
+요소의 검사
+
+count(), min(), max()
+
+요소의 동계
+
+sum(), average()
+
+요소의 연산
+
+collect()
+
+요소의 수집
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM5NDA4NzE5LC0xNjIyNjYzNjk5LC02NT
-Q3NDI5MjUsMTEyOTIzODQyOSw3MTQzNTU5MzcsMTUwMzI2NDg2
-MywtNDAwOTY5MTY5LDEwMzMxMzA0NTEsLTM3MDYyNDI2LC0zOD
-c0NTk2OTIsMTY0MTE3Niw0OTAyMDIyMDYsMTcyNDI2MzUxNywx
-NTAyMTYwNzYyLC05Nzg5MDE5NDEsNjA1MjU2NTAwLDEwMTYwMT
-kzMDEsMTMwMDg4MjI0NSw1MTMxNzI0OTQsOTU5NDc1MjMzXX0=
+eyJoaXN0b3J5IjpbMTM5NzQ5MjIzMSwtMTYyMjY2MzY5OSwtNj
+U0NzQyOTI1LDExMjkyMzg0MjksNzE0MzU1OTM3LDE1MDMyNjQ4
+NjMsLTQwMDk2OTE2OSwxMDMzMTMwNDUxLC0zNzA2MjQyNiwtMz
+g3NDU5NjkyLDE2NDExNzYsNDkwMjAyMjA2LDE3MjQyNjM1MTcs
+MTUwMjE2MDc2MiwtOTc4OTAxOTQxLDYwNTI1NjUwMCwxMDE2MD
+E5MzAxLDEzMDA4ODIyNDUsNTEzMTcyNDk0LDk1OTQ3NTIzM119
 
 -->
