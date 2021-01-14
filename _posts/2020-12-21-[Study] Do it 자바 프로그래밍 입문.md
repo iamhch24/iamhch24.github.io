@@ -716,7 +716,7 @@ public class StreamEx_Run {
 		System.out.println();
 		
 		Arrays
-		.stream(array1)
+		.stream(array1)		// int[] 는 객체가 아니고 stream을 생성할 수 없기에 Arrays객체를 이용함
 		.forEach(it->System.out.print(it+" "));
 		System.out.println();
 		
@@ -750,10 +750,10 @@ public class StreamEx_Run {
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE0MzU1OTM3LDE1MDMyNjQ4NjMsLTQwMD
-k2OTE2OSwxMDMzMTMwNDUxLC0zNzA2MjQyNiwtMzg3NDU5Njky
-LDE2NDExNzYsNDkwMjAyMjA2LDE3MjQyNjM1MTcsMTUwMjE2MD
-c2MiwtOTc4OTAxOTQxLDYwNTI1NjUwMCwxMDE2MDE5MzAxLDEz
-MDA4ODIyNDUsNTEzMTcyNDk0LDk1OTQ3NTIzMyw5NzEzMTg2NS
-wxNTE1NTk5MjE2LDk2NTQzMjY1OCw1NzQ4NDIzNF19
+eyJoaXN0b3J5IjpbMjAxNzYzNTA0Nyw3MTQzNTU5MzcsMTUwMz
+I2NDg2MywtNDAwOTY5MTY5LDEwMzMxMzA0NTEsLTM3MDYyNDI2
+LC0zODc0NTk2OTIsMTY0MTE3Niw0OTAyMDIyMDYsMTcyNDI2Mz
+UxNywxNTAyMTYwNzYyLC05Nzg5MDE5NDEsNjA1MjU2NTAwLDEw
+MTYwMTkzMDEsMTMwMDg4MjI0NSw1MTMxNzI0OTQsOTU5NDc1Mj
+MzLDk3MTMxODY1LDE1MTU1OTkyMTYsOTY1NDMyNjU4XX0=
 -->
