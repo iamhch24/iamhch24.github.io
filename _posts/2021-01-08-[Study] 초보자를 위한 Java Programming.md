@@ -839,9 +839,11 @@ ex) Button, Checkbox, Choice, Label, List, Scrollbar, TextField
 3 이벤트 핸들러를 내부 클래스로 처리하는 방법
 4 이벤트 핸들러를 익명의 클래스로 처리하는 방법
 
-
+### Adapter 클래스
+:: 2개 이상의 추상 메서드를 가진 리스너 인터페이스를 미리 구현한 클래스이다. 
+* 용도 :: Listener 인터페이스를 이용하여 이벤트 핸들러를 구현하면 사용되지 않는 추상 메서드로 구현해 주어야 한다. Adapter 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQwOTcwOTY4LC0xNzk2NDY0MjUwLC0xMT
+eyJoaXN0b3J5IjpbNjg4OTYyMzI3LC0xNzk2NDY0MjUwLC0xMT
 gwMDMxMzAsMTIyNDg5MTI1MiwxMDg0NjczNzQ4LDIyMjk2ODMx
 Myw4NDMxODk1OSwtMTY2NjMyODA2MiwzMTU2NTMwNDcsMjU3ND
 I3Njk4LC0zNTY0NzgxMTYsMTY3OTg0MTI2NCwxNzQwMDA0Mjk4
