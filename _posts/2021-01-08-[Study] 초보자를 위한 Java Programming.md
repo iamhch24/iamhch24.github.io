@@ -811,9 +811,11 @@ ex) Button, Checkbox, Choice, Label, List, Scrollbar, TextField
 * 종류 :: BorderLayout, FlowLayout, CardLayout, GridLayout...
 
 #### BorderLayout
-= Frame의 기본 배치 관리자로, 화면을 5개의 영역으로 구분한다
+= Frame의 기본 배치 관리자로, 화면을 5개의 영역으로 구분한다. 위치는 불변이지만 크기는 변한다. 
+* North, South, East, West, Center
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzE2NDg2OCwtMTE4MDAzMTMwLDEyMj
+eyJoaXN0b3J5IjpbMTcwMDM1MTQwNSwtMTE4MDAzMTMwLDEyMj
 Q4OTEyNTIsMTA4NDY3Mzc0OCwyMjI5NjgzMTMsODQzMTg5NTks
 LTE2NjYzMjgwNjIsMzE1NjUzMDQ3LDI1NzQyNzY5OCwtMzU2ND
 c4MTE2LDE2Nzk4NDEyNjQsMTc0MDAwNDI5OCwtNDQxODc4OTQ1
