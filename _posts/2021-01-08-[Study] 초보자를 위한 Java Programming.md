@@ -801,14 +801,19 @@ public class SimpleServer {
 
 * Compoment들을 그룹으로 묶어 위치시킬 때 사용함. 독립적으로 보이지 않고 반드시 Frame을 통해 보인다. 기본 LayoutManager는 FlowLayout이다. 
 
+### 컴포넌트 Component
+= 사용자가 화면에서 행위를 하는 대상이 되는 요소이다. 
+ex) Button, Checkbox, Choice, Label, List, Scrollbar, TextField
 
 
+### 배치관리자 LayoutManager
+= 컨네이터 안에서 컴ㅍ
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODAwMzEzMCwxMjI0ODkxMjUyLDEwOD
-Q2NzM3NDgsMjIyOTY4MzEzLDg0MzE4OTU5LC0xNjY2MzI4MDYy
-LDMxNTY1MzA0NywyNTc0Mjc2OTgsLTM1NjQ3ODExNiwxNjc5OD
-QxMjY0LDE3NDAwMDQyOTgsLTQ0MTg3ODk0NSwtMTM1NzI0OTc0
-MywxODEwNTY4OTkyLC0xNzgzNDY3MDQ3LC0xMTQ3Nzg0MjM2LC
-0xMTc4Mjc1NzI1LDE2MzQwODExMjcsNTA0NzE0NDQsMTk2NzI3
-ODc3OV19
+eyJoaXN0b3J5IjpbMjA1NTAwMDc4NSwtMTE4MDAzMTMwLDEyMj
+Q4OTEyNTIsMTA4NDY3Mzc0OCwyMjI5NjgzMTMsODQzMTg5NTks
+LTE2NjYzMjgwNjIsMzE1NjUzMDQ3LDI1NzQyNzY5OCwtMzU2ND
+c4MTE2LDE2Nzk4NDEyNjQsMTc0MDAwNDI5OCwtNDQxODc4OTQ1
+LC0xMzU3MjQ5NzQzLDE4MTA1Njg5OTIsLTE3ODM0NjcwNDcsLT
+ExNDc3ODQyMzYsLTExNzgyNzU3MjUsMTYzNDA4MTEyNyw1MDQ3
+MTQ0NF19
 -->
