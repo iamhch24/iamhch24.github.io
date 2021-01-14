@@ -393,7 +393,7 @@ public int compareTo(object o){
 
 
 ### 자바 람다식 :: 클래스 개념 때문에 어쩔 수 없이 인터페이스로 미리 선언되어야 사용할 수 있음
-그럼에도 자바에서 람다식을 사용하는 이유는 함수형 프로그래밍이 원본을 수정하지 않고, 원본을 보존하기 때문에 독립성이 보존되고 이를 기반으로 병렬처리가 가능함.
+그럼에도 자바에서 람다식을 사용하는 이유는 함수형 프로그래밍이 원본을 수정하지 않고, 원본을 보존하기 때문에 독립성이 보존되고 이를 기반으로 병렬처리가 가능함. 
 
 * str -> { System.out.println(str); }    // 한 문장이라도 리턴이 없는 경우는 {} 을 생략X
 * (x,y) -> { System.out.println(x+y);} // 매개변수가 2개 이상이면 ()를 생략X
@@ -673,6 +673,7 @@ public class Consumer_Run {
 	}
 }
 ```
+⇒ 람다식으로 인해 함수를 변수처럼 사용할 수 있어서 함수를 던질 수 있
 
 ### 스트림 클래스 :: 원본 값을 수정하지 않는다.
 
@@ -689,10 +690,10 @@ public static <T> Stream<T> stream(T[] array) {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MDYyNDI2LC0zODc0NTk2OTIsMTY0MT
-E3Niw0OTAyMDIyMDYsMTcyNDI2MzUxNywxNTAyMTYwNzYyLC05
-Nzg5MDE5NDEsNjA1MjU2NTAwLDEwMTYwMTkzMDEsMTMwMDg4Mj
-I0NSw1MTMxNzI0OTQsOTU5NDc1MjMzLDk3MTMxODY1LDE1MTU1
-OTkyMTYsOTY1NDMyNjU4LDU3NDg0MjM0LDc1NDI5ODQ0OCwtMT
-U1OTA5MTYzOCwtMTUxMTcxNDIwNSwtMTI5ODM1MTI5Ml19
+eyJoaXN0b3J5IjpbLTM2NDY1Mzk5NCwtMzcwNjI0MjYsLTM4Nz
+Q1OTY5MiwxNjQxMTc2LDQ5MDIwMjIwNiwxNzI0MjYzNTE3LDE1
+MDIxNjA3NjIsLTk3ODkwMTk0MSw2MDUyNTY1MDAsMTAxNjAxOT
+MwMSwxMzAwODgyMjQ1LDUxMzE3MjQ5NCw5NTk0NzUyMzMsOTcx
+MzE4NjUsMTUxNTU5OTIxNiw5NjU0MzI2NTgsNTc0ODQyMzQsNz
+U0Mjk4NDQ4LC0xNTU5MDkxNjM4LC0xNTExNzE0MjA1XX0=
 -->
