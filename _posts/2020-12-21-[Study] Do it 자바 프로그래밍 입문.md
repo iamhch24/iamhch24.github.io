@@ -756,12 +756,13 @@ public class StreamEx_Run {
 * Arrays 클래스의 모든 메소드는 클래스 메소드(static method)이므로, 객체를 생성하지 않고도 바로 사용할 수 있습니다.
 * 이 클래스는 java.util 패키지에 포함되므로, 반드시 import 문으로 java.util 패키지를 불러오고 나서 사용해야 합니다.
 
-
+> Optional 자바
+> 참고 :: http://homoefficio.github.io/2019/10/03/Java-Optional-%EB%B0%94%EB%A5%B4%EA%B2%8C-%EC%93%B0%EA%B8%B0/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyOTIzODQyOSw3MTQzNTU5MzcsMTUwMz
-I2NDg2MywtNDAwOTY5MTY5LDEwMzMxMzA0NTEsLTM3MDYyNDI2
-LC0zODc0NTk2OTIsMTY0MTE3Niw0OTAyMDIyMDYsMTcyNDI2Mz
-UxNywxNTAyMTYwNzYyLC05Nzg5MDE5NDEsNjA1MjU2NTAwLDEw
-MTYwMTkzMDEsMTMwMDg4MjI0NSw1MTMxNzI0OTQsOTU5NDc1Mj
-MzLDk3MTMxODY1LDE1MTU1OTkyMTYsOTY1NDMyNjU4XX0=
+eyJoaXN0b3J5IjpbNTAzNTUxNTA5LDExMjkyMzg0MjksNzE0Mz
+U1OTM3LDE1MDMyNjQ4NjMsLTQwMDk2OTE2OSwxMDMzMTMwNDUx
+LC0zNzA2MjQyNiwtMzg3NDU5NjkyLDE2NDExNzYsNDkwMjAyMj
+A2LDE3MjQyNjM1MTcsMTUwMjE2MDc2MiwtOTc4OTAxOTQxLDYw
+NTI1NjUwMCwxMDE2MDE5MzAxLDEzMDA4ODIyNDUsNTEzMTcyND
+k0LDk1OTQ3NTIzMyw5NzEzMTg2NSwxNTE1NTk5MjE2XX0=
 -->
