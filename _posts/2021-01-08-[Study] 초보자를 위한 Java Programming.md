@@ -827,12 +827,16 @@ ex) Button, Checkbox, Choice, Label, List, Scrollbar, TextField
 * 이벤트 소스 (Event Source) :: 이벤트를 발생시킨 컴포넌트를 의미한다. 
 * 이벤트 처리자 (Event Handler) :: 이벤트 발생 시 실제 작업을 수행하는 주체(클래스) 
 * 이벤트 리스너 (Event Listener) :: 이벤트 소스에서 이벤트 발생 유무를 체크한다. interface로 제공되고 실제 이벤트를 처리하는 추상 메서드를 가지고 있다. 이벤트 처리자는 이벤트 리스너를 구현하여 이벤트를 처리한다.
+
+### 자바 이벤트 처리 과정
+1단계 :: 이벤트를 발생시킬 이벤트 소스를 결정한다.
+2단계 :: 이벤트 리스너를 결정한 후 이벤트 리스너
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MTIzNzc3NSwtMTc5NjQ2NDI1MCwtMT
-E4MDAzMTMwLDEyMjQ4OTEyNTIsMTA4NDY3Mzc0OCwyMjI5Njgz
-MTMsODQzMTg5NTksLTE2NjYzMjgwNjIsMzE1NjUzMDQ3LDI1Nz
-QyNzY5OCwtMzU2NDc4MTE2LDE2Nzk4NDEyNjQsMTc0MDAwNDI5
-OCwtNDQxODc4OTQ1LC0xMzU3MjQ5NzQzLDE4MTA1Njg5OTIsLT
-E3ODM0NjcwNDcsLTExNDc3ODQyMzYsLTExNzgyNzU3MjUsMTYz
-NDA4MTEyN119
+eyJoaXN0b3J5IjpbLTEwMTg0Nzc4MDcsLTE3OTY0NjQyNTAsLT
+ExODAwMzEzMCwxMjI0ODkxMjUyLDEwODQ2NzM3NDgsMjIyOTY4
+MzEzLDg0MzE4OTU5LC0xNjY2MzI4MDYyLDMxNTY1MzA0NywyNT
+c0Mjc2OTgsLTM1NjQ3ODExNiwxNjc5ODQxMjY0LDE3NDAwMDQy
+OTgsLTQ0MTg3ODk0NSwtMTM1NzI0OTc0MywxODEwNTY4OTkyLC
+0xNzgzNDY3MDQ3LC0xMTQ3Nzg0MjM2LC0xMTc4Mjc1NzI1LDE2
+MzQwODExMjddfQ==
 -->
