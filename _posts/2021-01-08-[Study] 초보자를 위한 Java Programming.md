@@ -794,10 +794,12 @@ public class SimpleServer {
 * 종류 :: Window 계열 / Panel 계열 - 독립적으로 보이지 않고 주로 다른 컴포넌트를 그룹으로 보이도록 하는데 사용된다. ex) 애플릿
 
 > Frame의 특징
-> 
+
+* 일반적인 프로그램에서 윈도우를 생성하기 위해 사용. 타이블, 최소버튼, 최대버튼, 종료버튼이 기본으로 제공된다. default로 안보이게 설정되어 있으며 setVisible(true)로 설정해야 보인다. 기본 LayoutManager는 BorderLayout이다. 
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNzI5ODA1OSwxMjI0ODkxMjUyLDEwOD
+eyJoaXN0b3J5IjpbMTAzMzg4NzM1MCwxMjI0ODkxMjUyLDEwOD
 Q2NzM3NDgsMjIyOTY4MzEzLDg0MzE4OTU5LC0xNjY2MzI4MDYy
 LDMxNTY1MzA0NywyNTc0Mjc2OTgsLTM1NjQ3ODExNiwxNjc5OD
 QxMjY0LDE3NDAwMDQyOTgsLTQ0MTg3ODk0NSwtMTM1NzI0OTc0
