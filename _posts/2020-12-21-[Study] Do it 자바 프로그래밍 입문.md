@@ -800,8 +800,31 @@ reducing(), joining() :: 요소의 소모와 같은 동작을 수행
 groupingBy(), partitioningBy() :: 요소의 그룹화와 분할
 참고 :: https://blog.naver.com/ddk94/222157757762
 
+>실습
+
+```Java
+package stream;
+import java.util.Arrays;
+import java.util.List;
+
+public class ReduceTest {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<String> greetings = Arrays.asList("안녕하세요","Hello","Good Morning","반갑습니다");
+		String result = greetings.stream().reduce("", (s1,s2)->{
+			if(s1.getBytes().length >= s2.getBytes().length) return s1;
+			else return s2;			
+		});
+		System.out.println(result);
+		String result2 = greetings.stream().reduce("", (s1,s2)->{System.out.println(s1);return s1+" "+s2;});
+		System.out.println(result2);
+	}
+}
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mjk5MzQ1OTIsLTEwNDY1MTgzOTcsLT
+eyJoaXN0b3J5IjpbLTE4ODMyMTYzMDAsLTEwNDY1MTgzOTcsLT
 E2MjI2NjM2OTksLTY1NDc0MjkyNSwxMTI5MjM4NDI5LDcxNDM1
 NTkzNywxNTAzMjY0ODYzLC00MDA5NjkxNjksMTAzMzEzMDQ1MS
 wtMzcwNjI0MjYsLTM4NzQ1OTY5MiwxNjQxMTc2LDQ5MDIwMjIw
