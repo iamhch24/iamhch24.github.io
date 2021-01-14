@@ -760,13 +760,19 @@ public class StreamEx_Run {
 > 참고 :: http://homoefficio.github.io/2019/10/03/Java-Optional-%EB%B0%94%EB%A5%B4%EA%B2%8C-%EC%93%B0%EA%B8%B0/
 
 > Arrays.asList()
+일반 배열을 ArrayList로 변환한다.  
+```List<String> list = Arrays.asList(arr);  ```
+Arrays.asList()는 Arrays의 private 정적 클래스인 ArrayList를 리턴한다.  **java.util.ArrayList 클래스와는 다른 클래스**이다.  
+java.util.Arrays.ArrayList 클래스는 set(), get(), contains() 메서드를 가지고 있지만  **원소를 추가하는 메서드는 가지고 있지 않기 때문에 사이즈를 바꿀 수 없다.**
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NTkzMjQwOCwtNjU0NzQyOTI1LDExMj
-kyMzg0MjksNzE0MzU1OTM3LDE1MDMyNjQ4NjMsLTQwMDk2OTE2
-OSwxMDMzMTMwNDUxLC0zNzA2MjQyNiwtMzg3NDU5NjkyLDE2ND
-ExNzYsNDkwMjAyMjA2LDE3MjQyNjM1MTcsMTUwMjE2MDc2Miwt
-OTc4OTAxOTQxLDYwNTI1NjUwMCwxMDE2MDE5MzAxLDEzMDA4OD
-IyNDUsNTEzMTcyNDk0LDk1OTQ3NTIzMyw5NzEzMTg2NV19
+eyJoaXN0b3J5IjpbLTE2MjI2NjM2OTksLTY1NDc0MjkyNSwxMT
+I5MjM4NDI5LDcxNDM1NTkzNywxNTAzMjY0ODYzLC00MDA5Njkx
+NjksMTAzMzEzMDQ1MSwtMzcwNjI0MjYsLTM4NzQ1OTY5MiwxNj
+QxMTc2LDQ5MDIwMjIwNiwxNzI0MjYzNTE3LDE1MDIxNjA3NjIs
+LTk3ODkwMTk0MSw2MDUyNTY1MDAsMTAxNjAxOTMwMSwxMzAwOD
+gyMjQ1LDUxMzE3MjQ5NCw5NTk0NzUyMzMsOTcxMzE4NjVdfQ==
+
 -->
