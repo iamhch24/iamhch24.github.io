@@ -764,18 +764,18 @@ public class StreamEx_Run {
 ```List<String> list = Arrays.asList(arr);  ```
 Arrays.asList()는 Arrays의 private 정적 클래스인 ArrayList를 리턴한다.  **java.util.ArrayList 클래스와는 다른 클래스**이다.  
 java.util.Arrays.ArrayList 클래스는 set(), get(), contains() 메서드를 가지고 있지만  **원소를 추가하는 메서드는 가지고 있지 않기 때문에 사이즈를 바꿀 수 없다.**
+만약 **진짜 ArrayList를 받기 위해서는 다음과 같이 변환하면 된다.**  
+ArrayList 생성자는 **java.util.Arrays.ArrayList의  상위(super) 클래스인 Collection Type  
+도 받아들일 수 있다.**
+```List<String> list = new ArrayList<String>(Arrays.asList(arr));```
  참고 :: https://m.blog.naver.com/roropoly1/221140156345
 
-
-
-
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NTY4ODM2MywtMTYyMjY2MzY5OSwtNj
-U0NzQyOTI1LDExMjkyMzg0MjksNzE0MzU1OTM3LDE1MDMyNjQ4
-NjMsLTQwMDk2OTE2OSwxMDMzMTMwNDUxLC0zNzA2MjQyNiwtMz
-g3NDU5NjkyLDE2NDExNzYsNDkwMjAyMjA2LDE3MjQyNjM1MTcs
-MTUwMjE2MDc2MiwtOTc4OTAxOTQxLDYwNTI1NjUwMCwxMDE2MD
-E5MzAxLDEzMDA4ODIyNDUsNTEzMTcyNDk0LDk1OTQ3NTIzM119
-
+eyJoaXN0b3J5IjpbLTExNDY4ODgzNDcsLTE2MjI2NjM2OTksLT
+Y1NDc0MjkyNSwxMTI5MjM4NDI5LDcxNDM1NTkzNywxNTAzMjY0
+ODYzLC00MDA5NjkxNjksMTAzMzEzMDQ1MSwtMzcwNjI0MjYsLT
+M4NzQ1OTY5MiwxNjQxMTc2LDQ5MDIwMjIwNiwxNzI0MjYzNTE3
+LDE1MDIxNjA3NjIsLTk3ODkwMTk0MSw2MDUyNTY1MDAsMTAxNj
+AxOTMwMSwxMzAwODgyMjQ1LDUxMzE3MjQ5NCw5NTk0NzUyMzNd
+fQ==
 -->
