@@ -772,7 +772,6 @@ ArrayList 생성자는 **java.util.Arrays.ArrayList의  상위(super) 클래스�
 
 
 #### 중개 연산 메서드 요약:
-
 * filter() :: 해당 스트림에서 주어진 조건(predicate)에 맞는 요소만으로 구성된 새로운 스트림을 반환.
 * map() :: 해당 스트림의 요소들을 주어 함수에 인수로 전달하여, 그 반환 값으로 이루어진 새로운 스트림을 반환함
 * flatMap() :: 해당 스트림의 요소가 배열일 경우, 배열의 각 요소를 주어진 함수에 인수로 전달하여, 그 반환값으로 이루어진 새로운 스트림을 반환한다.
@@ -824,11 +823,11 @@ public class ReduceTest {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODMyMTYzMDAsLTEwNDY1MTgzOTcsLT
-E2MjI2NjM2OTksLTY1NDc0MjkyNSwxMTI5MjM4NDI5LDcxNDM1
-NTkzNywxNTAzMjY0ODYzLC00MDA5NjkxNjksMTAzMzEzMDQ1MS
-wtMzcwNjI0MjYsLTM4NzQ1OTY5MiwxNjQxMTc2LDQ5MDIwMjIw
-NiwxNzI0MjYzNTE3LDE1MDIxNjA3NjIsLTk3ODkwMTk0MSw2MD
-UyNTY1MDAsMTAxNjAxOTMwMSwxMzAwODgyMjQ1LDUxMzE3MjQ5
-NF19
+eyJoaXN0b3J5IjpbMTQzMDY1ODkxOCwtMTg4MzIxNjMwMCwtMT
+A0NjUxODM5NywtMTYyMjY2MzY5OSwtNjU0NzQyOTI1LDExMjky
+Mzg0MjksNzE0MzU1OTM3LDE1MDMyNjQ4NjMsLTQwMDk2OTE2OS
+wxMDMzMTMwNDUxLC0zNzA2MjQyNiwtMzg3NDU5NjkyLDE2NDEx
+NzYsNDkwMjAyMjA2LDE3MjQyNjM1MTcsMTUwMjE2MDc2MiwtOT
+c4OTAxOTQxLDYwNTI1NjUwMCwxMDE2MDE5MzAxLDEzMDA4ODIy
+NDVdfQ==
 -->
