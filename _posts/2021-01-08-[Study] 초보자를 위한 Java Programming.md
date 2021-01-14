@@ -841,13 +841,18 @@ ex) Button, Checkbox, Choice, Label, List, Scrollbar, TextField
 
 ### Adapter 클래스
 :: 2개 이상의 추상 메서드를 가진 리스너 인터페이스를 미리 구현한 클래스이다. 
-* 용도 :: Listener 인터페이스를 이용하여 이벤트 핸들러를 구현하면 사용되지 않는 추상 메서드로 구현해 주어야 한다. Adapter 
+* 용도 :: Listener 인터페이스를 이용하여 이벤트 핸들러를 구현하면 사용되지 않는 추상 메서드로 구현해 주어야 한다. Adapter 클래스를 사용하면 필요하지 않은 추상 메서드는 구현하지 않아도 된다. 
+
+### 애플릿  Applet
+:: 웹 서버에서 다운로드되어 클라이언트 웹브라우저에서 실행되는 자바 프로그램
+:: 독자적으로 실행될 수 없고, 웹브라우저나 애플릿 뷰어에서만 실행가능
+:: 지금은 자바 ㅈ
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg4OTYyMzI3LC0xNzk2NDY0MjUwLC0xMT
-gwMDMxMzAsMTIyNDg5MTI1MiwxMDg0NjczNzQ4LDIyMjk2ODMx
-Myw4NDMxODk1OSwtMTY2NjMyODA2MiwzMTU2NTMwNDcsMjU3ND
-I3Njk4LC0zNTY0NzgxMTYsMTY3OTg0MTI2NCwxNzQwMDA0Mjk4
-LC00NDE4Nzg5NDUsLTEzNTcyNDk3NDMsMTgxMDU2ODk5MiwtMT
-c4MzQ2NzA0NywtMTE0Nzc4NDIzNiwtMTE3ODI3NTcyNSwxNjM0
-MDgxMTI3XX0=
+eyJoaXN0b3J5IjpbLTE2MzkxOTc1MDMsLTE3OTY0NjQyNTAsLT
+ExODAwMzEzMCwxMjI0ODkxMjUyLDEwODQ2NzM3NDgsMjIyOTY4
+MzEzLDg0MzE4OTU5LC0xNjY2MzI4MDYyLDMxNTY1MzA0NywyNT
+c0Mjc2OTgsLTM1NjQ3ODExNiwxNjc5ODQxMjY0LDE3NDAwMDQy
+OTgsLTQ0MTg3ODk0NSwtMTM1NzI0OTc0MywxODEwNTY4OTkyLC
+0xNzgzNDY3MDQ3LC0xMTQ3Nzg0MjM2LC0xMTc4Mjc1NzI1LDE2
+MzQwODExMjddfQ==
 -->
