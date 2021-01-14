@@ -823,13 +823,16 @@ ex) Button, Checkbox, Choice, Label, List, Scrollbar, TextField
 :: 생성 시 행과 열을 지정함
 :: 컴포넌트 추가 시 왼쪽에서 오른쪽, 위에서 아래로 추가된다.
 
-
+### AWT 이벤트 관련 개념
+* 이벤트 소스 (Event Source) :: 이벤트를 발생시킨 컴포넌트를 의미한다. 
+* 이벤트 처리자 (Event Handler) :: 이벤트 발생 시 실제 작업을 수행하는 주체(클래스) 
+* 이벤트 리스너 (Event Listener) ::
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTY0NjQyNTAsLTExODAwMzEzMCwxMj
-I0ODkxMjUyLDEwODQ2NzM3NDgsMjIyOTY4MzEzLDg0MzE4OTU5
-LC0xNjY2MzI4MDYyLDMxNTY1MzA0NywyNTc0Mjc2OTgsLTM1Nj
-Q3ODExNiwxNjc5ODQxMjY0LDE3NDAwMDQyOTgsLTQ0MTg3ODk0
-NSwtMTM1NzI0OTc0MywxODEwNTY4OTkyLC0xNzgzNDY3MDQ3LC
-0xMTQ3Nzg0MjM2LC0xMTc4Mjc1NzI1LDE2MzQwODExMjcsNTA0
-NzE0NDRdfQ==
+eyJoaXN0b3J5IjpbLTY0MTk5MzIxMSwtMTc5NjQ2NDI1MCwtMT
+E4MDAzMTMwLDEyMjQ4OTEyNTIsMTA4NDY3Mzc0OCwyMjI5Njgz
+MTMsODQzMTg5NTksLTE2NjYzMjgwNjIsMzE1NjUzMDQ3LDI1Nz
+QyNzY5OCwtMzU2NDc4MTE2LDE2Nzk4NDEyNjQsMTc0MDAwNDI5
+OCwtNDQxODc4OTQ1LC0xMzU3MjQ5NzQzLDE4MTA1Njg5OTIsLT
+E3ODM0NjcwNDcsLTExNDc3ODQyMzYsLTExNzgyNzU3MjUsMTYz
+NDA4MTEyN119
 -->
