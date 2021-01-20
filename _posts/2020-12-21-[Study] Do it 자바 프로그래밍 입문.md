@@ -1017,19 +1017,16 @@ package threads;
 import java.awt.Toolkit;
 public class BeepPrintRun {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		new Thread(() -> {
-				Toolkit toolkit = Toolkit.getDefaultToolkit();
-				for(int i=0;i<5;i++) {
-					toolkit.beep();
-					System.out.println("띵소리");
-					try {
-						Thread.sleep(500);
-					} catch (InterruptedException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
+		new Thread(  () -> {   // 람다식
+			Toolkit toolkit = Toolkit.getDefaultToolkit();
+			for(int i=0;i<5;i++) {
+				toolkit.beep();
+				System.out.println("띵소리");
+				try {
+					Thread.sleep(500);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
 				}
 			}
 		} ).start();
@@ -1050,11 +1047,11 @@ public class BeepPrintRun {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mjc2NzUwMDgsLTgzMTQ4ODg2OSwtMT
-g2OTY3MjU0MCwtNDg1Mjk1OTc5LDU1NzIzNDAsMTQzMDY1ODkx
-OCwtMTg4MzIxNjMwMCwtMTA0NjUxODM5NywtMTYyMjY2MzY5OS
-wtNjU0NzQyOTI1LDExMjkyMzg0MjksNzE0MzU1OTM3LDE1MDMy
-NjQ4NjMsLTQwMDk2OTE2OSwxMDMzMTMwNDUxLC0zNzA2MjQyNi
-wtMzg3NDU5NjkyLDE2NDExNzYsNDkwMjAyMjA2LDE3MjQyNjM1
-MTddfQ==
+eyJoaXN0b3J5IjpbMTQxMTY0NzY2LC04MzE0ODg4NjksLTE4Nj
+k2NzI1NDAsLTQ4NTI5NTk3OSw1NTcyMzQwLDE0MzA2NTg5MTgs
+LTE4ODMyMTYzMDAsLTEwNDY1MTgzOTcsLTE2MjI2NjM2OTksLT
+Y1NDc0MjkyNSwxMTI5MjM4NDI5LDcxNDM1NTkzNywxNTAzMjY0
+ODYzLC00MDA5NjkxNjksMTAzMzEzMDQ1MSwtMzcwNjI0MjYsLT
+M4NzQ1OTY5MiwxNjQxMTc2LDQ5MDIwMjIwNiwxNzI0MjYzNTE3
+XX0=
 -->
