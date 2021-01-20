@@ -1077,14 +1077,28 @@ public class BeepTask implements Runnable {
 	}
 }
 
-
+//메인에서 "띵소리n"을 넘겨주모 run 호출
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Thread thread1 = new Thread(new BeepTask("띵소리1"));
+		thread1.start();
+		Thread thread2 = new Thread(new BeepTask("띵소리2"));
+		thread2.start();
+		Thread thread3 = new Thread(new BeepTask("띵소리3"));
+		thread3.start();
+		Thread thread4 = new Thread(new BeepTask("띵소리4"));
+		thread4.start();
+		Thread thread5 = new Thread(new BeepTask("띵소리5"));
+		thread5.start();
+	}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc0NTc2Njg5LDE0MTE2NDc2NiwtODMxND
-g4ODY5LC0xODY5NjcyNTQwLC00ODUyOTU5NzksNTU3MjM0MCwx
-NDMwNjU4OTE4LC0xODgzMjE2MzAwLC0xMDQ2NTE4Mzk3LC0xNj
-IyNjYzNjk5LC02NTQ3NDI5MjUsMTEyOTIzODQyOSw3MTQzNTU5
-MzcsMTUwMzI2NDg2MywtNDAwOTY5MTY5LDEwMzMxMzA0NTEsLT
-M3MDYyNDI2LC0zODc0NTk2OTIsMTY0MTE3Niw0OTAyMDIyMDZd
-fQ==
+eyJoaXN0b3J5IjpbMTQxODE2ODk4NSwxNDExNjQ3NjYsLTgzMT
+Q4ODg2OSwtMTg2OTY3MjU0MCwtNDg1Mjk1OTc5LDU1NzIzNDAs
+MTQzMDY1ODkxOCwtMTg4MzIxNjMwMCwtMTA0NjUxODM5NywtMT
+YyMjY2MzY5OSwtNjU0NzQyOTI1LDExMjkyMzg0MjksNzE0MzU1
+OTM3LDE1MDMyNjQ4NjMsLTQwMDk2OTE2OSwxMDMzMTMwNDUxLC
+0zNzA2MjQyNiwtMzg3NDU5NjkyLDE2NDExNzYsNDkwMjAyMjA2
+XX0=
 -->
