@@ -1122,10 +1122,12 @@ public class Bank {
 ```
 
 ```Java
-	public static synchronized void setMoney(int money) { // synchronized 하나 넣으면 비동기가 동기로 전환된다. 
+	public static synchronized void setMoney(int money) { //synchronized 하나 넣으면 비동기가 동기로 전환된다!!
 ```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2Njc1OTY5MywtMTQ1OTA4MDg1MiwxND
+eyJoaXN0b3J5IjpbLTIwMDcyNDc1NywtMTQ1OTA4MDg1MiwxND
 E4MTY4OTg1LDE0MTE2NDc2NiwtODMxNDg4ODY5LC0xODY5Njcy
 NTQwLC00ODUyOTU5NzksNTU3MjM0MCwxNDMwNjU4OTE4LC0xOD
 gzMjE2MzAwLC0xMDQ2NTE4Mzk3LC0xNjIyNjYzNjk5LC02NTQ3
