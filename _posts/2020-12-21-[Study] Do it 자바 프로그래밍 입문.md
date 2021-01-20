@@ -1048,16 +1048,43 @@ public class BeepPrintRun {
 ⇒ 
 
 ```Java
+package threads;
 
+import java.awt.Toolkit;
+
+public class BeepTask implements Runnable {
+
+	private String name;
+	
+	BeepTask(String name){  // 생성자를 만들 수 있음 , 정보를 넘겨 받아 run에서 구동 가능함
+		this.name = name;
+	}
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		Toolkit toolkit = Toolkit.getDefaultToolkit();
+		for(int i=0;i<5;i++) {
+			toolkit.beep();
+			System.out.println(this.name);
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+}
 
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODYwMjgyOTgsMTQxMTY0NzY2LC04Mz
-E0ODg4NjksLTE4Njk2NzI1NDAsLTQ4NTI5NTk3OSw1NTcyMzQw
-LDE0MzA2NTg5MTgsLTE4ODMyMTYzMDAsLTEwNDY1MTgzOTcsLT
-E2MjI2NjM2OTksLTY1NDc0MjkyNSwxMTI5MjM4NDI5LDcxNDM1
-NTkzNywxNTAzMjY0ODYzLC00MDA5NjkxNjksMTAzMzEzMDQ1MS
-wtMzcwNjI0MjYsLTM4NzQ1OTY5MiwxNjQxMTc2LDQ5MDIwMjIw
-Nl19
+eyJoaXN0b3J5IjpbNTc0NTc2Njg5LDE0MTE2NDc2NiwtODMxND
+g4ODY5LC0xODY5NjcyNTQwLC00ODUyOTU5NzksNTU3MjM0MCwx
+NDMwNjU4OTE4LC0xODgzMjE2MzAwLC0xMDQ2NTE4Mzk3LC0xNj
+IyNjYzNjk5LC02NTQ3NDI5MjUsMTEyOTIzODQyOSw3MTQzNTU5
+MzcsMTUwMzI2NDg2MywtNDAwOTY5MTY5LDEwMzMxMzA0NTEsLT
+M3MDYyNDI2LC0zODc0NTk2OTIsMTY0MTE3Niw0OTAyMDIyMDZd
+fQ==
 -->
