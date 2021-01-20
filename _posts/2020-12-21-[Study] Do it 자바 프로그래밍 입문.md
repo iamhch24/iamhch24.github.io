@@ -914,11 +914,36 @@ public class BeepPrintRun {
 
 > 스레드로 구현
 
+```Java
+
+
+
 ```
+
+```Java
+package threads;
+import java.awt.Toolkit;
+public class BeepTask implements Runnable {
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		Toolkit toolkit = Toolkit.getDefaultToolkit();
+		for(int i=0;i<5;i++) {
+			toolkit.beep();
+			System.out.println("띵소리");
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+}
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMjk5ODIwNyw1NTcyMzQwLDE0MzA2NT
+eyJoaXN0b3J5IjpbLTQ4NTI5NTk3OSw1NTcyMzQwLDE0MzA2NT
 g5MTgsLTE4ODMyMTYzMDAsLTEwNDY1MTgzOTcsLTE2MjI2NjM2
 OTksLTY1NDc0MjkyNSwxMTI5MjM4NDI5LDcxNDM1NTkzNywxNT
 AzMjY0ODYzLC00MDA5NjkxNjksMTAzMzEzMDQ1MSwtMzcwNjI0
