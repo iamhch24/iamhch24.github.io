@@ -977,7 +977,6 @@ public class BeepPrintRun {
 //		thread.start();
 
 		Thread thread = new Thread(new Runnable() {
-			
 			@Override
 			public void run() {
 				// TODO Auto-generated method stub
@@ -1010,8 +1009,56 @@ public class BeepPrintRun {
 
 }
 ```
+ 
+⇒ 
+
+```Java
+package threads;
+
+import java.awt.Toolkit;
+
+public class BeepPrintRun {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+//		Thread thread = new Thread(new BeepTask());
+//		thread.start();
+
+		new Thread(() -> {
+				Toolkit toolkit = Toolkit.getDefaultToolkit();
+				for(int i=0;i<5;i++) {
+					toolkit.beep();
+					System.out.println("띵소리");
+					try {
+						Thread.sleep(500);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+			}
+		} ).start();
+		
+		for(int i=0;i<5;i++) {
+			System.out.println("띵문자");
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+	}
+
+}
+
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMDk3MjA1MCwtMTg2OTY3MjU0MCwtND
+eyJoaXN0b3J5IjpbLTgzMTQ4ODg2OSwtMTg2OTY3MjU0MCwtND
 g1Mjk1OTc5LDU1NzIzNDAsMTQzMDY1ODkxOCwtMTg4MzIxNjMw
 MCwtMTA0NjUxODM5NywtMTYyMjY2MzY5OSwtNjU0NzQyOTI1LD
 ExMjkyMzg0MjksNzE0MzU1OTM3LDE1MDMyNjQ4NjMsLTQwMDk2
