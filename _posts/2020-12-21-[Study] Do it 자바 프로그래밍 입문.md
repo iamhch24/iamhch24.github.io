@@ -1093,12 +1093,39 @@ public class BeepTask implements Runnable {
 		thread5.start();
 	}
 ```
+
+
+
+```Java
+package threads;
+
+public class Bank {
+	private static int money;
+
+	public static int getMoney() {
+		return Bank.money;
+	}
+
+	public static void setMoney(int money) {
+		Bank.money = money;
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.out.println("인터럽트 에러 발생");
+		}
+		System.out.println(Thread.currentThread().getName()+":"+Bank.money);	
+	}
+}
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxODE2ODk4NSwxNDExNjQ3NjYsLTgzMT
-Q4ODg2OSwtMTg2OTY3MjU0MCwtNDg1Mjk1OTc5LDU1NzIzNDAs
-MTQzMDY1ODkxOCwtMTg4MzIxNjMwMCwtMTA0NjUxODM5NywtMT
-YyMjY2MzY5OSwtNjU0NzQyOTI1LDExMjkyMzg0MjksNzE0MzU1
-OTM3LDE1MDMyNjQ4NjMsLTQwMDk2OTE2OSwxMDMzMTMwNDUxLC
-0zNzA2MjQyNiwtMzg3NDU5NjkyLDE2NDExNzYsNDkwMjAyMjA2
-XX0=
+eyJoaXN0b3J5IjpbLTE0NTkwODA4NTIsMTQxODE2ODk4NSwxND
+ExNjQ3NjYsLTgzMTQ4ODg2OSwtMTg2OTY3MjU0MCwtNDg1Mjk1
+OTc5LDU1NzIzNDAsMTQzMDY1ODkxOCwtMTg4MzIxNjMwMCwtMT
+A0NjUxODM5NywtMTYyMjY2MzY5OSwtNjU0NzQyOTI1LDExMjky
+Mzg0MjksNzE0MzU1OTM3LDE1MDMyNjQ4NjMsLTQwMDk2OTE2OS
+wxMDMzMTMwNDUxLC0zNzA2MjQyNiwtMzg3NDU5NjkyLDE2NDEx
+NzZdfQ==
 -->
