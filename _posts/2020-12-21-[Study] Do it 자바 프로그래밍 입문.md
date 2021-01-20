@@ -871,12 +871,58 @@ public class Q7 {
 }
 
 ```
+
+
+# 스레드
+
+> 싱글스레드인 경우
+
+```Java
+package threads;
+
+import java.awt.Toolkit;
+
+public class BeepPrintRun {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Toolkit toolkit = Toolkit.getDefaultToolkit();
+		for(int i=0;i<5;i++) {
+			toolkit.beep();
+			System.out.println("띵소리");
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		for(int i=0;i<5;i++) {
+			System.out.println("띵문자");
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+	}
+
+}
+```
+
+> 스레드로 구현
+
+```
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU3MjM0MCwxNDMwNjU4OTE4LC0xODgzMj
-E2MzAwLC0xMDQ2NTE4Mzk3LC0xNjIyNjYzNjk5LC02NTQ3NDI5
-MjUsMTEyOTIzODQyOSw3MTQzNTU5MzcsMTUwMzI2NDg2MywtND
-AwOTY5MTY5LDEwMzMxMzA0NTEsLTM3MDYyNDI2LC0zODc0NTk2
-OTIsMTY0MTE3Niw0OTAyMDIyMDYsMTcyNDI2MzUxNywxNTAyMT
-YwNzYyLC05Nzg5MDE5NDEsNjA1MjU2NTAwLDEwMTYwMTkzMDFd
+eyJoaXN0b3J5IjpbMTgyMjk5ODIwNyw1NTcyMzQwLDE0MzA2NT
+g5MTgsLTE4ODMyMTYzMDAsLTEwNDY1MTgzOTcsLTE2MjI2NjM2
+OTksLTY1NDc0MjkyNSwxMTI5MjM4NDI5LDcxNDM1NTkzNywxNT
+AzMjY0ODYzLC00MDA5NjkxNjksMTAzMzEzMDQ1MSwtMzcwNjI0
+MjYsLTM4NzQ1OTY5MiwxNjQxMTc2LDQ5MDIwMjIwNiwxNzI0Mj
+YzNTE3LDE1MDIxNjA3NjIsLTk3ODkwMTk0MSw2MDUyNTY1MDBd
 fQ==
 -->
