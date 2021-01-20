@@ -915,9 +915,26 @@ public class BeepPrintRun {
 > 스레드로 구현 ( main 스레드와 BeepTask 스레드가 구동, 스택이 2개가 됨)
 
 ```Java
+package threads;
 
+public class BeepPrintRun {
 
-
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Thread thread = new Thread(new BeepTask());
+		thread.start();
+		
+		for(int i=0;i<5;i++) {
+			System.out.println("띵문자");
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}		
+		}
+	}
+}
 ```
 
 ```Java
@@ -942,12 +959,63 @@ public class BeepTask implements Runnable {
 }
 
 ```
+
+⇒ 
+
+```Java
+
+package threads;
+
+import java.awt.Toolkit;
+
+public class BeepPrintRun {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+//		Thread thread = new Thread(new BeepTask());
+//		thread.start();
+
+		Thread thread = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				Toolkit toolkit = Toolkit.getDefaultToolkit();
+				for(int i=0;i<5;i++) {
+					toolkit.beep();
+					System.out.println("띵소리");
+					try {
+						Thread.sleep(500);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+			}
+		} );
+		thread.start();
+		
+		for(int i=0;i<5;i++) {
+			System.out.println("띵문자");
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+	}
+
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Njk2NzI1NDAsLTQ4NTI5NTk3OSw1NT
-cyMzQwLDE0MzA2NTg5MTgsLTE4ODMyMTYzMDAsLTEwNDY1MTgz
-OTcsLTE2MjI2NjM2OTksLTY1NDc0MjkyNSwxMTI5MjM4NDI5LD
-cxNDM1NTkzNywxNTAzMjY0ODYzLC00MDA5NjkxNjksMTAzMzEz
-MDQ1MSwtMzcwNjI0MjYsLTM4NzQ1OTY5MiwxNjQxMTc2LDQ5MD
-IwMjIwNiwxNzI0MjYzNTE3LDE1MDIxNjA3NjIsLTk3ODkwMTk0
-MV19
+eyJoaXN0b3J5IjpbMTExMDk3MjA1MCwtMTg2OTY3MjU0MCwtND
+g1Mjk1OTc5LDU1NzIzNDAsMTQzMDY1ODkxOCwtMTg4MzIxNjMw
+MCwtMTA0NjUxODM5NywtMTYyMjY2MzY5OSwtNjU0NzQyOTI1LD
+ExMjkyMzg0MjksNzE0MzU1OTM3LDE1MDMyNjQ4NjMsLTQwMDk2
+OTE2OSwxMDMzMTMwNDUxLC0zNzA2MjQyNiwtMzg3NDU5NjkyLD
+E2NDExNzYsNDkwMjAyMjA2LDE3MjQyNjM1MTcsMTUwMjE2MDc2
+Ml19
 -->
