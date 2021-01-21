@@ -1126,6 +1126,8 @@ public class Bank {
 ```
 
 > 쓰레드.join() 이 스레드를 만날때 까지 기다려줌.
+
+```Java
 package toys;
 
 public class SummationRun {
@@ -1151,13 +1153,10 @@ public class SummationRun {
 }
 
 public class Summation extends Thread {
-    
     private int sum;
-    
     public Summation() {
         this.sum = 0;
     }
-    
     @Override
     public void run() {
         for(int i = 0; i < 1000; ++i) {
@@ -1170,19 +1169,17 @@ public class Summation extends Thread {
             }
         }
         System.out.println("Summation = " + sum);
-        
     }
 }
-```Java
-
-
 ```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1OTI0MjM3NywtMjAwNzI0NzU3LC0xND
-U5MDgwODUyLDE0MTgxNjg5ODUsMTQxMTY0NzY2LC04MzE0ODg4
-NjksLTE4Njk2NzI1NDAsLTQ4NTI5NTk3OSw1NTcyMzQwLDE0Mz
-A2NTg5MTgsLTE4ODMyMTYzMDAsLTEwNDY1MTgzOTcsLTE2MjI2
-NjM2OTksLTY1NDc0MjkyNSwxMTI5MjM4NDI5LDcxNDM1NTkzNy
-wxNTAzMjY0ODYzLC00MDA5NjkxNjksMTAzMzEzMDQ1MSwtMzcw
-NjI0MjZdfQ==
+eyJoaXN0b3J5IjpbLTE0MDgxMjkzMTksLTIwMDcyNDc1NywtMT
+Q1OTA4MDg1MiwxNDE4MTY4OTg1LDE0MTE2NDc2NiwtODMxNDg4
+ODY5LC0xODY5NjcyNTQwLC00ODUyOTU5NzksNTU3MjM0MCwxND
+MwNjU4OTE4LC0xODgzMjE2MzAwLC0xMDQ2NTE4Mzk3LC0xNjIy
+NjYzNjk5LC02NTQ3NDI5MjUsMTEyOTIzODQyOSw3MTQzNTU5Mz
+csMTUwMzI2NDg2MywtNDAwOTY5MTY5LDEwMzMxMzA0NTEsLTM3
+MDYyNDI2XX0=
 -->
