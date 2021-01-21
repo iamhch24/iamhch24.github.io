@@ -1125,13 +1125,64 @@ public class Bank {
 	public static synchronized void setMoney(int money) { //synchronized 하나 넣으면 비동기가 동기로 전환된다!!
 ```
 
+> 쓰레드.join() 이 스레드를 만날때 까지 기다려줌.
+package toys;
 
+public class SummationRun {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Summation sum = new Summation();
+		sum.start();
+		
+//		try {
+//			Thread.sleep(100000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		try {
+			sum.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+			System.out.println("End");	
+	}
+}
+
+public class Summation extends Thread {
+    
+    private int sum;
+    
+    public Summation() {
+        this.sum = 0;
+    }
+    
+    @Override
+    public void run() {
+        for(int i = 0; i < 1000; ++i) {
+            sum += i;
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+        System.out.println("Summation = " + sum);
+        
+    }
+}
+```Java
+
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDcyNDc1NywtMTQ1OTA4MDg1MiwxND
-E4MTY4OTg1LDE0MTE2NDc2NiwtODMxNDg4ODY5LC0xODY5Njcy
-NTQwLC00ODUyOTU5NzksNTU3MjM0MCwxNDMwNjU4OTE4LC0xOD
-gzMjE2MzAwLC0xMDQ2NTE4Mzk3LC0xNjIyNjYzNjk5LC02NTQ3
-NDI5MjUsMTEyOTIzODQyOSw3MTQzNTU5MzcsMTUwMzI2NDg2My
-wtNDAwOTY5MTY5LDEwMzMxMzA0NTEsLTM3MDYyNDI2LC0zODc0
-NTk2OTJdfQ==
+eyJoaXN0b3J5IjpbMjA1OTI0MjM3NywtMjAwNzI0NzU3LC0xND
+U5MDgwODUyLDE0MTgxNjg5ODUsMTQxMTY0NzY2LC04MzE0ODg4
+NjksLTE4Njk2NzI1NDAsLTQ4NTI5NTk3OSw1NTcyMzQwLDE0Mz
+A2NTg5MTgsLTE4ODMyMTYzMDAsLTEwNDY1MTgzOTcsLTE2MjI2
+NjM2OTksLTY1NDc0MjkyNSwxMTI5MjM4NDI5LDcxNDM1NTkzNy
+wxNTAzMjY0ODYzLC00MDA5NjkxNjksMTAzMzEzMDQ1MSwtMzcw
+NjI0MjZdfQ==
 -->
