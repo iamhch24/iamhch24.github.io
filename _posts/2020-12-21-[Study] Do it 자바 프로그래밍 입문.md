@@ -1181,13 +1181,17 @@ public class Summation extends Thread {
 
 ### 표준 입출력
 
-System.in.read() :: 키보드 버퍼에서 읽어옴. 한번 호출해서 엔터 치면 한글자씩 처리되기에 2번
+* System.in.read() :: 키보드 버퍼에서 읽어옴. 한번 호출해서 엔터 치면 한글자씩 처리되기에 2번째 글자를 변수에 넣어르면 System.in.read()함수를 한번 더 호출해서 받아야 함. 결국, 4글자 입력을 받으려면 System.in.read()함수를 4번 호출해서 각각을 변수에 넣어야 함. 
+System.in은 inputStream 유형
+
+* Scanner 클래스
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyODQyNjMsLTE0MDgxMjkzMTksLTIwMD
-cyNDc1NywtMTQ1OTA4MDg1MiwxNDE4MTY4OTg1LDE0MTE2NDc2
-NiwtODMxNDg4ODY5LC0xODY5NjcyNTQwLC00ODUyOTU5NzksNT
-U3MjM0MCwxNDMwNjU4OTE4LC0xODgzMjE2MzAwLC0xMDQ2NTE4
-Mzk3LC0xNjIyNjYzNjk5LC02NTQ3NDI5MjUsMTEyOTIzODQyOS
-w3MTQzNTU5MzcsMTUwMzI2NDg2MywtNDAwOTY5MTY5LDEwMzMx
-MzA0NTFdfQ==
+eyJoaXN0b3J5IjpbLTE0NTM1MTAyOTEsLTE0MDgxMjkzMTksLT
+IwMDcyNDc1NywtMTQ1OTA4MDg1MiwxNDE4MTY4OTg1LDE0MTE2
+NDc2NiwtODMxNDg4ODY5LC0xODY5NjcyNTQwLC00ODUyOTU5Nz
+ksNTU3MjM0MCwxNDMwNjU4OTE4LC0xODgzMjE2MzAwLC0xMDQ2
+NTE4Mzk3LC0xNjIyNjYzNjk5LC02NTQ3NDI5MjUsMTEyOTIzOD
+QyOSw3MTQzNTU5MzcsMTUwMzI2NDg2MywtNDAwOTY5MTY5LDEw
+MzMxMzA0NTFdfQ==
 -->
