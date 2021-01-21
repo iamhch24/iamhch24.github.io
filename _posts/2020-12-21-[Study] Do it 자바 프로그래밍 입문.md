@@ -1176,14 +1176,18 @@ public class Summation extends Thread {
 # 15장 자바 입출력
 
 * 입력 스트림 vs 출력 스트림
-* 바이트 단위 스트림( vs 문자 단위 스트림
+* 바이트 단위 스트림(Input/OutputStream) vs 문자 단위 스트림(Reader/Writer)
 * 기반 스트림(File) vs 보조 스트림(buffered)
+
+### 표준 입출력
+
+System.in.read() :: 키보드 버퍼에서 읽어옴. 한번 호출해서 엔터 치면 한글자씩 처리되기에 2번
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkyMzkzMTc4LC0xNDA4MTI5MzE5LC0yMD
-A3MjQ3NTcsLTE0NTkwODA4NTIsMTQxODE2ODk4NSwxNDExNjQ3
-NjYsLTgzMTQ4ODg2OSwtMTg2OTY3MjU0MCwtNDg1Mjk1OTc5LD
-U1NzIzNDAsMTQzMDY1ODkxOCwtMTg4MzIxNjMwMCwtMTA0NjUx
-ODM5NywtMTYyMjY2MzY5OSwtNjU0NzQyOTI1LDExMjkyMzg0Mj
-ksNzE0MzU1OTM3LDE1MDMyNjQ4NjMsLTQwMDk2OTE2OSwxMDMz
-MTMwNDUxXX0=
+eyJoaXN0b3J5IjpbMTIyODQyNjMsLTE0MDgxMjkzMTksLTIwMD
+cyNDc1NywtMTQ1OTA4MDg1MiwxNDE4MTY4OTg1LDE0MTE2NDc2
+NiwtODMxNDg4ODY5LC0xODY5NjcyNTQwLC00ODUyOTU5NzksNT
+U3MjM0MCwxNDMwNjU4OTE4LC0xODgzMjE2MzAwLC0xMDQ2NTE4
+Mzk3LC0xNjIyNjYzNjk5LC02NTQ3NDI5MjUsMTEyOTIzODQyOS
+w3MTQzNTU5MzcsMTUwMzI2NDg2MywtNDAwOTY5MTY5LDEwMzMx
+MzA0NTFdfQ==
 -->
