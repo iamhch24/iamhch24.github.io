@@ -1190,13 +1190,18 @@ new Scanner(new File("C://Data//input_data.txt"));
 
 scanner.nextLine(); // 엔터까지 한번에 읽음.
 
+# 퍼포먼스 측정 :: 걸리는 시간을 체크함
+long millisecond = 0;
+millisecond = System.currentTimeMillis();
+로직 처리
+millisecond = System.currentTimeMillis() - millisecond;
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3OTA2MTgxNywtMTQwODEyOTMxOSwtMj
-AwNzI0NzU3LC0xNDU5MDgwODUyLDE0MTgxNjg5ODUsMTQxMTY0
-NzY2LC04MzE0ODg4NjksLTE4Njk2NzI1NDAsLTQ4NTI5NTk3OS
-w1NTcyMzQwLDE0MzA2NTg5MTgsLTE4ODMyMTYzMDAsLTEwNDY1
-MTgzOTcsLTE2MjI2NjM2OTksLTY1NDc0MjkyNSwxMTI5MjM4ND
-I5LDcxNDM1NTkzNywxNTAzMjY0ODYzLC00MDA5NjkxNjksMTAz
-MzEzMDQ1MV19
+eyJoaXN0b3J5IjpbLTIxMTk3Mjk1ODIsMTM3OTA2MTgxNywtMT
+QwODEyOTMxOSwtMjAwNzI0NzU3LC0xNDU5MDgwODUyLDE0MTgx
+Njg5ODUsMTQxMTY0NzY2LC04MzE0ODg4NjksLTE4Njk2NzI1ND
+AsLTQ4NTI5NTk3OSw1NTcyMzQwLDE0MzA2NTg5MTgsLTE4ODMy
+MTYzMDAsLTEwNDY1MTgzOTcsLTE2MjI2NjM2OTksLTY1NDc0Mj
+kyNSwxMTI5MjM4NDI5LDcxNDM1NTkzNywxNTAzMjY0ODYzLC00
+MDA5NjkxNjldfQ==
 -->
