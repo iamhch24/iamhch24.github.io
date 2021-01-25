@@ -1191,13 +1191,15 @@ new Scanner(new File("C://Data//input_data.txt"));
 scanner.nextLine(); // 엔터까지 한번에 읽음.
 
 # 퍼포먼스 측정 :: 걸리는 시간을 체크함
+```Java
 long millisecond = 0;
 millisecond = System.currentTimeMillis();
 로직 처리
 millisecond = System.currentTimeMillis() - millisecond;
-
+System.out.println (millisecond + "milliseconds 소요되었습니다.");
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTk3Mjk1ODIsMTM3OTA2MTgxNywtMT
+eyJoaXN0b3J5IjpbLTE1NjQ3ODYwMjMsMTM3OTA2MTgxNywtMT
 QwODEyOTMxOSwtMjAwNzI0NzU3LC0xNDU5MDgwODUyLDE0MTgx
 Njg5ODUsMTQxMTY0NzY2LC04MzE0ODg4NjksLTE4Njk2NzI1ND
 AsLTQ4NTI5NTk3OSw1NTcyMzQwLDE0MzA2NTg5MTgsLTE4ODMy
